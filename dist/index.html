@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Un atlas visual de arquitectura, territorio y memoria. Explora la arquitectura paleocristiana, bizantina y carolingia, junto a los mundos inca, muisca, romano y egipcio.">
+<title>JSOP — Clase teoria e historia 1</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23121f25'/%3E%3Cpath d='M8 24L16 7L24 24M11 19H21' fill='none' stroke='%23e5b775' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/maplibre-gl.css"><link rel="stylesheet" href="style.css?v=map4"><script defer src="vendor/maplibre-gl.js"></script><script type="module" src="app.js?v=map7"></script>
+</head>
+<body>
+<a class="skip" href="#recorrido">Saltar al recorrido</a>
+<header class="header"><a class="brand" href="#mapa" aria-label="JSOP, volver al mapa"><span class="brand-symbol">⊕</span> JSOP<span class="brand-note">Clase teoria e historia 1</span></a><a class="map-link" href="#mapa">Explorar el mapa <span>↗</span></a></header>
+<main>
+<section class="hero" id="mapa" aria-label="Mapa de civilizaciones">
+<div class="hero-heading"><p class="eyebrow">ARQUITECTURA · CULTURA · TERRITORIO</p><h1>Un mundo.<br><em>Muchas huellas.</em></h1><p class="intro">Siete lugares. Distintas formas de habitar la Tierra.<br>Elige un punto y viaja a su historia.</p></div>
+<div id="live-map" aria-label="Mapa interactivo del mundo"></div><div class="map-tools" hidden><button id="world-reset" type="button">⊕ Ver el mundo</button></div><p id="map-status" role="status">Cargando mapa navegable…</p><div class="map-surface"><svg id="world" viewBox="0 0 1000 500" role="img" aria-label="Mapamundi con siete destinos históricos: paleocristiano, bizantino, carolingio, inca, muisca, romano y egipcio"><defs><radialGradient id="ocean"><stop stop-color="#25383e"/><stop offset="1" stop-color="#121f25"/></radialGradient></defs><rect width="1000" height="500" fill="url(#ocean)"/><g id="grid"></g><g id="land"></g><g class="map-routes"><path d="M300 287 Q210 250 295 235 T535 133 T587 167"/></g></svg><div id="markers"></div><span class="ocean-label pacific">OCÉANO PACÍFICO</span><span class="ocean-label atlantic">OCÉANO ATLÁNTICO</span><span class="ocean-label indian">OCÉANO ÍNDICO</span></div>
+<div class="compass" aria-hidden="true"><span>N</span><span>✧</span></div><p id="map-error" hidden>La cartografía no pudo cargarse. Puedes explorar todos los lugares desde la lista inferior.</p>
+<div class="hero-bottom"><a class="scroll-cue" href="#recorrido"><span class="scroll-circle">↓</span><span>CONTINUAR<br>EL RECORRIDO</span></a></div>
+</section>
+<nav class="chapter-nav" aria-label="Destinos"><div id="destination-nav"></div></nav>
+<div id="recorrido"><div class="route-intro"><p class="eyebrow">EL TERRITORIO GUARDA LA HISTORIA</p><p>De los Andes al Mediterráneo,<br>la memoria también se construye.</p><span>01 — 07</span></div><div id="chapters"></div></div>
+<footer><a class="brand" href="#mapa">⊕ JSOP</a><p>El viaje termina. Las huellas permanecen.</p><a href="#mapa">Volver al mundo ↑</a><details><summary>Fuentes y créditos</summary><div id="credits"><p>Mapa navegable: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> · <a href="https://openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>. Cartografía de respaldo: <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth · dominio público</a>. Los marcadores señalan lugares concretos; no representan las fronteras de las culturas.</p></div></details></footer>
+</main>
+<div id="flight-status" role="status" hidden><span>Viajando a <strong></strong></span><button id="cancel-flight" type="button">Cancelar</button></div>
+<div class="progress" aria-hidden="true"></div>
+</body></html>

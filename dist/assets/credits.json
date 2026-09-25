@@ -1,0 +1,162 @@
+[
+  {
+    "id": "inca-machu-picchu",
+    "path": "assets/inca-machu-picchu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:99_-_Machu_Picchu_-_Juin_2009.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/99_-_Machu_Picchu_-_Juin_2009.jpg",
+    "credit": "Martin St-Amant — Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "bytes": 238209,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "inca-sacred-valley",
+    "path": "assets/inca-sacred-valley.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Panoramic_Image_of_Machu_Picchu_and_the_Sacred_Valley.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Panoramic_Image_of_Machu_Picchu_and_the_Sacred_Valley.jpg",
+    "credit": "Rubyk; stitched/edited by Fir0002; cropped by Dschwen",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "bytes": 370814,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "muisca-guatavita",
+    "path": "assets/muisca-guatavita.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:LagunaDeGuatavita.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/LagunaDeGuatavita.jpg",
+    "credit": "Masanalv; cropped by Ras67",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "bytes": 87441,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "muisca-raft",
+    "path": "assets/muisca-raft.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gold_Museum%2C_Bogota_%2836145671394%29.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gold_Museum%2C_Bogota_%2836145671394%29.jpg",
+    "credit": "Pedro Szekely",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "bytes": 748193,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "rome-colosseum",
+    "path": "assets/rome-colosseum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Colosseum_exterior_%285200565537%29.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Colosseum_exterior_%285200565537%29.jpg",
+    "credit": "Weldon Kennedy",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "bytes": 541362,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "rome-pantheon",
+    "path": "assets/rome-pantheon.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pantheon_%28Roma%29_-_Front.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Pantheon_%28Roma%29_-_Front.jpg",
+    "credit": "NikonZ7II",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 616556,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "egypt-pyramids",
+    "path": "assets/egypt-pyramids.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Panoramic_View_of_the_Pyramids_of_Giza.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Panoramic_View_of_the_Pyramids_of_Giza.jpg",
+    "credit": "Hosam Zidan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 194402,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "egypt-sphinx",
+    "path": "assets/egypt-sphinx.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sphinx_and_the_Great_Pyramid_of_Giza_panorama.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sphinx_and_the_Great_Pyramid_of_Giza_panorama.jpg",
+    "credit": "kallerna",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "bytes": 179245,
+    "changes": "Resized for website; display may crop to fit"
+  },
+  {
+    "id": "paleo-historico",
+    "path": "assets/paleo-historico.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_1450.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Basilica_di_San_Pietro_1450.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "credit": "H.W. Brewer (1836 – 1903)[1]",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_1450.jpg",
+    "description": "Drawing and graphic reconstruction of the Constantinian basilica over the grave of St. Peter in Rome. The figure shows, according to the caption, the building in 1450. In the right background, however, the Sistine Chapel can be seen, whose construction started in 1475 and finished in 1483. Since the foundation stone was laid for the new St. Peter's Cathedral in 1506, the drawing shows the state between 1483 and 1506. Drawing from H.W.Brewer, 1891",
+    "date": "1891date QS:P571,+1891-00-00T00:00:00Z/9",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "paleo-actual",
+    "path": "assets/paleo-actual.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:St._Peter%27s_Basilica_and_its_dome.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/St._Peter%27s_Basilica_and_its_dome.jpg/1280px-St._Peter%27s_Basilica_and_its_dome.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "credit": "Vitold Muratov",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "St. Peter's Cathedral with a height of 120 m, and its dome",
+    "date": "2019-02-22",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "bizantino-historico",
+    "path": "assets/bizantino-historico.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sainte-sophie,_a_Constantinople.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Sainte-sophie%2C_a_Constantinople.jpg/1280px-Sainte-sophie%2C_a_Constantinople.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "credit": "Autor desconocido; digitalización de Dmitry Makeev",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Sainte-sophie,_a_Constantinople.jpg",
+    "description": "Hagia Sophia (The Church of the Holy Wisdom), Constantinople – The Most Beautiful Churches of the World",
+    "date": "1857date QS:P571,+1857-00-00T00:00:00Z/9",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "bizantino-actual",
+    "path": "assets/bizantino-actual.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ayasofya_Camii_(20230126).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ayasofya_Camii_%2820230126%29.jpg/1280px-Ayasofya_Camii_%2820230126%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "credit": "Kadı",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "description": "Hagia Sophia Mosque",
+    "date": "2023-01-26 20:44:08",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "carolingio-historico",
+    "path": "assets/carolingio-historico.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Aachen_Dehio_1887.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Aachen_Dehio_1887.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "credit": "Georg Dehio/Gustav von Bezold",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Aachen_Dehio_1887.jpg",
+    "description": "Palace chapel of Aachen",
+    "date": "1887–1901",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "carolingio-actual",
+    "path": "assets/carolingio-actual.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_d%27Aix-la-Chapelle_04.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cath%C3%A9drale_d%27Aix-la-Chapelle_04.jpg/1280px-Cath%C3%A9drale_d%27Aix-la-Chapelle_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "credit": "Alex Riechert",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Cathédrale d'Aix-la-Chapelle\nAix-la-Chapelle (Aachen)\n\nAllemagne",
+    "date": "2009-12-22 15:35:18",
+    "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  }
+]
