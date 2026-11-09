@@ -1,0 +1,944 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/block"
+      },
+      "maxItems": 200
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "provider": {
+          "enum": [
+            "manual",
+            "photon"
+          ]
+        }
+      },
+      "required": [
+        "lat",
+        "lon",
+        "label",
+        "provider"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "title",
+    "blocks"
+  ],
+  "definitions": {
+    "asset": {
+      "type": "object",
+      "properties": {
+        "assetId": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "src": {
+          "type": "string",
+          "maxLength": 3000,
+          "pattern": "^(https://[^/@\\s]+[^\\s]*|/assets/[a-zA-Z0-9_./-]+(\\?v=[0-9]+)?)$"
+        },
+        "alt": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "caption": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "author": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "source": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "sourceURL": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 3000,
+              "pattern": "^(https://[^/@\\s]+[^\\s]*|/assets/[a-zA-Z0-9_./-]+(\\?v=[0-9]+)?)$"
+            },
+            {
+              "const": ""
+            }
+          ]
+        },
+        "kind": {
+          "enum": [
+            "photo",
+            "plan"
+          ]
+        }
+      },
+      "required": [
+        "alt"
+      ],
+      "oneOf": [
+        {
+          "required": [
+            "assetId"
+          ],
+          "not": {
+            "required": [
+              "src"
+            ]
+          }
+        },
+        {
+          "required": [
+            "src"
+          ],
+          "not": {
+            "required": [
+              "assetId"
+            ]
+          }
+        }
+      ]
+    },
+    "block": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "heading"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "level": {
+              "enum": [
+                2,
+                3
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "level"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "hero"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "eyebrow": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 12000
+            },
+            "cover": {
+              "$ref": "#/definitions/asset"
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "eyebrow",
+            "description"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "section"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 12000
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/block"
+              },
+              "maxItems": 200
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "text"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "body": {
+              "type": "string",
+              "maxLength": 12000
+            },
+            "content": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/rich"
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "doc"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout"
+          ],
+          "anyOf": [
+            {
+              "required": [
+                "body"
+              ]
+            },
+            {
+              "required": [
+                "content"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "plates"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/asset"
+              },
+              "maxItems": 30
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "items"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "comparison"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/asset"
+              },
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "items"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "timeline"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 12000
+            },
+            "range": {
+              "type": "string",
+              "maxLength": 100
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "maxLength": 100
+                  },
+                  "era": {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  "title": {
+                    "type": "string",
+                    "maxLength": 500
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxLength": 12000
+                  },
+                  "tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "maxLength": 80
+                    },
+                    "maxItems": 12
+                  },
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "maxLength": 1000
+                      },
+                      "url": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "maxLength": 3000,
+                            "pattern": "^(https://[^/@\\s]+[^\\s]*|/assets/[a-zA-Z0-9_./-]+(\\?v=[0-9]+)?)$"
+                          },
+                          {
+                            "const": ""
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "url"
+                    ]
+                  }
+                },
+                "required": [
+                  "date",
+                  "era",
+                  "title",
+                  "body",
+                  "tags",
+                  "source"
+                ]
+              },
+              "maxItems": 200
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "description",
+            "range",
+            "events"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "sources"
+            },
+            "id": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "layout": {
+              "enum": [
+                "reading",
+                "wide",
+                "two-columns",
+                "three-columns"
+              ]
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "url": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 3000,
+                        "pattern": "^(https://[^/@\\s]+[^\\s]*|/assets/[a-zA-Z0-9_./-]+(\\?v=[0-9]+)?)$"
+                      },
+                      {
+                        "const": ""
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "url"
+                ]
+              },
+              "maxItems": 100
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "title",
+            "layout",
+            "items"
+          ]
+        }
+      ]
+    },
+    "rich": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "doc"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "paragraph",
+                          "heading",
+                          "bulletList",
+                          "orderedList",
+                          "blockquote"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "paragraph"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "text",
+                          "hardBreak"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "heading"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "text",
+                          "hardBreak"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            },
+            "attrs": {
+              "type": "object",
+              "properties": {
+                "level": {
+                  "enum": [
+                    2,
+                    3
+                  ]
+                }
+              },
+              "required": [
+                "level"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "attrs"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "bulletList"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "listItem"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "orderedList"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "listItem"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            },
+            "attrs": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 10000
+                }
+              },
+              "required": []
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "listItem"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "paragraph",
+                          "bulletList",
+                          "orderedList",
+                          "blockquote"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "blockquote"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rich"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "paragraph",
+                          "heading",
+                          "bulletList",
+                          "orderedList"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "maxItems": 10000
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "not": {
+            "required": [
+              "marks"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "text"
+            },
+            "text": {
+              "type": "string",
+              "maxLength": 12000,
+              "minLength": 1
+            },
+            "marks": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "bold",
+                          "italic"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "const": "link"
+                      },
+                      "attrs": {
+                        "type": "object",
+                        "properties": {
+                          "href": {
+                            "type": "string",
+                            "maxLength": 3000,
+                            "pattern": "^https?://[^/@\\s]+[^\\s]*$"
+                          }
+                        },
+                        "required": [
+                          "href"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "attrs"
+                    ]
+                  }
+                ]
+              },
+              "maxItems": 20
+            }
+          },
+          "required": [
+            "type",
+            "text"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "hardBreak"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    }
+  }
+}

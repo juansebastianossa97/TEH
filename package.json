@@ -1,0 +1,22 @@
+{
+  "name": "atlas-civilizaciones",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build:editor && python3 scripts/dev-server.py",
+    "test": "node --test tests/*.test.js && python3 -m unittest discover -s tests -p \"test_*.py\"",
+    "build:editor": "esbuild development/editor.js development/tools/task-worker.js development/cloud/community.js development/cloud/review.js development/cloud/exhibition.js development/cloud/markers.js --bundle --format=esm --splitting --minify --external:/map-loading.js --outdir=development/build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.0",
+    "@tiptap/core": "^3.32.2",
+    "@tiptap/pm": "^3.32.2",
+    "@tiptap/starter-kit": "^3.32.2",
+    "fflate": "^0.8.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "fake-indexeddb": "^6.2.7",
+    "jsdom": "^29.1.1"
+  }
+}

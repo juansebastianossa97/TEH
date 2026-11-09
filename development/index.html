@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JSOP · Estudio de exposiciones</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23192f33'/%3E%3Ctext x='6' y='23' fill='%23efece4' font-size='23'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/dev/editor.css"><link rel="stylesheet" href="/dev/studio.css?v=validation1"><link rel="stylesheet" href="/vendor/maplibre-gl.css">
+<script defer src="/vendor/maplibre-gl.js"></script><script type="module" src="/dev/build/editor.js?v=validation1"></script>
+</head>
+<body class="workshop">
+<header class="workshop-header toolbar">
+ <a class="studio-brand" href="/index.html" aria-label="JSOP · Ver mapa público"><span class="brand-symbol">⊕</span> JSOP<span class="brand-divider"></span><span class="studio-word">Estudio</span></a>
+ <div class="document-heading"><span class="draft-tag">BORRADOR LOCAL</span><label class="document-name"><span class="sr-only">Nombre del documento</span><input id="document-title" aria-label="Nombre del documento" placeholder="Nombre de tu exposición"></label></div>
+ <div class="header-actions">
+  <details class="file-menu"><summary>Archivo <span>⌄</span></summary><div class="file-menu-content">
+   <span class="menu-label">TU TRABAJO</span><button id="new-document">Nueva exposición vacía</button><a class="cloud-space" href="/dev/community.html">Mis exposiciones ↗</a><button id="cloud-save">Guardar en la nube</button><button id="recover">Recuperar borrador</button><button id="export-backup">Respaldar ZIP con imágenes</button><label class="file-button">Restaurar ZIP<input id="import-backup" type="file" accept=".zip,application/zip"></label>
+   <span class="menu-label">DOCUMENTO</span><button id="export">Exportar JSON</button><label class="file-button">Importar JSON<input id="import" type="file" accept="application/json,.json"></label><button id="reference">Cargar Santa Sofía</button>
+  </div></details>
+  <button id="save" class="save-button">Guardar</button><button type="button" id="send-proposal">Enviar a revisión</button><button id="preview-toggle" aria-pressed="false">Previsualizar ↗</button>
+ </div>
+</header>
+<main class="studio-main">
+ <div class="studio-context"><div class="context-actions"><button id="outline-toggle" aria-expanded="true" aria-controls="outline-panel">☷ Estructura</button><button id="location">◎ Ubicación</button></div><p id="save-status" role="status" aria-live="polite"></p><button id="inspector-toggle" aria-expanded="true" aria-controls="settings-panel">Ajustes del bloque ◧</button></div>
+ <div id="editor-workspace">
+  <aside class="outline-panel" id="outline-panel"><div class="panel-heading"><span class="panel-kicker">TU EXPOSICIÓN</span><h1>Estructura <span id="block-count"></span></h1><p>Organiza tu historia, bloque a bloque.</p></div><ol id="outline"></ol><div class="add-block-panel"><label for="block-type">Añadir un bloque</label><select id="block-type"><option value="heading">Solo un título</option><option value="section">Sección / subsección</option><option value="text">Texto</option><option value="plates">Láminas / galería</option><option value="timeline">Línea de tiempo</option><option value="comparison">Comparación</option><option value="sources">Fuentes</option><option value="hero">Portada</option></select><button id="add-root">＋ Añadir a la exposición</button><button id="add-child">Añadir dentro de la sección</button></div><a class="back-to-map" href="/index.html">↗ Explorar el mapa público</a></aside>
+  <section class="canvas-panel" aria-label="Vista de la exposición"><div class="canvas-caption"><span>LIENZO DE LA EXPOSICIÓN</span><span id="canvas-hint">Selecciona un bloque para editarlo</span></div><div id="preview"></div><p class="canvas-end">JSOP <span>·</span> Cada lugar tiene una historia.</p></section>
+  <section class="settings-panel" id="settings-panel" aria-labelledby="settings-title"><div class="panel-heading"><span class="panel-kicker">ESTÁS EDITANDO</span><h2 id="settings-title">Portada</h2><p id="selected-description">El comienzo de tu exposición.</p></div><div id="block-fields"></div></section>
+ </div>
+</main>
+</body></html>

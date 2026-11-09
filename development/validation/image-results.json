@@ -1,0 +1,28 @@
+{
+  "elapsedMs": 5035,
+  "maxTimerDelayMs": 1,
+  "heartbeatTicks": 314,
+  "results": [
+    {
+      "file": "prueba-1.jpg",
+      "input": 232825,
+      "output": 29128,
+      "width": 2400,
+      "height": 1575
+    },
+    {
+      "file": "prueba-2.jpg",
+      "input": 224087,
+      "output": 29132,
+      "width": 2400,
+      "height": 1575
+    },
+    {
+      "file": "prueba-3.jpg",
+      "input": 234188,
+      "output": 29686,
+      "width": 2400,
+      "height": 1575
+    }
+  ]
+}

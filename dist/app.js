@@ -1,3 +1,4 @@
+import {mapLoadingOptions, observeMapLoading} from './map-loading.js?v=1';
 if(location.hash==='#historia-santa-sofia')location.replace('santa-sofia.html#historia-santa-sofia');
 const places = [
 {"id": "paleocristiano", "label": "Paleocristiano", "culture": "ARQUITECTURA PALEOCRISTIANA", "name": "San Pedro", "country": "VATICANO", "period": "Siglo IV", "lat": 41.9022, "lon": 12.4539, "coords": "41.9022° N / 12.4539° E", "headline": "La basílica como lugar de encuentro.", "text": "La antigua basílica de San Pedro, impulsada por Constantino en el siglo IV, es un referente de la arquitectura paleocristiana. Su organización longitudinal, con cinco naves, atrio y ábside, orientaba a la comunidad hacia el altar y la memoria del apóstol.", "detail": "El edificio original no se conserva en pie. Fue sustituido por la basílica actual, cuya construcción comenzó en 1506 y concluyó en 1626. La comparación muestra dos edificios distintos en el mismo lugar.", "fact": "Planta basilical y cinco naves", "main": "paleo-historico", "second": "paleo-actual", "caption": "Antigua San Pedro · reconstrucción gráfica de H. W. Brewer, 1891. Representa su aspecto tardomedieval, con modificaciones posteriores al siglo IV.", "caption2": "Basílica actual de San Pedro · fotografía de 2019. Sustituyó al edificio paleocristiano; no es su estado original restaurado.", "status": "EDIFICIO ORIGINAL REEMPLAZADO", "source": "https://www.basilicasanpietro.va/en/faq/when-was-st-peters-basilica-built", "sourceName": "Basílica de San Pedro", "history": true},
@@ -32,7 +33,7 @@ async function initMap(){
  try{
   if(!window.maplibregl)throw new Error('MapLibre no disponible');
   const initialZoom=()=>innerWidth<600?0.65:innerWidth<1000?1.2:1.8;
-  map=new maplibregl.Map({container:'live-map',locale:{'NavigationControl.ZoomIn':'Acercar','NavigationControl.ZoomOut':'Alejar','NavigationControl.ResetBearing':'Orientar al norte','AttributionControl.ToggleAttribution':'Créditos del mapa'},style:'assets/map-style.json?v=3',center:[-25,22],zoom:initialZoom(),minZoom:0.5,maxZoom:18,renderWorldCopies:false,attributionControl:false,canvasContextAttributes:{antialias:true}});
+  map=new maplibregl.Map({container:'live-map',...mapLoadingOptions(innerWidth),locale:{'NavigationControl.ZoomIn':'Acercar','NavigationControl.ZoomOut':'Alejar','NavigationControl.ResetBearing':'Orientar al norte','AttributionControl.ToggleAttribution':'Créditos del mapa'},style:'assets/map-style.json?v=3',center:[-25,22],zoom:initialZoom(),minZoom:0.5,maxZoom:18,renderWorldCopies:false,attributionControl:false,canvasContextAttributes:{antialias:true}});
   // Mayor respuesta para rueda y trackpad, conservando la animación suave.
   map.scrollZoom.setWheelZoomRate(1 / 200);
   map.scrollZoom.setZoomRate(1 / 50);
@@ -60,10 +61,10 @@ async function initMap(){
    }
   }
   markerLayout();map.on('move',markerLayout);map.on('resize',markerLayout);
-  const loadingDeadline=setTimeout(()=>{if(!mapReady)mapFailure()},20000);
-  map.on('load',()=>{clearTimeout(loadingDeadline);mapReady=true;$('#live-map').hidden=false;$('#mapa').classList.add('live-ready');$('.map-tools').hidden=false;$('#map-status').hidden=true;map.resize()});
-  map.on('error',()=>{if(mapReady){$('#map-status').hidden=false;$('#map-status').textContent='No se pudo cargar parte del mapa. Revisa tu conexión; el recorrido sigue disponible.'}});
-  map.on('idle',()=>{if(mapReady&&map.areTilesLoaded())$('#map-status').hidden=true});
+  observeMapLoading(map, {
+   ready:()=>{mapReady=true;$('#live-map').hidden=false;$('#mapa').classList.add('live-ready');$('.map-tools').hidden=false;$('#map-status').hidden=true;map.resize()},
+   status:message=>{$('#map-status').textContent=message;$('#map-status').hidden=!message}
+  });
   map.on('movestart',e=>{if(e.originalEvent){cancelFlight();$('#mapa').classList.add('exploring')}});
   for(const event of ['wheel','pointerdown','touchstart'])map.getCanvas().addEventListener(event,()=>{cancelFlight();$('#mapa').classList.add('exploring')},{passive:true});
   $('#world-reset').addEventListener('click',()=>{cancelFlight();$('#mapa').classList.remove('exploring');map.flyTo({center:[-25,22],zoom:initialZoom(),pitch:0,bearing:0,duration:reduced()?0:1200})});

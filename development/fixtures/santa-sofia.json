@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "title": "Santa Sofía · Referencia de aceptación",
+  "blocks": [
+    {
+      "id": "portada",
+      "type": "hero",
+      "title": "Dentro de\nSanta Sofía.",
+      "layout": "reading",
+      "eyebrow": "ESTAMBUL / ESPACIO E HISTORIA",
+      "description": "Tres maneras de leer el espacio.\nQuince momentos para entender su historia."
+    },
+    {
+      "id": "analisis",
+      "type": "section",
+      "title": "La masa y el vacío.",
+      "layout": "reading",
+      "description": "Una misma geometría, tres lecturas. Abre cada lámina para observarla en detalle.",
+      "children": [
+        {
+          "id": "laminas",
+          "type": "plates",
+          "title": "",
+          "layout": "three-columns",
+          "items": [
+            {
+              "src": "/assets/sophia-vacios.svg?v=2",
+              "alt": "Mapa de vacíos de Santa Sofía",
+              "caption": "El negro destaca los espacios interiores: nártex, naves laterales, nave central y ábside. Permite leer sus conexiones y proporciones generales.",
+              "label": "01 / VACÍOS",
+              "title": "El espacio habitable"
+            },
+            {
+              "src": "/assets/sophia-llenos.svg?v=2",
+              "alt": "Mapa de llenos de Santa Sofía",
+              "caption": "El negro identifica la masa de muros, pilares y columnas. El blanco deja ver el espacio libre entre los elementos que delimitan y sostienen el edificio.",
+              "label": "02 / LLENOS",
+              "title": "La materia que sostiene"
+            },
+            {
+              "src": "/assets/sophia-nolli.svg?v=2",
+              "alt": "Mapa de Nolli de Santa Sofía",
+              "caption": "El blanco vincula el espacio exterior de llegada con el interior colectivo, atravesando el nártex. Es una interpretación del principio Nolli aplicada al edificio.",
+              "label": "03 / NOLLI",
+              "title": "El interior como continuidad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historia",
+      "type": "timeline",
+      "title": "Un edificio.\nMuchas vidas.",
+      "layout": "reading",
+      "description": "Incendios, imperios, reconstrucciones y nuevas formas de habitar lo sagrado. Sigue los momentos que transformaron Santa Sofía y la ciudad a su alrededor.",
+      "range": "360 — 2020",
+      "events": [
+        {
+          "date": "360",
+          "era": "Antes del edificio actual",
+          "tags": [
+            "Arquitectura",
+            "Sociedad"
+          ],
+          "title": "La primera iglesia",
+          "body": "Bajo Constancio II se dedica la primera iglesia en este lugar. Es el comienzo de su historia, pero todavía no es el edificio que vemos hoy.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "404",
+          "era": "Las iglesias anteriores",
+          "tags": [
+            "Sociedad"
+          ],
+          "title": "Un incendio interrumpe su historia",
+          "body": "La primera iglesia queda destruida durante disturbios. El destino del templo ya está ligado a los conflictos de Constantinopla.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "415",
+          "era": "Las iglesias anteriores",
+          "tags": [
+            "Arquitectura",
+            "Política"
+          ],
+          "title": "Una segunda Santa Sofía",
+          "body": "Teodosio II inaugura una nueva iglesia. También desaparecerá: el monumento actual es la tercera gran construcción del lugar.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "532",
+          "era": "Constantinopla bizantina",
+          "tags": [
+            "Política",
+            "Sociedad"
+          ],
+          "title": "La revuelta de Niká",
+          "body": "La segunda iglesia arde durante la rebelión contra Justiniano. El emperador ordena reconstruirla: una crisis urbana da paso a una obra monumental.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "532–537",
+          "era": "Constantinopla bizantina",
+          "tags": [
+            "Economía",
+            "Arquitectura"
+          ],
+          "title": "Los recursos de un imperio",
+          "body": "La construcción reúne materiales de distintas regiones del imperio. Los mármoles y las columnas hacen visible su riqueza; entender esta obra también implica pensar en el transporte, los oficios y los recursos que la hicieron posible.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/exhibitions/listings/2012/byzantium-and-islam/blog/where-in-the-world/posts/hagia-sophia"
+          }
+        },
+        {
+          "date": "537",
+          "era": "Constantinopla bizantina",
+          "tags": [
+            "Arquitectura"
+          ],
+          "title": "Se inaugura el edificio actual",
+          "body": "El 27 de diciembre se dedica la obra de Antemio de Trales e Isidoro de Mileto. Su gran cúpula redefine el espacio interior.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "558–562",
+          "era": "Constantinopla bizantina",
+          "tags": [
+            "Arquitectura"
+          ],
+          "title": "La cúpula se reconstruye",
+          "body": "La primera cúpula colapsa en 558. Se reconstruye con un perfil más elevado y la iglesia vuelve a dedicarse en 562.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "843",
+          "era": "Constantinopla bizantina",
+          "tags": [
+            "Arte",
+            "Sociedad"
+          ],
+          "title": "El regreso de las imágenes",
+          "body": "Termina la iconoclasia bizantina. Después se incorporan mosaicos figurativos: el interior cambia junto con la relación religiosa con las imágenes.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/essays/hagia-sophia-532-37"
+          }
+        },
+        {
+          "date": "1204",
+          "era": "Una capital disputada",
+          "tags": [
+            "Política"
+          ],
+          "title": "La Cuarta Cruzada",
+          "body": "Los cruzados toman Constantinopla y comienza el dominio latino. Este cambio de poder rompe la continuidad política bizantina de la ciudad que alberga Santa Sofía.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/exhibitions/listings/2004/byzantium-faith-and-power"
+          }
+        },
+        {
+          "date": "1261",
+          "era": "Una capital disputada",
+          "tags": [
+            "Política"
+          ],
+          "title": "El regreso bizantino",
+          "body": "Los bizantinos recuperan Constantinopla tras 57 años de dominio latino. La ciudad vuelve a ser capital imperial, en una nueva etapa de su historia religiosa y artística.",
+          "source": {
+            "name": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/exhibitions/listings/2004/byzantium-faith-and-power"
+          }
+        },
+        {
+          "date": "1453",
+          "era": "Estambul otomana",
+          "tags": [
+            "Política",
+            "Arquitectura"
+          ],
+          "title": "De iglesia a mezquita",
+          "body": "Tras la conquista otomana, Mehmed II convierte Santa Sofía en mezquita. En esta nueva etapa se añaden elementos para el culto islámico; los minaretes y otras intervenciones transforman progresivamente el conjunto.",
+          "source": {
+            "name": "Dijital Istanbul",
+            "url": "https://dijitalistanbul.org/en/hagia-sophia-grand-mosque"
+          }
+        },
+        {
+          "date": "1847–1849",
+          "era": "Estambul otomana",
+          "tags": [
+            "Arquitectura",
+            "Patrimonio"
+          ],
+          "title": "Restaurar y documentar",
+          "body": "Los hermanos Gaspare y Giuseppe Fossati restauran el monumento. Sus representaciones documentan una etapa de su vida otomana y permiten estudiar cómo se veía en el siglo XIX.",
+          "source": {
+            "name": "Museo de Cultura Bizantina",
+            "url": "https://www.mbp.gr/en/exhibition/i-agia-sofia-ton-adelfon-fossati-mesa-apo-ti-2/"
+          }
+        },
+        {
+          "date": "1935",
+          "era": "La República de Turquía",
+          "tags": [
+            "Sociedad",
+            "Patrimonio"
+          ],
+          "title": "Santa Sofía abre como museo",
+          "body": "Su apertura como museo introduce una nueva forma de recorrer el edificio: además de su historia religiosa, cobra protagonismo su lectura como monumento histórico y artístico.",
+          "source": {
+            "name": "Dijital Istanbul",
+            "url": "https://dijitalistanbul.org/en/hagia-sophia-grand-mosque"
+          }
+        },
+        {
+          "date": "1985",
+          "era": "Un patrimonio compartido",
+          "tags": [
+            "Patrimonio"
+          ],
+          "title": "Reconocimiento mundial",
+          "body": "Las Zonas Históricas de Estambul ingresan en la Lista del Patrimonio Mundial de la UNESCO. Santa Sofía forma parte de este conjunto, reconocido por el encuentro de la arquitectura bizantina y otomana.",
+          "source": {
+            "name": "UNESCO",
+            "url": "https://whc.unesco.org/en/list/356/"
+          }
+        },
+        {
+          "date": "2020",
+          "era": "Un patrimonio compartido",
+          "tags": [
+            "Política",
+            "Sociedad",
+            "Patrimonio"
+          ],
+          "title": "Un nuevo cambio de uso",
+          "body": "El 10 de julio se decide su reconversión en mezquita. La UNESCO subraya la necesidad de proteger su valor universal y de mantener el acceso a este patrimonio compartido.",
+          "source": {
+            "name": "UNESCO",
+            "url": "https://www.unesco.org/en/articles/unesco-statement-hagia-sophia-istanbul"
+          }
+        }
+      ]
+    }
+  ]
+}

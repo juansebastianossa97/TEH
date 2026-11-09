@@ -1,0 +1,2 @@
+export function validLocation(value){return value&&Number.isFinite(value.lat)&&Math.abs(value.lat)<=90&&Number.isFinite(value.lon)&&Math.abs(value.lon)<=180&&typeof value.label==='string'&&value.label.length<=500&&['manual','photon'].includes(value.provider)}
+export function coordinates(lat,lon,label='',provider='manual'){const value={lat:Number(lat),lon:Number(lon),label,provider};if(String(lat).trim()===''||String(lon).trim()===''||!validLocation(value))throw Error('Latitud entre −90 y 90; longitud entre −180 y 180.');return value}

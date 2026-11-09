@@ -1,0 +1,134 @@
+
+> test
+> node --test tests/*.test.js && python3 -m unittest discover -s tests -p "test_*.py"
+
+TAP version 13
+# Subtest: Santa Sofía incluye portada, sección, tres láminas y 15 eventos válidos
+ok 1 - Santa Sofía incluye portada, sección, tres láminas y 15 eventos válidos
+  ---
+  duration_ms: 1.161792
+  ...
+# Subtest: rechaza contenido desconocido, URL ejecutable, versiones y IDs duplicados
+ok 2 - rechaza contenido desconocido, URL ejecutable, versiones y IDs duplicados
+  ---
+  duration_ms: 1.138708
+  ...
+# Subtest: reordenar conserva los hijos y no modifica el original
+ok 3 - reordenar conserva los hijos y no modifica el original
+  ---
+  duration_ms: 0.427833
+  ...
+# Subtest: eliminar sección elimina hijos únicamente en la copia
+ok 4 - eliminar sección elimina hijos únicamente en la copia
+  ---
+  duration_ms: 0.084875
+  ...
+# Subtest: todos los bloques nuevos cumplen el contrato
+ok 5 - todos los bloques nuevos cumplen el contrato
+  ---
+  duration_ms: 1.060042
+  ...
+# Subtest: guardado recuperable detecta sobrescrituras de otra pestaña
+ok 6 - guardado recuperable detecta sobrescrituras de otra pestaña
+  ---
+  duration_ms: 1.747542
+  ...
+# Subtest: rechaza eventos y referencias nulas sin romper el validador
+ok 7 - rechaza eventos y referencias nulas sin romper el validador
+  ---
+  duration_ms: 0.280583
+  ...
+# Subtest: Pereira puede ser el único bloque y se recupera sin imágenes
+ok 8 - Pereira puede ser el único bloque y se recupera sin imágenes
+  ---
+  duration_ms: 0.1195
+  ...
+# Subtest: los bloques nuevos no incluyen contenido de ejemplo
+ok 9 - los bloques nuevos no incluyen contenido de ejemplo
+  ---
+  duration_ms: 0.28475
+  ...
+# Subtest: duplicar conserva la sección y renueva todos los identificadores
+ok 10 - duplicar conserva la sección y renueva todos los identificadores
+  ---
+  duration_ms: 0.794292
+  ...
+# Subtest: fuentes vacías son borradores válidos; enlaces inseguros no
+ok 11 - fuentes vacías son borradores válidos; enlaces inseguros no
+  ---
+  duration_ms: 0.125959
+  ...
+# Subtest: rich text compatibility and executable links rejected
+ok 12 - rich text compatibility and executable links rejected
+  ---
+  duration_ms: 1.204167
+  ...
+# Subtest: safe renderer preserves semantic formatting without interpreting HTML
+ok 13 - safe renderer preserves semantic formatting without interpreting HTML
+  ---
+  duration_ms: 38.905
+  ...
+# Subtest: coordinates validate bounds, empty values and preserve precision
+ok 14 - coordinates validate bounds, empty values and preserve precision
+  ---
+  duration_ms: 0.312333
+  ...
+# Subtest: image resizing does not upscale and keeps aspect ratio
+ok 15 - image resizing does not upscale and keeps aspect ratio
+  ---
+  duration_ms: 0.132917
+  ...
+# Subtest: IndexedDB stores blobs; ZIP restores referenced assets without base64 JSON
+ok 16 - IndexedDB stores blobs; ZIP restores referenced assets without base64 JSON
+  ---
+  duration_ms: 11.848417
+  ...
+# Subtest: missing images are detectable; invalid asset refs and data URLs rejected
+ok 17 - missing images are detectable; invalid asset refs and data URLs rejected
+  ---
+  duration_ms: 0.685917
+  ...
+# Subtest: gallery drop reorders metadata and images together
+ok 18 - gallery drop reorders metadata and images together
+  ---
+  duration_ms: 8.4335
+  ...
+# Subtest: renderer keeps empty nested blocks editable and omits blank sources
+ok 19 - renderer keeps empty nested blocks editable and omits blank sources
+  ---
+  duration_ms: 10.597208
+  ...
+# Subtest: timeline without a source never invents a bibliography link
+ok 20 - timeline without a source never invents a bibliography link
+  ---
+  duration_ms: 5.161041
+  ...
+# Subtest: red lenta no oculta una vista utilizable; el error de una tesela conserva el mapa
+ok 21 - red lenta no oculta una vista utilizable; el error de una tesela conserva el mapa
+  ---
+  duration_ms: 16.879959
+  ...
+# Subtest: mantiene padres pendientes y limita la caché sin desactivar caducidad HTTP
+ok 22 - mantiene padres pendientes y limita la caché sin desactivar caducidad HTTP
+  ---
+  duration_ms: 0.182583
+  ...
+# Subtest: conserva el respaldo inicial hasta recibir una tesela real
+ok 23 - conserva el respaldo inicial hasta recibir una tesela real
+  ---
+  duration_ms: 0.103458
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 523.049584
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

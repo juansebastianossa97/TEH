@@ -1,0 +1,34 @@
+{
+  "mode": "improved",
+  "note": "La muestra sin elementos visibles es un indicador, no una medición exacta de huecos. Demora por respuesta; no equivale a ancho de banda total compartido.",
+  "runs": [
+    {
+      "run": 1,
+      "settled": true,
+      "returned": true,
+      "durationMs": 9939,
+      "requests": 46,
+      "bytes": 3272007,
+      "aborted": 22,
+      "proxyErrors": 0,
+      "zeroFeatureSamples": 0,
+      "samples": 49,
+      "errors": 0,
+      "errorMessages": []
+    },
+    {
+      "run": 2,
+      "settled": true,
+      "returned": true,
+      "durationMs": 4384,
+      "requests": 42,
+      "bytes": 720896,
+      "aborted": 35,
+      "proxyErrors": 0,
+      "zeroFeatureSamples": 0,
+      "samples": 21,
+      "errors": 0,
+      "errorMessages": []
+    }
+  ]
+}

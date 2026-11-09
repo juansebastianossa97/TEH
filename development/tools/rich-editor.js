@@ -1,0 +1,13 @@
+import {Editor} from '@tiptap/core';
+import StarterKit from '@tiptap/starter-kit';
+import {plainToRich,safeLink} from './rich-content.js';
+export function mountRichEditor(root,block,onChange){
+ const toolbar=document.createElement('div');toolbar.className='rich-toolbar';toolbar.setAttribute('role','group');toolbar.setAttribute('aria-label','Formato del texto');
+ const surface=document.createElement('div');surface.className='rich-editor';root.append(toolbar,surface);
+ const editor=new Editor({element:surface,extensions:[StarterKit.configure({heading:{levels:[2,3]},code:false,codeBlock:false,horizontalRule:false,strike:false,underline:false,link:{openOnClick:false,autolink:false,linkOnPaste:false,isAllowedUri:safeLink}})],content:block.content||plainToRich(block.body),editorProps:{attributes:{'aria-label':'Contenido enriquecido',role:'textbox','aria-multiline':'true'}},onUpdate:({editor})=>{block.content=editor.getJSON();block.body=editor.getText();onChange()}});
+ const controls=[['Párrafo',c=>c.setParagraph(),'paragraph'],['Título',c=>c.toggleHeading({level:2}),'heading',{level:2}],['Subtítulo',c=>c.toggleHeading({level:3}),'heading',{level:3}],['Negrita',c=>c.toggleBold(),'bold'],['Cursiva',c=>c.toggleItalic(),'italic'],['Lista',c=>c.toggleBulletList(),'bulletList'],['Lista numerada',c=>c.toggleOrderedList(),'orderedList'],['Cita',c=>c.toggleBlockquote(),'blockquote'],['Deshacer',c=>c.undo()],['Rehacer',c=>c.redo()]];
+ const buttons=[];for(const [label,command,type,attrs] of controls){const button=document.createElement('button');button.type='button';button.textContent=label;button.addEventListener('mousedown',event=>event.preventDefault());button.addEventListener('click',()=>command(editor.chain().focus()).run());toolbar.append(button);buttons.push({button,type,attrs})}
+ const links=document.createElement('div');links.className='rich-links';const input=document.createElement('input');input.type='url';input.placeholder='https://…';input.setAttribute('aria-label','URL del enlace');links.append(input);
+ for(const [label,fn] of [['Aplicar enlace',()=>{if(!safeLink(input.value)){input.setCustomValidity('Introduce un enlace HTTP o HTTPS válido');input.reportValidity();return}input.setCustomValidity('');editor.chain().focus().extendMarkRange('link').setLink({href:input.value}).run()}],['Quitar enlace',()=>editor.chain().focus().unsetLink().run()]]){const button=document.createElement('button');button.type='button';button.textContent=label;button.onclick=fn;links.append(button)}
+ root.append(links);const sync=()=>{for(const {button,type,attrs} of buttons)if(type)button.setAttribute('aria-pressed',String(editor.isActive(type,attrs)));};editor.on('transaction',sync);sync();return editor;
+}
