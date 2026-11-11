@@ -1,3 +1,4 @@
+import karnak from '../fixtures/karnak-publication.json';
 import {supabase,checked} from './client.js';
 import {loadDraft} from '../blocks/model.js';
 
@@ -82,12 +83,13 @@ function chapter(row, number, id) {
     copy.append(node('p','',paragraph));
   }
   for (const [index,photoItem] of [photo,secondPhoto].entries()) {
-    if (!photoItem?.assetId) continue;
+    if (!photoItem?.assetId && !photoItem?.src) continue;
     const figure = node('figure',index===0?'photo-main':'photo-secondary');
     const img = node('img','');
     img.alt = photoItem.alt || doc.title;
     figure.append(img,node('figcaption','',photoItem.caption || photoItem.title || photoItem.alt));
     (index === 0 ? body : copy).append(figure);
+    if (photoItem.src) { img.src = photoItem.src; continue; }
     (async()=>{
       const ref = await checked(supabase.from('atlas_revision_media').select('owner_id').eq('revision_id',row.revision_id).eq('asset_id',photoItem.assetId).single());
       const path = ref.owner_id+'/'+photoItem.assetId+'/full';
@@ -116,7 +118,8 @@ export function mountPublications(getMap) {
     if(loading) return;
     loading=true;
     try {
-      const rows=await checked(supabase.from('atlas_publications').select('exhibition_id,revision_id,document,author,description,categories,published_at').order('published_at').order('exhibition_id'));
+      const rows=await checked(supabase.from('atlas_publications').select('exhibition_id,revision_id,document,author,description,categories,published_at').order('published_at').order('exhibition_id')).catch(error=>{console.warn('Publicaciones remotas no disponibles:',error.message);return []});
+      rows.push(karnak);
       const signature=rows.map(r=>r.revision_id).join();
       if(last===signature) return;
       for(const item of mounted){item.marker?.remove();item.tab.remove();item.section.remove();item.fallback.remove();}

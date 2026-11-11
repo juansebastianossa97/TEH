@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "title": "Karnak",
+  "location": {
+    "lat": 25.7188,
+    "lon": 32.6573,
+    "label": "Karnak, Luxor, Egipto",
+    "provider": "manual"
+  },
+  "blocks": [
+    {
+      "id": "portada",
+      "type": "hero",
+      "layout": "reading",
+      "title": "Un templo construido a través del tiempo.",
+      "eyebrow": "TEBAS / ANTIGUO EGIPTO",
+      "description": "En la antigua Tebas, junto al Nilo, Karnak reunió espacios de culto dedicados principalmente a Amón-Ra. Su crecimiento durante sucesivas dinastías convirtió el conjunto en una expresión del vínculo entre poder, religión y sociedad.\n\nPilonos, patios y salas de columnas organizan un recorrido axial hacia ámbitos cada vez más restringidos. La piedra, los dinteles y la repetición de soportes dan forma a una arquitectura monumental, sostenida por el trabajo de artesanos y los recursos del territorio.\n\nAnálisis de Maria Antonia Guerrero, Salome Agudelo y Manuela Agudelo.",
+      "cover": {
+        "assetId": "1939981595ddb3375171e2072db48721d377dca91bf6d90be45f8cf663abc65d",
+        "alt": "Antes · Reconstrucción ilustrada de Karnak incluida en el documento. Representación interpretativa, no fotografía antigua.",
+        "caption": "Antes · Reconstrucción ilustrada de Karnak incluida en el documento. Representación interpretativa, no fotografía antigua.",
+        "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
+        "author": "",
+        "title": "",
+        "label": ""
+      },
+      "secondCover": {
+        "assetId": "02aa89371e3fbaa5e3445b9b66fe93f34f37b7f6e8783b9b719fff22ef421f11",
+        "alt": "Después · Vista aérea del estado conservado de Karnak. Fotografía del documento, sin fecha indicada.",
+        "caption": "Después · Vista aérea del estado conservado de Karnak. Fotografía del documento, sin fecha indicada.",
+        "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
+        "author": "",
+        "title": "",
+        "label": ""
+      }
+    },
+    {
+      "id": "analisis",
+      "type": "section",
+      "layout": "reading",
+      "title": "La masa y el vacío.",
+      "description": "Tres lecturas del entorno urbano de Tebas/Luxor extraídas del documento. Estas láminas estudian la ciudad; no son plantas interiores del templo de Karnak. Abre cada una para observarla en detalle.",
+      "children": [
+        {
+          "id": "laminas",
+          "type": "plates",
+          "layout": "three-columns",
+          "title": "",
+          "items": [
+            {
+              "assetId": "8fa3cec5a122d7e7ccf54134751f11079c5079d6161498fad25333cafc8f5a35",
+              "alt": "Lectura de los vacíos del entorno urbano de Tebas/Luxor, según el análisis del documento.",
+              "caption": "Lectura de los vacíos del entorno urbano de Tebas/Luxor, según el análisis del documento.",
+              "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
+              "author": "",
+              "title": "",
+              "label": "01 / VACÍOS"
+            },
+            {
+              "assetId": "167467bcf7be850371e25c58b95b78d4819fed97dc1e5affccb483b9437e170f",
+              "alt": "Lectura de las masas construidas del entorno urbano de Tebas/Luxor.",
+              "caption": "Lectura de las masas construidas del entorno urbano de Tebas/Luxor.",
+              "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
+              "author": "",
+              "title": "",
+              "label": "02 / LLENOS"
+            },
+            {
+              "assetId": "ed758c0f4c6539e9f02c37d5554ccc38e8ab8b8f7a2c024cc7d1286095da2ef0",
+              "alt": "Plano presentado como Nolli de Luxor en el documento: relación entre tejido urbano y espacios abiertos.",
+              "caption": "Plano presentado como Nolli de Luxor en el documento: relación entre tejido urbano y espacios abiertos.",
+              "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
+              "author": "",
+              "title": "",
+              "label": "03 / NOLLI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historia",
+      "type": "timeline",
+      "layout": "reading",
+      "title": "Muchas dinastías. Un lugar sagrado.",
+      "description": "Trece momentos para entender sus transformaciones arquitectónicas, religiosas y políticas, y su conservación. Las fechas antiguas son aproximadas y los intervalos corresponden a reinados, no a fechas exactas de obra; algunos se superponen por corregencias.",
+      "range": "c. 1971 a. C. — 1979",
+      "events": [
+        {
+          "date": "c. 1971–1926 a. C.",
+          "era": "Imperio Medio",
+          "title": "Senusret I consolida el santuario",
+          "body": "Senusret I levanta un templo de caliza dedicado a Amón-Ra y la Capilla Blanca.",
+          "tags": [
+            "Arquitectura",
+            "Religión"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1525–1504 a. C.",
+          "era": "Imperio Nuevo",
+          "title": "Capillas y espacios de servicio",
+          "body": "Amenhotep I añade capillas, almacenes y un santuario para la barca sagrada.",
+          "tags": [
+            "Arquitectura",
+            "Religión"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1504–1492 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "Una nueva entrada monumental",
+          "body": "Tutmosis I construye los pilonos cuarto y quinto y erige obeliscos.",
+          "tags": [
+            "Arquitectura",
+            "Política"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1473–1458 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "La intervención de Hatshepsut",
+          "body": "Hatshepsut incorpora obeliscos y la Capilla Roja, y transforma el núcleo ceremonial.",
+          "tags": [
+            "Política",
+            "Arquitectura"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1479–1425 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "Tutmosis III amplía el conjunto",
+          "body": "El Akhmenu y el lago sagrado amplían los espacios ceremoniales.",
+          "tags": [
+            "Arquitectura",
+            "Religión"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1390–1352 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "Construir reutilizando",
+          "body": "Amenhotep III emplea piezas de edificios anteriores como relleno del tercer pilono.",
+          "tags": [
+            "Arquitectura",
+            "Economía"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1352–1336 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "El culto a Atón",
+          "body": "Akenatón construye el Gem-pa-Atón al este de Karnak.",
+          "tags": [
+            "Religión",
+            "Política"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1323–1295 a. C.",
+          "era": "Dinastía XVIII",
+          "title": "Transformación tras Amarna",
+          "body": "Horemheb desmonta edificios de Akenatón y reutiliza sus bloques en nuevas construcciones.",
+          "tags": [
+            "Política",
+            "Arquitectura"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1294–1213 a. C.",
+          "era": "Dinastía XIX",
+          "title": "La gran sala hipóstila",
+          "body": "Seti I construye la sala de 134 columnas; Ramsés II completa su decoración.",
+          "tags": [
+            "Arquitectura",
+            "Religión"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "c. 1184–1153 a. C.",
+          "era": "Dinastía XX",
+          "title": "Nuevos lugares para el ritual",
+          "body": "Ramsés III incorpora un templo para las barcas e inicia el templo de Jonsu.",
+          "tags": [
+            "Arquitectura",
+            "Religión"
+          ],
+          "source": {
+            "name": "Elaine Sullivan · Digital Karnak (2010)",
+            "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+          }
+        },
+        {
+          "date": "380–362 a. C.",
+          "era": "Dinastía XXX",
+          "title": "El recinto que llega hasta nosotros",
+          "body": "Nectanebo I construye la muralla de cierre conservada del conjunto, una de sus fases tardías.",
+          "tags": [
+            "Arquitectura"
+          ],
+          "source": {
+            "name": "Digital Karnak · Enclosures and Gates",
+            "url": "https://digitalkarnak.ucsc.edu/enclosures-and-gates/"
+          }
+        },
+        {
+          "date": "3 de octubre de 1899",
+          "era": "Conservación moderna",
+          "title": "El derrumbe de once columnas",
+          "body": "Once columnas del ala norte de la sala hipóstila caen en cadena. El desastre impulsa trabajos para estabilizar sus cimentaciones.",
+          "tags": [
+            "Arquitectura",
+            "Patrimonio"
+          ],
+          "source": {
+            "name": "University of Memphis · Recording Methods",
+            "url": "https://classic.memphis.edu/hypostyle/project/r_methods.php"
+          }
+        },
+        {
+          "date": "1979",
+          "era": "Patrimonio mundial",
+          "title": "Karnak dentro de la antigua Tebas",
+          "body": "La UNESCO inscribe la antigua Tebas y su necrópolis en la Lista del Patrimonio Mundial. Karnak forma parte de este conjunto.",
+          "tags": [
+            "Patrimonio",
+            "Sociedad"
+          ],
+          "source": {
+            "name": "UNESCO · Ancient Thebes with its Necropolis",
+            "url": "https://whc.unesco.org/en/list/87/"
+          }
+        }
+      ]
+    }
+  ]
+}
