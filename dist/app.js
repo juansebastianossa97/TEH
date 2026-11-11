@@ -26,6 +26,7 @@ function go(p){document.getElementById(p.id).scrollIntoView({behavior:'instant',
 function cancelFlight(){const wasFlying=Boolean(pendingArrival);if(wasFlying&&map)map.off('moveend',pendingArrival);pendingArrival=null;$('#flight-status').hidden=true;if(wasFlying&&map)map.stop()}
 function travel(p){cancelFlight();if(!mapReady||reduced()){go(p);return}map.stop();$('#flight-status strong').textContent=p.name;$('#flight-status').hidden=false;$('#mapa').classList.add('exploring');pendingArrival=()=>{pendingArrival=null;$('#flight-status').hidden=true;go(p)};map.once('moveend',pendingArrival);map.flyTo({center:[p.lon,p.lat],zoom:15,pitch:35,bearing:0,duration:2400,essential:false})}
 document.querySelectorAll('.marker').forEach(b=>b.addEventListener('click',()=>travel(places.find(p=>p.id===b.dataset.id))));
+document.addEventListener('atlas:travel', event => travel(event.detail));
 $('#cancel-flight').addEventListener('click',cancelFlight);
 window.addEventListener('keydown',e=>{if(e.key==='Escape')cancelFlight()});
 function mapFailure(){mapReady=false;$('#map-status').hidden=false;$('#live-map').hidden=true;$('.map-tools').hidden=true;$('#mapa').classList.remove('live-ready');$('#map-status').textContent='No se pudo cargar el mapa navegable. Puedes usar los destinos del mapa y seguir el recorrido.';cancelFlight()}
@@ -72,7 +73,7 @@ async function initMap(){
  }catch(error){mapFailure()}
 }
 initMap();
-let queued=false;function update(){queued=false;const y=scrollY+innerHeight*.35;let current=null;for(const p of places){if(document.getElementById(p.id).offsetTop<=y)current=p.id}document.querySelectorAll('.chapter-tab').forEach(a=>{const on=a.dataset.destination===current;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});$('.progress').style.width=`${scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100}%`}
+let queued=false;function update(){queued=false;const y=scrollY+innerHeight*.35;let current=null;for(const section of document.querySelectorAll('#chapters > section[id]')){if(section.offsetTop<=y)current=section.id}document.querySelectorAll('.chapter-tab').forEach(a=>{const on=a.dataset.destination===current;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});$('.progress').style.width=`${scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100}%`}
 window.addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(update)}},{passive:true});update();
 if(places.some(p=>`#${p.id}`===location.hash))requestAnimationFrame(()=>document.querySelector(location.hash).scrollIntoView({behavior:'instant'}));
 if('IntersectionObserver' in window&&!reduced()){

@@ -20,7 +20,12 @@ export function renderDocument(doc,root){
   if(b.type==='heading'&&b.title.trim())node.append(el(`h${b.level}`,'block-title',b.title));
   if(b.type==='hero'){
    if(b.eyebrow.trim())node.append(el('p','eyebrow',b.eyebrow));if(b.title.trim())node.append(el('h1','',b.title));if(b.description.trim())node.append(el('p','hero-description',b.description));
-   if(b.cover)node.append(figure(b.cover));
+   const covers=el('div','cover-pair');
+   for(const key of ['cover','secondCover']){
+    if(!b[key])continue;
+    const tile=figure(b[key]);tile.dataset.coverKey=key;covers.append(tile);
+   }
+   if(covers.childElementCount)node.append(covers);
    const nav=el('nav','block-toc');for(const section of doc.blocks.filter(x=>(x.type==='section'||x.type==='timeline')&&x.title.trim())){const a=el('a','',section.title+' ↓');a.href='#block-'+section.id;nav.append(a)}if(nav.childElementCount&&(b.title.trim()||b.eyebrow.trim()||b.description.trim()||b.cover))node.append(nav);
   }
   if(b.type==='section'){heading();if(b.description)node.append(el('p','section-description',b.description));b.children.forEach(child=>node.append(draw(child,depth+1)))}

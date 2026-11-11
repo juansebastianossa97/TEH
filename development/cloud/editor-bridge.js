@@ -1,4 +1,5 @@
-import {profile,revision,hydrate,saveCloud,uploadAssets,command} from './client.js';
+import {newSophiaDocument,checkSophiaSubmission} from '../blocks/sophia-template.js';
+import {profile,revision,hydrate,prepareProposal,saveCloud,uploadAssets,command} from './client.js';
 export async function connectCloudEditor({getDocument,setDocument,confirm,message,busy}){
  let current=null;
  const save=document.querySelector('#cloud-save');
@@ -12,7 +13,8 @@ export async function connectCloudEditor({getDocument,setDocument,confirm,messag
   try{
    const me=await profile();
    if(!me)throw Error('Inicia sesión en Comunidad para enviar tu propuesta.');
-   const doc=getDocument();
+   checkSophiaSubmission(getDocument());
+   const doc=await prepareProposal(getDocument());
    if(!doc.title.trim()||!doc.blocks.length||!doc.location)throw Error('Añade un nombre, contenido y ubicación antes de enviar.');
    message('Guardando las imágenes de tu propuesta…');
    await uploadAssets(doc,message);
@@ -26,5 +28,7 @@ export async function connectCloudEditor({getDocument,setDocument,confirm,messag
   finally{send.disabled=false;busy(false)}
  };
  const id=new URLSearchParams(location.search).get('revision');if(!id)return;
- busy(true);try{await profile();const row=await revision(id);if(row.state!=='draft')throw Error('Esta versión está congelada. Revísala desde Mis exposiciones.');if(!await confirm('¿Abrir este borrador de la nube en el editor? Exporta antes tu borrador local si quieres conservarlo.'))return;await hydrate(row.document,row.id,message);setDocument(row.document);current=row;message('Borrador de la nube abierto. Cuando termines, pulsa Enviar a revisión.')}catch(e){message(e.message,true)}finally{busy(false)}
+ busy(true);try{await profile();const row=await revision(id);if(row.state!=='draft')throw Error('Esta versión está congelada. Revísala desde Mis exposiciones.');if(!await confirm('¿Abrir este borrador de la nube en el editor? Exporta antes tu borrador local si quieres conservarlo.'))return;await hydrate(row.document,row.id,message);const document = structuredClone(row.document);
+ if (!document.blocks.length) document.blocks = newSophiaDocument().blocks;
+ setDocument(document);current=row;message('Borrador de la nube abierto. Cuando termines, pulsa Enviar a revisión.')}catch(e){message(e.message,true)}finally{busy(false)}
 }

@@ -33,7 +33,7 @@ export function validateDocument(doc) {
       if(b.textAlign!==undefined&&!['left','center','right'].includes(b.textAlign))errors.push('Alineación no válida');
       text(b.title,'Título',500);
       if(b.type==='heading'&&![2,3].includes(b.level))errors.push('Nivel de título no válido');
-      if(b.type==='hero'){text(b.eyebrow,'Antetítulo',200);text(b.description,'Descripción');if(b.cover)asset(b.cover)}
+      if(b.type==='hero'){text(b.eyebrow,'Antetítulo',200);text(b.description,'Descripción');if(b.cover)asset(b.cover);if(b.secondCover)asset(b.secondCover)}
       if(b.type==='section'){text(b.description??'','Introducción');visit(b.children,depth+1)}
       if(b.type==='text'){if(b.content!==undefined){if(!validRich(b.content))errors.push('Texto enriquecido no válido')}else text(b.body,'Texto');}
       if(b.type==='plates'||b.type==='comparison'){const items=list(b.items,'Imágenes',30);if(b.type==='comparison'&&items.length>2)errors.push('Una comparación admite hasta dos imágenes');items.forEach(asset)}

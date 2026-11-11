@@ -12,6 +12,7 @@ export function enableImageDrag(canvas, {getBlock, commit, redraw}) {
   const figure = image.closest('figure');
   const node = figure.closest('[data-block-id]');
   const block = getBlock(node.dataset.blockId);
+  if (!block) return;
   const figures = [...node.querySelectorAll('figure')].filter(f => f.closest('[data-block-id]') === node);
   const item = block.type === 'hero' ? block.cover : block.items?.[figures.indexOf(figure)];
   if (!item) return;

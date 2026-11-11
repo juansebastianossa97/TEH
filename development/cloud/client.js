@@ -1,12 +1,57 @@
 import {createClient} from '@supabase/supabase-js';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './config.js';
-import {assetReferences,getAsset,putAssets,hashBlob} from '../tools/assets.js';
+import {assetReferences,getAsset,putAssets,hashBlob,optimizeImage} from '../tools/assets.js';
 import {validateDocument} from '../blocks/model.js';
 export const supabase=createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{flowType:'pkce',persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 export const BUCKET='atlas-media';
 export async function checked(promise){const {data,error}=await promise;if(error)throw Error(error.message);return data}
 export const command=(action,payload={})=>checked(supabase.rpc('atlas_command',{action,payload}));
 export async function profile(){const {data:{user}}=await supabase.auth.getUser();return user?command('session'):null}
+// Freeze linked images into the same immutable asset format as uploaded photos.
+export async function prepareProposal(document) {
+ const draft = structuredClone(document);
+ async function prepare(item) {
+  if (!item?.src) return;
+  const url = new URL(item.src, location.href);
+  let blob;
+  try {
+   const response = await fetch(url, {credentials:'omit', referrerPolicy:'no-referrer'});
+   if (!response.ok) throw Error();
+   blob = await response.blob();
+   if (blob.type.split(';')[0] === 'image/svg+xml') {
+    const image = new Image();
+    const objectURL = URL.createObjectURL(blob);
+    try {
+     image.src = objectURL;
+     await image.decode();
+     const canvas = window.document.createElement('canvas');
+     const scale = Math.min(1, 3200 / Math.max(image.naturalWidth, image.naturalHeight));
+     canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+     canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+     canvas.getContext('2d').drawImage(image, 0, 0, canvas.width, canvas.height);
+     blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+    } finally { URL.revokeObjectURL(objectURL); }
+   }
+   const file = new File([blob], url.pathname.split('/').pop(), {type:blob.type});
+   const asset = await optimizeImage(file, item.kind || (blob.type === 'image/png' ? 'plan' : 'photo'));
+   await putAssets([asset]);
+   item.assetId = asset.id;
+   delete item.src;
+  } catch {
+   throw Error('No se pudo copiar la imagen «' + (item.title || item.alt || url.pathname) + '». Añádela desde tu equipo para enviar la propuesta.');
+  }
+ }
+ async function walk(blocks) {
+  for (const block of blocks) {
+   await prepare(block.cover);
+   await prepare(block.secondCover);
+   if (['plates','comparison'].includes(block.type)) for (const item of block.items) await prepare(item);
+   if (block.children) await walk(block.children);
+  }
+ }
+ await walk(draft.blocks);
+ return draft;
+}
 export async function uploadAssets(doc,onProgress=()=>{}){
  const user=await checked(supabase.auth.getUser());if(!user.user)throw Error('Inicia sesión para guardar en la nube.');
  const ids=assetReferences(doc);
@@ -41,6 +86,7 @@ export async function hydrate(doc,revisionId,onProgress=()=>{}){
 export const revision=id=>checked(supabase.from('atlas_revisions').select('*').eq('id',id).single());
 export async function saveCloud(doc,current,metadata,onProgress){
  const errors=validateDocument(doc);if(errors.length)throw Error(errors.join('\n'));
+ doc=await prepareProposal(doc);
  await uploadAssets(doc,onProgress);
  if(!current)current=await command('create');
  return command('save',{id:current.id,expected_version:current.lock_version,document:doc,...metadata});

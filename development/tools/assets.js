@@ -1,7 +1,7 @@
 export const ASSET_ID=/^[a-f0-9]{64}$/;
 export const MAX_IMAGE=25*1024*1024;
 export function fittedSize(width,height,max){const ratio=Math.min(1,max/Math.max(width,height));return {width:Math.max(1,Math.round(width*ratio)),height:Math.max(1,Math.round(height*ratio))}}
-export function assetReferences(doc){const ids=new Set();function walk(blocks){for(const b of blocks){if(b.cover?.assetId)ids.add(b.cover.assetId);for(const item of b.items||[])if(item.assetId)ids.add(item.assetId);if(b.children)walk(b.children)}}walk(doc.blocks);return [...ids]}
+export function assetReferences(doc){const ids=new Set();function walk(blocks){for(const b of blocks){if(b.cover?.assetId)ids.add(b.cover.assetId);if(b.secondCover?.assetId)ids.add(b.secondCover.assetId);for(const item of b.items||[])if(item.assetId)ids.add(item.assetId);if(b.children)walk(b.children)}}walk(doc.blocks);return [...ids]}
 export async function hashBlob(blob){return [...new Uint8Array(await crypto.subtle.digest('SHA-256',await blob.arrayBuffer()))].map(x=>x.toString(16).padStart(2,'0')).join('')}
 export async function openAssets(){return new Promise((resolve,reject)=>{const request=indexedDB.open('jsop-media-v1',1);request.onupgradeneeded=()=>request.result.createObjectStore('assets',{keyPath:'id'});request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)})}
 export async function getAsset(id){const db=await openAssets();try{return await new Promise((resolve,reject)=>{const r=db.transaction('assets').objectStore('assets').get(id);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}finally{db.close()}}

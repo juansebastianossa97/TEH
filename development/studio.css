@@ -30,3 +30,7 @@ body:not(.preview-mode) #preview .block-image-open img{cursor:grab;touch-action:
 
 label.event-category-option { display: flex; align-items: center; gap: .6rem; }
 label.event-category-option input[type="checkbox"] { width: 1rem; height: 1rem; min-height: 0; margin: 0; }
+
+dialog.location-preview[open] { position: fixed; inset: 0; margin: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; box-sizing: border-box; border: 0; padding: 0; display: flex; flex-direction: column; background: var(--paper); }
+dialog.location-preview > button { align-self: flex-start; flex: none; margin: 6px 12px; }
+dialog.location-preview > iframe { display: block; flex: 1; min-height: 0; width: 100%; border: 0; }
