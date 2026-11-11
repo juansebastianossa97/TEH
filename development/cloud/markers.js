@@ -76,13 +76,18 @@ function chapter(row, number, id) {
   heading.append(node('p','eyebrow',[point.label,...row.categories].filter(Boolean).join(' / ')),title);
   header.append(node('span','chapter-number',number),heading,node('span','coordinates',point.lat.toFixed(4)+'°, '+point.lon.toFixed(4)+'°'));
   const body = node('div','chapter-body');
+  const copy = node('div','chapter-copy');
+  copy.append(node('h3','',headline));
+  for (const paragraph of intro.split(/\n\s*\n/).filter(value => value.trim())) {
+    copy.append(node('p','',paragraph));
+  }
   for (const [index,photoItem] of [photo,secondPhoto].entries()) {
     if (!photoItem?.assetId) continue;
     const figure = node('figure',index===0?'photo-main':'photo-secondary');
     const img = node('img','');
     img.alt = photoItem.alt || doc.title;
     figure.append(img,node('figcaption','',photoItem.caption || photoItem.title || photoItem.alt));
-    body.append(figure);
+    (index === 0 ? body : copy).append(figure);
     (async()=>{
       const ref = await checked(supabase.from('atlas_revision_media').select('owner_id').eq('revision_id',row.revision_id).eq('asset_id',photoItem.assetId).single());
       const path = ref.owner_id+'/'+photoItem.assetId+'/full';
@@ -90,11 +95,10 @@ function chapter(row, number, id) {
       img.src = signedUrl;
     })().catch(()=>{img.alt='Imagen no disponible · '+img.alt;});
   }
-  const copy = node('div','chapter-copy');
   const more = node('a','sophia-more','Ver más');
   const arrow=node('span','','↗');arrow.setAttribute('aria-hidden','true');more.append(' ',arrow);
   more.href = '/dev/exhibition.html?id='+encodeURIComponent(row.exhibition_id);
-  copy.append(node('h3','',headline),node('p','',intro),more);
+  copy.append(more);
   body.append(copy);
   const footer = node('div','chapter-next');
   const back = node('a','','↖ Volver al mapa');

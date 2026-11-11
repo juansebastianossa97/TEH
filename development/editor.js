@@ -109,7 +109,7 @@ function select(container,label,value,options,callback){const wrapper=element('l
 function action(container,name,callback){const button=element('button',name);button.type='button';button.addEventListener('click',callback);container.append(button);return button}
 function fields(){richEditor?.destroy();richEditor=null;const root=$('#block-fields');root.replaceChildren();const b=findBlock(doc.blocks,selected);if(!b){$('#settings-title').textContent='Empieza tu exposición';$('#selected-description').textContent='Añade un bloque desde la estructura.';root.append(element('p','Selecciona o añade un bloque.'));return}
  $('#settings-title').textContent=labels[b.type];$('#selected-description').textContent=descriptions[b.type];
- const titleInput=input(root,b.type==='heading'?'Texto del título':isSophiaDocument(doc)&&b.type!=='plates'?'Título':'Título (opcional)',b.title,v=>b.title=v,{large:b.type==='hero'||b.type==='timeline'});titleInput.placeholder=b.type==='heading'?'Por ejemplo: Pereira':'Sin título';
+ const titleInput=input(root,b.type==='hero'?'Título junto a las imágenes en el recorrido':b.type==='heading'?'Texto del título':isSophiaDocument(doc)&&b.type!=='plates'?'Título':'Título (opcional)',b.title,v=>b.title=v,{large:b.type==='hero'||b.type==='timeline'});titleInput.placeholder=b.type==='heading'?'Por ejemplo: Pereira':'Sin título';
  if(b.type==='heading')select(root,'Nivel',String(b.level),[['2','Título'],['3','Subtítulo']],v=>b.level=Number(v));
  if (!isSophiaDocument(doc)) select(root,'Disposición',b.layout,[['reading','Ancho de lectura'],['wide','Ancho completo'],['two-columns','Dos columnas'],['three-columns','Tres columnas']],v=>b.layout=v);
  const placement=element('fieldset'),legend=element('legend','Posición y tamaño');
@@ -135,11 +135,11 @@ function fields(){richEditor?.destroy();richEditor=null;const root=$('#block-fie
  if(b.type==='hero'){
   input(root,'Antetítulo',b.eyebrow,v=>b.eyebrow=v);
   for(const [index,key] of ['cover','secondCover'].entries()){
-   const group=element('fieldset');group.append(element('legend','Imagen de portada '+(index+1)));root.append(group);
+   const group=element('fieldset');group.append(element('legend',index===0?'Imagen 1 · principal en el recorrido':'Imagen 2 · debajo del texto en el recorrido'));root.append(group);
    coverSlot(group,b,key,false);
   }
  }
- if(['hero','section','timeline'].includes(b.type))input(root,'Introducción',b.description,v=>b.description=v,{large:true});
+ if(['hero','section','timeline'].includes(b.type))input(root,b.type==='hero'?'Texto junto a las imágenes en el recorrido':'Introducción',b.description,v=>b.description=v,{large:true});
  if(b.type==='text')richEditor=mountRichEditor(root,b,changed);
  if(b.type==='section' && !isSophiaDocument(doc))root.append(element('p','Selecciona “Añadir dentro de la sección” para crear bloques o subsecciones.'));
  if (b.type==='plates' && isSophiaDocument(doc)) {

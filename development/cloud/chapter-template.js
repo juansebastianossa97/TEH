@@ -12,7 +12,7 @@ export function chapterFields(doc, description = '') {
   const richText = node => node?.text || (node?.content || []).map(richText).join(' ');
   return {
     headline: hero?.title || text?.title || '',
-    intro: description || hero?.description || text?.body || richText(text?.content) || blocks.find(b => b.description)?.description || '',
+    intro: hero?.description || description || text?.body || richText(text?.content) || blocks.find(b => b.description)?.description || '',
     secondPhoto: hero?.cover && hero?.secondCover,
     photo: hero?.cover || hero?.secondCover || blocks.find(b => ['plates','comparison'].includes(b.type) && b.items.length)?.items[0]
   };
