@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "site",
+  "installCommand": "npm ci",
+  "functions": {
+    "api/geocode.py": {
+      "includeFiles": "scripts/geocoder.py",
+      "maxDuration": 30
+    }
+  },
+  "redirects": [
+    {"source": "/dev", "destination": "/editor/", "permanent": false},
+    {"source": "/dev/", "destination": "/editor/", "permanent": false},
+    {"source": "/dev/community.html", "destination": "/comunidad/", "permanent": false},
+    {"source": "/dev/review.html", "destination": "/revision/", "permanent": false},
+    {"source": "/dev/exhibition.html", "destination": "/exposicion/", "permanent": false},
+    {"source": "/dev/mapa", "destination": "/", "permanent": false}
+  ]
+}
