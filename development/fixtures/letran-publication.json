@@ -1,0 +1,305 @@
+{
+  "exhibition_id": "san-juan-letran",
+  "revision_id": "san-juan-letran-static-v1",
+  "author": "Kevin Stuart Gómez, Santiago Zapata y Alejandro Arciniegas",
+  "description": "Arquitectura, ciudad y transformaciones de la catedral de Roma.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "San Juan de Letrán",
+    "location": {
+      "lat": 41.8859,
+      "lon": 12.5057,
+      "label": "Roma, Italia",
+      "provider": "manual"
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "La catedral de Roma. Diecisiete siglos de transformaciones.",
+        "eyebrow": "ROMA / ARCHIBASÍLICA DE SAN JUAN DE LETRÁN",
+        "description": "San Juan de Letrán reúne la historia de la primera arquitectura cristiana monumental y las transformaciones de la Roma papal. Es la catedral del obispo de Roma: su importancia nace de esa función, además de su escala y antigüedad.\n\nLa nave longitudinal conduce al altar y al ábside. A su alrededor, el baptisterio, el claustro, el palacio y las plazas forman un conjunto donde conviven celebración, residencia y vida urbana.",
+        "cover": {
+          "src": "/assets/letran/historica.webp",
+          "alt": "San Juan de Letrán · grabado del siglo XVIII",
+          "caption": "San Juan de Letrán · grabado del siglo XVIII",
+          "author": "Giovanni Battista Piranesi",
+          "source": "The Metropolitan Museum of Art · CC0 · conversión a WebP",
+          "sourceURL": "https://www.metmuseum.org/art/collection/search/363887"
+        },
+        "secondCover": {
+          "src": "/assets/letran/fachada.webp",
+          "alt": "La fachada · 2018",
+          "caption": "La fachada · 2018",
+          "author": "Sonse",
+          "source": "CC BY 2.0 · reducción y conversión a WebP",
+          "sourceURL": "https://creativecommons.org/licenses/by/2.0/"
+        }
+      },
+      {
+        "id": "analisis",
+        "type": "section",
+        "layout": "reading",
+        "title": "Análisis espacial",
+        "description": "El eje de la nave, los espacios colectivos y la relación con la ciudad.",
+        "children": [
+          {
+            "id": "vacios",
+            "type": "text",
+            "layout": "reading",
+            "title": "01 / Vacíos y recorrido",
+            "body": "La nave central organiza el movimiento desde el pórtico hasta el altar y el ábside. Las naves laterales ofrecen recorridos paralelos, mientras el transepto ensancha el espacio ceremonial. En el claustro, las galerías rodean un patio abierto: un vacío de encuentro y circulación dentro del conjunto."
+          },
+          {
+            "id": "llenos",
+            "type": "text",
+            "layout": "reading",
+            "title": "02 / Masa y ritmo",
+            "body": "Los muros y los grandes pilares separan las naves y marcan una secuencia regular. La intervención de Borromini integra la estructura anterior en un interior barroco. La jerarquía espacial se reconoce en la mayor dimensión de la nave central y en el remate del ábside."
+          },
+          {
+            "id": "laminas",
+            "type": "plates",
+            "layout": "two-columns",
+            "title": "Planta y ciudad",
+            "items": [
+              {
+                "src": "/assets/letran/planta.webp",
+                "alt": "Planta del conjunto · 1900",
+                "caption": "Planta del conjunto · 1900",
+                "author": "Karl Baedeker · L’Italie",
+                "source": "Dominio público · conversión a WebP",
+                "sourceURL": "https://commons.wikimedia.org/wiki/File:Lateran_plan.jpg"
+              },
+              {
+                "src": "/assets/letran/nolli.webp",
+                "alt": "Letrán en el plano de Nolli · 1748",
+                "caption": "Letrán en el plano de Nolli · 1748",
+                "author": "Giovanni Battista Nolli",
+                "source": "Dominio público · detalle en montaje de Luis Casillas · conversión a WebP",
+                "sourceURL": "https://commons.wikimedia.org/wiki/File:Nolli_11_norte.jpg"
+              }
+            ]
+          },
+          {
+            "id": "ciudad",
+            "type": "text",
+            "layout": "reading",
+            "title": "03 / La basílica y el espacio público",
+            "body": "El plano de Nolli permite leer la continuidad entre calles, plazas y los interiores representados de la basílica. El conjunto combina el eje longitudinal de la iglesia, el patio del claustro y la geometría octagonal del baptisterio. Las distintas piezas y sus accesos muestran una arquitectura formada por etapas, vinculada a recorridos urbanos y ceremoniales."
+          }
+        ]
+      },
+      {
+        "id": "historia",
+        "type": "timeline",
+        "layout": "reading",
+        "title": "Una catedral a través del tiempo.",
+        "description": "Catorce momentos para comprender las transformaciones del conjunto lateranense.",
+        "range": "324 — 2024",
+        "events": [
+          {
+            "date": "324",
+            "era": "Roma constantiniana",
+            "title": "La consagración de la basílica",
+            "body": "Silvestre I consagra la iglesia dedicada al Salvador, impulsada por Constantino. La comunidad cristiana dispone de un gran espacio de reunión vinculado a su obispo.",
+            "tags": [
+              "Arquitectura",
+              "Religión"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/it/news-ed-eventi/2024/san-giovanni-in-laterano-si-concludono-le-celebrazioni-per-i-1-7.html"
+            }
+          },
+          {
+            "date": "432–440",
+            "era": "Antigüedad tardía",
+            "title": "La transformación del baptisterio",
+            "body": "Durante el pontificado de Sixto III se remodela el baptisterio de origen constantiniano. Su forma octagonal organiza el rito del bautismo alrededor de un centro.",
+            "tags": [
+              "Arquitectura",
+              "Religión"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/battistero.html"
+            }
+          },
+          {
+            "date": "1123–1179",
+            "era": "Edad Media",
+            "title": "Los primeros concilios lateranenses",
+            "body": "En el palacio de Letrán se celebran los concilios de 1123, 1139 y 1179. El conjunto funciona como lugar de gobierno y reunión de la Iglesia.",
+            "tags": [
+              "Política",
+              "Religión"
+            ],
+            "source": {
+              "name": "Catholic Encyclopedia · Lateran Councils",
+              "url": "https://www.newadvent.org/cathen/09016a.htm"
+            }
+          },
+          {
+            "date": "1215",
+            "era": "Edad Media",
+            "title": "El IV Concilio de Letrán",
+            "body": "El cuarto concilio refuerza el papel del conjunto lateranense como escenario de decisiones religiosas de alcance europeo.",
+            "tags": [
+              "Política",
+              "Religión"
+            ],
+            "source": {
+              "name": "Catholic Encyclopedia · Lateran Councils",
+              "url": "https://www.newadvent.org/cathen/09016a.htm"
+            }
+          },
+          {
+            "date": "Desde 1222",
+            "era": "Vida comunitaria",
+            "title": "La construcción del claustro",
+            "body": "Comienza la obra del claustro bajo Honorio III. El patio y sus galerías conectan los espacios de los canónigos y acompañan la vida compartida, el estudio y la oración.",
+            "tags": [
+              "Arquitectura",
+              "Sociedad"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/basilica/il-chiostro.html"
+            }
+          },
+          {
+            "date": "1288–1292",
+            "era": "Patronazgo medieval",
+            "title": "El mosaico del ábside",
+            "body": "Durante el pontificado de Nicolás IV, Jacopo Torriti realiza el mosaico absidal sobre una tradición anterior. El ábside concentra imágenes que dan sentido al espacio litúrgico.",
+            "tags": [
+              "Arte",
+              "Religión"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/basilica/l-abside-e-l-immagine-del-salvatore.html"
+            }
+          },
+          {
+            "date": "1368",
+            "era": "Edad Media tardía",
+            "title": "El ciborio sobre el altar",
+            "body": "Urbano V encarga a Giovanni di Stefano el ciborio. Esta pieza destaca el altar papal como centro ceremonial dentro del transepto.",
+            "tags": [
+              "Arquitectura",
+              "Religión"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/basilica.html"
+            }
+          },
+          {
+            "date": "1423",
+            "era": "Peregrinación",
+            "title": "La Puerta Santa",
+            "body": "Martín V abre la Puerta Santa durante el jubileo. El acceso a la basílica adquiere un significado ritual que se repite en celebraciones posteriores.",
+            "tags": [
+              "Sociedad",
+              "Religión"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/basilica.html"
+            }
+          },
+          {
+            "date": "1562–1567",
+            "era": "Renacimiento",
+            "title": "El techo de madera",
+            "body": "Flaminio Boulanger realiza el techo de madera de la basílica. La cubierta decorada añade una nueva capa artística al espacio longitudinal.",
+            "tags": [
+              "Arquitectura",
+              "Arte"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/it/news-ed-eventi/2024/san-giovanni-in-laterano-si-concludono-le-celebrazioni-per-i-1-7.html"
+            }
+          },
+          {
+            "date": "1646–1657",
+            "era": "Barroco",
+            "title": "Borromini transforma el interior",
+            "body": "Por encargo de Inocencio X, Borromini renueva las naves conservando la estructura basilical. El jubileo de 1650 es un hito central de esta transformación.",
+            "tags": [
+              "Arquitectura",
+              "Arte"
+            ],
+            "source": {
+              "name": "Italia.it · Basilica of Saint John Lateran",
+              "url": "https://www.italia.it/en/lazio/rome/basilica-of-saint-john-lateran"
+            }
+          },
+          {
+            "date": "1732–1735",
+            "era": "Siglo XVIII",
+            "title": "La fachada de Alessandro Galilei",
+            "body": "Una nueva fachada monumental, promovida por Clemente XII, redefine la relación entre la basílica y su explanada. Es la gran entrada que domina la imagen exterior del edificio.",
+            "tags": [
+              "Arquitectura",
+              "Política"
+            ],
+            "source": {
+              "name": "Italia.it · Basilica di San Giovanni in Laterano",
+              "url": "https://www.italia.it/it/lazio/roma/basilica-di-s--giovanni-in-laterano"
+            }
+          },
+          {
+            "date": "1884",
+            "era": "Transformación del presbiterio",
+            "title": "Un ábside más profundo",
+            "body": "León XIII amplía el presbiterio desplazando el ábside. La intervención sobre el mosaico conserva su iconografía, pero altera materialmente la obra medieval.",
+            "tags": [
+              "Arquitectura",
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/en/san-giovanni-in-laterano/basilica/l-abside-e-l-immagine-del-salvatore.html"
+            }
+          },
+          {
+            "date": "1929",
+            "era": "Italia y la Santa Sede",
+            "title": "Los Pactos de Letrán",
+            "body": "El 11 de febrero se firman los acuerdos en el Palacio de Letrán. Resuelven la cuestión romana y establecen el Estado de la Ciudad del Vaticano.",
+            "tags": [
+              "Política"
+            ],
+            "source": {
+              "name": "Santa Sede · Pactos de Letrán",
+              "url": "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html"
+            }
+          },
+          {
+            "date": "2024",
+            "era": "Patrimonio vivo",
+            "title": "Diecisiete siglos de historia",
+            "body": "Las celebraciones por los 1700 años de la consagración reúnen actividades litúrgicas, culturales y educativas. La basílica continúa funcionando como catedral de Roma.",
+            "tags": [
+              "Patrimonio",
+              "Sociedad"
+            ],
+            "source": {
+              "name": "Archibasílica de San Juan de Letrán",
+              "url": "https://www.basilicasangiovanni.va/it/news-ed-eventi/2024/san-giovanni-in-laterano-si-concludono-le-celebrazioni-per-i-1-7.html"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

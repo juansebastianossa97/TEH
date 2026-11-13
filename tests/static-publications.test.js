@@ -8,12 +8,12 @@ import {renderDocument} from '../development/blocks/render.js';
 
 test('las exposiciones curadas conservan orden, no duplican IDs y se abren sin consulta remota',()=>{
  const rows=combinePublications([{exhibition_id:'barcelona'},{exhibition_id:'karnak'}]);
- assert.deepEqual(rows.map(r=>r.exhibition_id),['barcelona','karnak','teyuna','mesopotamia-ur']);
- assert.deepEqual(rows.map((_,i)=>String(8+i).padStart(2,'0')),['08','09','10','11']);
+ assert.deepEqual(rows.map(r=>r.exhibition_id),['barcelona','karnak','teyuna','mesopotamia-ur','san-juan-letran']);
+ assert.deepEqual(rows.map((_,i)=>String(8+i).padStart(2,'0')),['08','09','10','11','12']);
  assert.equal(findStaticPublication('teyuna').author,'Tomás Esguerra');
  assert.equal(findStaticPublication('mesopotamia-ur').author,'Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano');
  assert.equal(findStaticPublication('unknown'),undefined);
- assert.equal(combinePublications([]).length,3);
+ assert.equal(combinePublications([]).length,4);
 });
 test('documentos válidos, portadas distintas, recursos presentes y cronologías filtrables',()=>{
  const dom=new JSDOM('<main></main>',{url:'https://example.org'});globalThis.document=dom.window.document;
