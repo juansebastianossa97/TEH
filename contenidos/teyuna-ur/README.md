@@ -6,7 +6,7 @@ Orden actual: 10 Ciudad Perdida de Teyuna; 11 Mesopotamia · Zigurat de Ur.
 
 ## Contenido y autoría
 
-- Teyuna: Tomás Esguerra. Dos fotografías citadas en su PDF, análisis de terrazas, drenaje y vivienda; diez acontecimientos con fuentes.
+- Teyuna: Alejandro Velez Escobar, Tomás Alejandro Rubio y Santiago Hernández. Dos fotografías citadas en su PDF, análisis de terrazas, drenaje y vivienda; diez acontecimientos con fuentes.
 - Mesopotamia: Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano. Se selecciona Ur como lugar concreto porque concentra el desarrollo arquitectónico del documento. Reconstrucción ilustrada del PDF, fotografía de J. P. Lawrence (DVIDS, 2009, dominio público), ilustración volumétrica y once acontecimientos.
 
 Los créditos de los trabajos no se confunden con la autoría de las fotografías. Las imágenes tienen créditos y enlaces cuando están disponibles. Se convierten a WebP conservando su proporción, sin inventar resolución o partes faltantes.

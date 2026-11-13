@@ -10,7 +10,7 @@ test('las exposiciones curadas conservan orden, no duplican IDs y se abren sin c
  const rows=combinePublications([{exhibition_id:'barcelona'},{exhibition_id:'karnak'}]);
  assert.deepEqual(rows.map(r=>r.exhibition_id),['barcelona','karnak','teyuna','mesopotamia-ur','san-juan-letran']);
  assert.deepEqual(rows.map((_,i)=>String(8+i).padStart(2,'0')),['08','09','10','11','12']);
- assert.equal(findStaticPublication('teyuna').author,'Tomás Esguerra');
+ assert.equal(findStaticPublication('teyuna').author,'Alejandro Velez Escobar, Tomás Alejandro Rubio y Santiago Hernández');
  assert.equal(findStaticPublication('mesopotamia-ur').author,'Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano');
  assert.equal(findStaticPublication('unknown'),undefined);
  assert.equal(combinePublications([]).length,4);
