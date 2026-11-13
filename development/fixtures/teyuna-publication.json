@@ -1,0 +1,224 @@
+{
+  "exhibition_id": "teyuna",
+  "revision_id": "teyuna-static-v1",
+  "author": "Tomás Esguerra",
+  "description": "Análisis arquitectónico e histórico preparado a partir del trabajo de Tomás Esguerra.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Ciudad Perdida de Teyuna",
+    "location": {
+      "lat": 11.0389,
+      "lon": -73.925,
+      "provider": "manual",
+      "label": "Sierra Nevada de Santa Marta, Colombia"
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "Habitar la montaña.",
+        "eyebrow": "SIERRA NEVADA DE SANTA MARTA, COLOMBIA",
+        "description": "En la cuenca del río Buritaca, Teyuna convierte la pendiente en una secuencia de terrazas, caminos y espacios de encuentro. La piedra organiza el suelo mientras el bosque y el agua forman parte de la experiencia del lugar.\n\nEl trabajo de Tomás Esguerra destaca los muros de contención, el drenaje y las viviendas circulares. Su lectura permite entender la ciudad como una adaptación al relieve y como parte de un territorio que conserva vínculos culturales vivos.",
+        "cover": {
+          "src": "/assets/teyuna/terrazas.webp",
+          "alt": "Terrazas de piedra de Ciudad Perdida, integradas en la ladera. Fotografía citada por el documento; sin fecha indicada.",
+          "caption": "Terrazas de piedra de Ciudad Perdida, integradas en la ladera. Fotografía citada por el documento; sin fecha indicada.",
+          "source": "Denomades · fuente indicada en el PDF",
+          "sourceURL": "https://denomades.imgix.net/destinos/santa-marta/973/terrazas-ciudad-perdida-teyuna-sierra-nevada.jpg",
+          "author": ""
+        },
+        "secondCover": {
+          "src": "/assets/teyuna/territorio-vivo.webp",
+          "alt": "Territorio vivo de la Sierra Nevada: desplazamiento por un río. Imagen de contexto cultural, no reconstrucción del asentamiento antiguo.",
+          "caption": "Territorio vivo de la Sierra Nevada: desplazamiento por un río. Imagen de contexto cultural, no reconstrucción del asentamiento antiguo.",
+          "source": "Expotur · fuente indicada en el PDF",
+          "sourceURL": "https://expotur-eco.com/wp-content/uploads/2017/08/pueblos-indigenas-de-la-sierra-nevada-de-santa-marta-001.jpg",
+          "author": ""
+        }
+      },
+      {
+        "id": "analisis",
+        "type": "section",
+        "layout": "reading",
+        "title": "Leer el espacio.",
+        "description": "Territorio, construcción y vida colectiva.",
+        "children": [
+          {
+            "id": "terrazas",
+            "type": "text",
+            "layout": "reading",
+            "title": "01 / Construir sobre la pendiente",
+            "body": "Las plataformas crean superficies habitables a distintas alturas. Los muros de piedra contienen el terreno; escaleras y senderos conectan los cambios de nivel. La organización del conjunto sigue la topografía en lugar de imponer una cuadrícula."
+          },
+          {
+            "id": "agua",
+            "type": "text",
+            "layout": "reading",
+            "title": "02 / Darle un camino al agua",
+            "body": "El documento destaca canales de drenaje que conducen la lluvia y ayudan a proteger las terrazas frente a la erosión. La conservación del sitio depende de atender tanto las estructuras como el suelo, la vegetación y los recorridos del agua."
+          },
+          {
+            "id": "habitar",
+            "type": "text",
+            "layout": "reading",
+            "title": "03 / La huella de la vivienda",
+            "body": "Los anillos y basamentos circulares permiten leer la implantación de construcciones cuyos elementos vegetales no permanecen como la piedra. El patrimonio de Teyuna también debe comprenderse en relación con los pueblos indígenas de la Sierra, sin reducirlos a un pasado desaparecido."
+          }
+        ]
+      },
+      {
+        "id": "historia",
+        "type": "timeline",
+        "layout": "reading",
+        "title": "El lugar a través del tiempo.",
+        "description": "Una selección de acontecimientos para comprender la obra y su conservación. Las fechas antiguas son aproximadas; los intervalos de reinado no equivalen a una duración exacta de construcción.",
+        "range": "c. 650 d. C. — 2022",
+        "events": [
+          {
+            "date": "c. 650 d. C.",
+            "era": "Ocupación temprana",
+            "title": "Viviendas bajo las terrazas",
+            "body": "Las investigaciones sitúan algunas de las zonas residenciales más antiguas hacia 650 d. C. No se trata de una fecha única de fundación de toda la ciudad.",
+            "tags": [
+              "Sociedad",
+              "Arquitectura"
+            ],
+            "source": {
+              "url": "https://mng.mincultura.gov.co/prensa/noticias/Documents/Patrimonio/Portafolio-de-la-oferta-Institucional-Ministerio-de-Cultura-Digital-_compressed.pdf",
+              "name": "Ministerio de Cultura · Oferta institucional, p. 136"
+            }
+          },
+          {
+            "date": "c. 1100–1200",
+            "era": "Transformaciones del asentamiento",
+            "title": "Persistencia de los primeros sectores",
+            "body": "Las viviendas tempranas permanecieron ocupadas al menos hasta este periodo. Sus restos quedaron debajo de construcciones posteriores.",
+            "tags": [
+              "Sociedad",
+              "Arquitectura"
+            ],
+            "source": {
+              "url": "https://ciudadperdida.co/es/construccion-del-poblado-de-ciudad-perdida",
+              "name": "Guía del ICANH · extracto reproducido en Ciudadperdida.co"
+            }
+          },
+          {
+            "date": "c. 1200–1600",
+            "era": "Desarrollo tairona",
+            "title": "El paisaje de terrazas",
+            "body": "La secuencia de construcción superpone y modifica estructuras anteriores. De este periodo proceden las terrazas y muros que caracterizan el recorrido conservado.",
+            "tags": [
+              "Arquitectura"
+            ],
+            "source": {
+              "url": "https://ciudadperdida.co/es/construccion-del-poblado-de-ciudad-perdida",
+              "name": "Guía del ICANH · extracto reproducido en Ciudadperdida.co"
+            }
+          },
+          {
+            "date": "Siglo XVI",
+            "era": "Poblamiento regional",
+            "title": "Una ciudad conectada",
+            "body": "Las estimaciones arqueológicas proponen entre 1.500 y 2.000 habitantes para Teyuna. Son cálculos preliminares, no un censo; el sitio formaba parte de una red de asentamientos.",
+            "tags": [
+              "Sociedad",
+              "Economía"
+            ],
+            "source": {
+              "url": "https://ciudadperdida.co/es/construccion-del-poblado-de-ciudad-perdida",
+              "name": "Guía del ICANH · extracto reproducido en Ciudadperdida.co"
+            }
+          },
+          {
+            "date": "1973",
+            "era": "Investigación regional",
+            "title": "Explorar la Sierra",
+            "body": "Luisa Fernanda Herrera y Gilberto Cadavid investigan la Sierra antes de la expedición a Teyuna, dentro de un trabajo regional de identificación de poblados.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-teyuna",
+              "name": "ICANH · Parque Arqueológico Teyuna"
+            }
+          },
+          {
+            "date": "1976",
+            "era": "Investigación y protección",
+            "title": "Comienza el proyecto arqueológico",
+            "body": "Tras conocerse el saqueo del sitio, se organiza la expedición y comienza un programa de investigación, conservación y restauración.",
+            "tags": [
+              "Patrimonio",
+              "Sociedad"
+            ],
+            "source": {
+              "url": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-teyuna",
+              "name": "ICANH · Parque Arqueológico Teyuna"
+            }
+          },
+          {
+            "date": "1980",
+            "era": "Protección institucional",
+            "title": "Creación del parque",
+            "body": "El portafolio institucional del Ministerio de Cultura registra 1980 como año de creación del Parque Arqueológico Teyuna.",
+            "tags": [
+              "Patrimonio",
+              "Política"
+            ],
+            "source": {
+              "url": "https://mng.mincultura.gov.co/prensa/noticias/Documents/Patrimonio/Portafolio-de-la-oferta-Institucional-Ministerio-de-Cultura-Digital-_compressed.pdf",
+              "name": "Ministerio de Cultura · Oferta institucional, p. 136"
+            }
+          },
+          {
+            "date": "2009–2011",
+            "era": "Cooperación para conservar",
+            "title": "Patrimonio y comunidades",
+            "body": "Global Heritage Fund desarrolla un proyecto junto al ICANH y otras organizaciones, con conservación científica, planificación y participación comunitaria.",
+            "tags": [
+              "Patrimonio",
+              "Sociedad"
+            ],
+            "source": {
+              "url": "https://globalheritagefund.org/docs/GHFCiudadPerdidaColombiaProjectProposal102011.pdf",
+              "name": "Global Heritage Fund · propuesta del proyecto, 2011"
+            }
+          },
+          {
+            "date": "2010",
+            "era": "Gestión de visitantes",
+            "title": "Reducir el impacto sobre las ruinas",
+            "body": "Se trasladan alojamientos turísticos fuera del sitio. También se realizan levantamientos y documentación de amenazas para orientar su conservación.",
+            "tags": [
+              "Patrimonio",
+              "Economía"
+            ],
+            "source": {
+              "url": "https://globalheritagefund.org/images/uploads/docs/GHFAnnualReport2010.pdf",
+              "name": "Global Heritage Fund · informe 2009–2010"
+            }
+          },
+          {
+            "date": "2022",
+            "era": "Patrimonio vivo",
+            "title": "Reconocimiento del conocimiento ancestral",
+            "body": "La UNESCO inscribe el sistema de conocimiento de los pueblos Arhuaco, Kankuamo, Kogui y Wiwa. El reconocimiento corresponde a sus saberes, no a una inscripción de Ciudad Perdida como Patrimonio Mundial.",
+            "tags": [
+              "Sociedad",
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://ich.unesco.org/en/RL/ancestral-system-of-knowledge-of-the-four-indigenous-peoples-arhuaco-kankuamo-kogui-and-wiwa-of-the-sierra-nevada-de-santa-marta-01886",
+              "name": "UNESCO · Sistema de conocimiento ancestral"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

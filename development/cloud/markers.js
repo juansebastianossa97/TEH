@@ -1,4 +1,4 @@
-import karnak from '../fixtures/karnak-publication.json';
+import {combinePublications} from './static-publications.js';
 import {supabase,checked} from './client.js';
 import {loadDraft} from '../blocks/model.js';
 
@@ -118,8 +118,8 @@ export function mountPublications(getMap) {
     if(loading) return;
     loading=true;
     try {
-      const rows=await checked(supabase.from('atlas_publications').select('exhibition_id,revision_id,document,author,description,categories,published_at').order('published_at').order('exhibition_id')).catch(error=>{console.warn('Publicaciones remotas no disponibles:',error.message);return []});
-      rows.push(karnak);
+      const remote=await checked(supabase.from('atlas_publications').select('exhibition_id,revision_id,document,author,description,categories,published_at').order('published_at').order('exhibition_id')).catch(error=>{console.warn('Publicaciones remotas no disponibles:',error.message);return []});
+      const rows=combinePublications(remote);
       const signature=rows.map(r=>r.revision_id).join();
       if(last===signature) return;
       for(const item of mounted){item.marker?.remove();item.tab.remove();item.section.remove();item.fallback.remove();}
@@ -136,7 +136,7 @@ export function mountPublications(getMap) {
         nav.append(tab);
         const travel=()=>document.dispatchEvent(new CustomEvent('atlas:travel',{detail:{id,name:doc.title,lat,lon}}));
         const anchor=node('div','geo-anchor');
-        anchor.style.setProperty('--dx','14px');anchor.style.setProperty('--dy','12px');
+        anchor.style.setProperty('--dx',(row.mapOffset?.[0]??14)+'px');anchor.style.setProperty('--dy',(row.mapOffset?.[1]??12)+'px');
         const pin=node('button','geo-destination');
         pin.setAttribute('aria-label','Viajar a '+doc.title);
         const label=node('span','geo-label');

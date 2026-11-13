@@ -1,0 +1,251 @@
+{
+  "exhibition_id": "mesopotamia-ur",
+  "revision_id": "mesopotamia-ur-static-v1",
+  "author": "Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano",
+  "description": "Análisis arquitectónico e histórico preparado a partir del trabajo de Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Mesopotamia · Zigurat de Ur",
+    "location": {
+      "lat": 30.9628,
+      "lon": 46.1031,
+      "provider": "manual",
+      "label": "Ur, Dhi Qar, Irak"
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "Elevar el templo. Organizar la ciudad.",
+        "eyebrow": "UR, DHI QAR, IRAK",
+        "description": "Entre el Tigris y el Éufrates, la agricultura, el riego y los intercambios favorecieron sociedades urbanas capaces de movilizar materiales y trabajo. El Zigurat de Ur expresa esa relación entre territorio, poder y religión.\n\nEl estudio de Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano toma esta obra como referente principal. Su volumen escalonado y sus escaleras dominaban el paisaje urbano; el santuario superior, dedicado al dios lunar Nanna, no se conserva íntegro.",
+        "cover": {
+          "src": "/assets/ur/reconstruccion.webp",
+          "alt": "Reconstrucción ilustrada del Zigurat de Ur incluida en el PDF. La parte superior es interpretativa; no se conserva íntegra.",
+          "caption": "Reconstrucción ilustrada del Zigurat de Ur incluida en el PDF. La parte superior es interpretativa; no se conserva íntegra.",
+          "source": "MESOPOTAMIA..pdf, p. 6 · autor de la ilustración no indicado",
+          "sourceURL": "",
+          "author": ""
+        },
+        "secondCover": {
+          "src": "/assets/ur/estado-conservado.webp",
+          "alt": "Detalle del Zigurat de Ur en 2009: ladrillo y volumen escalonado del monumento parcialmente reconstruido.",
+          "caption": "Detalle del Zigurat de Ur en 2009: ladrillo y volumen escalonado del monumento parcialmente reconstruido.",
+          "source": "DVIDS · dominio público",
+          "sourceURL": "https://www.dvidshub.net/image/226300/lesson-history-ancient-ziggurat-ur",
+          "author": "J. P. Lawrence"
+        }
+      },
+      {
+        "id": "analisis",
+        "type": "section",
+        "layout": "reading",
+        "title": "Leer el espacio.",
+        "description": "Territorio, construcción y vida colectiva.",
+        "children": [
+          {
+            "id": "masa",
+            "type": "text",
+            "layout": "reading",
+            "title": "01 / La masa construida",
+            "body": "El adobe forma el núcleo y el ladrillo cocido protege el exterior. El sistema depende de una gran masa escalonada, distinta de un edificio compuesto principalmente por salas interiores. El documento destaca la capacidad de organizar materiales, trabajadores y recursos."
+          },
+          {
+            "id": "ascenso",
+            "type": "text",
+            "layout": "reading",
+            "title": "02 / El ascenso ceremonial",
+            "body": "Las escaleras articulan la aproximación y el ascenso hacia las terrazas. La elevación del espacio sagrado distingue el monumento dentro de la ciudad y refuerza su carácter religioso y político."
+          },
+          {
+            "id": "laminas",
+            "type": "plates",
+            "layout": "reading",
+            "title": "Leer el volumen",
+            "items": [
+              {
+                "src": "/assets/ur/volumetria.webp",
+                "alt": "Representación volumétrica incluida en el documento. Es una ilustración explicativa, no una planta medida ni un plano Nolli.",
+                "caption": "Representación volumétrica incluida en el documento. Es una ilustración explicativa, no una planta medida ni un plano Nolli.",
+                "source": "MESOPOTAMIA..pdf, p. 9 · autor gráfico no indicado",
+                "sourceURL": "",
+                "author": ""
+              }
+            ]
+          },
+          {
+            "id": "restos",
+            "type": "text",
+            "layout": "reading",
+            "title": "03 / Reconstrucción y evidencia",
+            "body": "Las ilustraciones ayudan a imaginar el conjunto, pero no sustituyen la evidencia arqueológica. Las partes superiores desaparecieron y la fachada visible incorpora restauraciones modernas. Por eso se distinguen la reconstrucción ilustrada y la fotografía documentada."
+          }
+        ]
+      },
+      {
+        "id": "historia",
+        "type": "timeline",
+        "layout": "reading",
+        "title": "El lugar a través del tiempo.",
+        "description": "Una selección de acontecimientos para comprender la obra y su conservación. Las fechas antiguas son aproximadas; los intervalos de reinado no equivalen a una duración exacta de construcción.",
+        "range": "IV milenio a. C. — 2016",
+        "events": [
+          {
+            "date": "IV–III milenios a. C.",
+            "era": "Urbanización mesopotámica",
+            "title": "Del humedal a la ciudad",
+            "body": "Ur, Uruk y Eridu se desarrollan en el paisaje de humedales del sur de Mesopotamia. Agua, producción y organización urbana forman el contexto del monumento.",
+            "tags": [
+              "Sociedad",
+              "Economía"
+            ],
+            "source": {
+              "url": "https://whc.unesco.org/en/list/1481/",
+              "name": "UNESCO · Ahwar del sur de Irak"
+            }
+          },
+          {
+            "date": "c. 2112–2095 a. C.",
+            "era": "III Dinastía de Ur",
+            "title": "El poder constructor de Ur-Nammu",
+            "body": "El reinado de Ur-Nammu impulsa un programa de construcción religiosa. El documento sitúa en él el inicio del gran zigurat dedicado a Nanna.",
+            "tags": [
+              "Política",
+              "Arquitectura"
+            ],
+            "source": {
+              "url": "https://www.metmuseum.org/art/collection/search/324915",
+              "name": "The Metropolitan Museum of Art · Inscribed brick"
+            }
+          },
+          {
+            "date": "c. 2100 a. C.",
+            "era": "Arquitectura neosumeria",
+            "title": "Una montaña de ladrillo",
+            "body": "El zigurat eleva el santuario sobre terrazas. Su núcleo de adobe se protege con ladrillo cocido y sus escaleras convierten el ascenso en un elemento monumental.",
+            "tags": [
+              "Arquitectura",
+              "Religión"
+            ],
+            "source": {
+              "url": "https://smarthistory.org/ziggurat-of-ur/",
+              "name": "Smarthistory · Ziggurat of Ur"
+            }
+          },
+          {
+            "date": "c. 2094–2047 a. C.",
+            "era": "Reinado de Shulgi",
+            "title": "Continuidad de la obra",
+            "body": "El documento atribuye a Shulgi, sucesor de Ur-Nammu, la continuación y conclusión del proyecto. El intervalo corresponde al reinado, no a una duración exacta de construcción.",
+            "tags": [
+              "Política",
+              "Arquitectura"
+            ],
+            "source": {
+              "url": "https://uruk-warka.dk/news/2020-MATH/Ur_city_of_the_Moon_god.pdf",
+              "name": "Harriet Crawford · Ur: The City of the Moon God"
+            }
+          },
+          {
+            "date": "Siglo VI a. C.",
+            "era": "Época neobabilónica",
+            "title": "La restauración de Nabonido",
+            "body": "Nabonido interviene en las terrazas superiores. El edificio llega a épocas posteriores como resultado de reparaciones, no como una obra intacta de una sola fase.",
+            "tags": [
+              "Arquitectura",
+              "Religión"
+            ],
+            "source": {
+              "url": "https://smarthistory.org/ziggurat-of-ur/",
+              "name": "Smarthistory · Ziggurat of Ur"
+            }
+          },
+          {
+            "date": "1850",
+            "era": "Exploración moderna",
+            "title": "La ruina visible en el desierto",
+            "body": "William Kennett Loftus visita Ur y describe el gran volumen que sobresale entre las ruinas.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://www.bisi.ac.uk/wp-content/uploads/Ur.pdf",
+              "name": "Julian Reade · The background and status of the ziggurrat of Ur"
+            }
+          },
+          {
+            "date": "Década de 1850",
+            "era": "Arqueología temprana",
+            "title": "Las campañas de Taylor",
+            "body": "J. G. Taylor realiza trabajos de excavación en Ur, incluidos sectores del zigurat.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://www.bisi.ac.uk/wp-content/uploads/Ur.pdf",
+              "name": "Julian Reade · The background and status of the ziggurrat of Ur"
+            }
+          },
+          {
+            "date": "1919",
+            "era": "Arqueología",
+            "title": "El trabajo de H. R. Hall",
+            "body": "Las excavaciones de Hall refuerzan el interés por estudiar el zigurat y contribuyen a la preparación de la posterior expedición conjunta.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://www.bisi.ac.uk/wp-content/uploads/Ur.pdf",
+              "name": "Julian Reade · The background and status of the ziggurrat of Ur"
+            }
+          },
+          {
+            "date": "1922–1934",
+            "era": "Investigación sistemática",
+            "title": "La expedición de Woolley",
+            "body": "Leonard Woolley dirige las excavaciones del British Museum y Penn Museum. Sus registros permiten reconstruir la historia de Ur y de su conjunto monumental.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://collections.penn.museum/collections/archives/findingaid/552803",
+              "name": "Penn Museum · Ur expedition records"
+            }
+          },
+          {
+            "date": "Década de 1980",
+            "era": "Reconstrucción moderna",
+            "title": "Fachada y escaleras restauradas",
+            "body": "Se reconstruyen la fachada inferior y las tres escaleras principales. Parte del aspecto visible del monumento procede de esta intervención.",
+            "tags": [
+              "Arquitectura",
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://smarthistory.org/ziggurat-of-ur/",
+              "name": "Smarthistory · Ziggurat of Ur"
+            }
+          },
+          {
+            "date": "2016",
+            "era": "Patrimonio mundial",
+            "title": "Ur dentro de los Ahwar",
+            "body": "La UNESCO incorpora Ur al sitio de los Ahwar del sur de Irak, junto con otros componentes arqueológicos y naturales.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "url": "https://whc.unesco.org/en/list/1481/",
+              "name": "UNESCO · Ahwar del sur de Irak"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
