@@ -27,16 +27,16 @@
         "cover": {
           "src": "/assets/teyuna/terrazas.webp",
           "alt": "Terrazas de piedra de Ciudad Perdida, integradas en la ladera. Fotografía citada por el documento; sin fecha indicada.",
-          "caption": "Terrazas de piedra de Ciudad Perdida, integradas en la ladera. Fotografía citada por el documento; sin fecha indicada.",
-          "source": "Denomades · fuente indicada en el PDF",
+          "caption": "Terrazas de Teyuna",
+          "source": "Denomades",
           "sourceURL": "https://denomades.imgix.net/destinos/santa-marta/973/terrazas-ciudad-perdida-teyuna-sierra-nevada.jpg",
           "author": ""
         },
         "secondCover": {
           "src": "/assets/teyuna/territorio-vivo.webp",
           "alt": "Territorio vivo de la Sierra Nevada: desplazamiento por un río. Imagen de contexto cultural, no reconstrucción del asentamiento antiguo.",
-          "caption": "Territorio vivo de la Sierra Nevada: desplazamiento por un río. Imagen de contexto cultural, no reconstrucción del asentamiento antiguo.",
-          "source": "Expotur · fuente indicada en el PDF",
+          "caption": "La Sierra Nevada, territorio vivo",
+          "source": "Expotur",
           "sourceURL": "https://expotur-eco.com/wp-content/uploads/2017/08/pueblos-indigenas-de-la-sierra-nevada-de-santa-marta-001.jpg",
           "author": ""
         }

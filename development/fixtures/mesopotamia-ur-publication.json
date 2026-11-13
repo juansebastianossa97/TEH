@@ -27,15 +27,15 @@
         "cover": {
           "src": "/assets/ur/reconstruccion.webp",
           "alt": "Reconstrucción ilustrada del Zigurat de Ur incluida en el PDF. La parte superior es interpretativa; no se conserva íntegra.",
-          "caption": "Reconstrucción ilustrada del Zigurat de Ur incluida en el PDF. La parte superior es interpretativa; no se conserva íntegra.",
-          "source": "MESOPOTAMIA..pdf, p. 6 · autor de la ilustración no indicado",
+          "caption": "Zigurat de Ur · reconstrucción ilustrada",
+          "source": "MESOPOTAMIA..pdf, p. 6",
           "sourceURL": "",
           "author": ""
         },
         "secondCover": {
           "src": "/assets/ur/estado-conservado.webp",
           "alt": "Detalle del Zigurat de Ur en 2009: ladrillo y volumen escalonado del monumento parcialmente reconstruido.",
-          "caption": "Detalle del Zigurat de Ur en 2009: ladrillo y volumen escalonado del monumento parcialmente reconstruido.",
+          "caption": "Zigurat de Ur · 2009",
           "source": "DVIDS · dominio público",
           "sourceURL": "https://www.dvidshub.net/image/226300/lesson-history-ancient-ziggurat-ur",
           "author": "J. P. Lawrence"
@@ -71,8 +71,8 @@
               {
                 "src": "/assets/ur/volumetria.webp",
                 "alt": "Representación volumétrica incluida en el documento. Es una ilustración explicativa, no una planta medida ni un plano Nolli.",
-                "caption": "Representación volumétrica incluida en el documento. Es una ilustración explicativa, no una planta medida ni un plano Nolli.",
-                "source": "MESOPOTAMIA..pdf, p. 9 · autor gráfico no indicado",
+                "caption": "Zigurat de Ur · esquema volumétrico",
+                "source": "MESOPOTAMIA..pdf, p. 9",
                 "sourceURL": "",
                 "author": ""
               }

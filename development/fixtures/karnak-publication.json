@@ -20,7 +20,7 @@
         "description": "En la antigua Tebas, junto al Nilo, Karnak reunió espacios de culto dedicados principalmente a Amón-Ra. Su crecimiento durante sucesivas dinastías convirtió el conjunto en una expresión del vínculo entre poder, religión y sociedad.\n\nPilonos, patios y salas de columnas organizan un recorrido axial hacia ámbitos cada vez más restringidos. La piedra, los dinteles y la repetición de soportes dan forma a una arquitectura monumental, sostenida por el trabajo de artesanos y los recursos del territorio.\n\nAnálisis de Maria Antonia Guerrero, Salome Agudelo y Manuela Agudelo.",
         "cover": {
           "alt": "Antes · Reconstrucción ilustrada de Karnak incluida en el documento. Representación interpretativa, no fotografía antigua.",
-          "caption": "Antes · Reconstrucción ilustrada de Karnak incluida en el documento. Representación interpretativa, no fotografía antigua.",
+          "caption": "Karnak · reconstrucción ilustrada",
           "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
           "author": "",
           "title": "",
@@ -29,7 +29,7 @@
         },
         "secondCover": {
           "alt": "Después · Vista aérea del estado conservado de Karnak. Fotografía del documento, sin fecha indicada.",
-          "caption": "Después · Vista aérea del estado conservado de Karnak. Fotografía del documento, sin fecha indicada.",
+          "caption": "Karnak · estado conservado",
           "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
           "author": "",
           "title": "",
@@ -52,7 +52,7 @@
             "items": [
               {
                 "alt": "Lectura de los vacíos del entorno urbano de Tebas/Luxor, según el análisis del documento.",
-                "caption": "Lectura de los vacíos del entorno urbano de Tebas/Luxor, según el análisis del documento.",
+                "caption": "Vacíos · entorno urbano de Luxor",
                 "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
                 "author": "",
                 "title": "",
@@ -61,7 +61,7 @@
               },
               {
                 "alt": "Lectura de las masas construidas del entorno urbano de Tebas/Luxor.",
-                "caption": "Lectura de las masas construidas del entorno urbano de Tebas/Luxor.",
+                "caption": "Llenos · entorno urbano de Luxor",
                 "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
                 "author": "",
                 "title": "",
@@ -70,7 +70,7 @@
               },
               {
                 "alt": "Plano presentado como Nolli de Luxor en el documento: relación entre tejido urbano y espacios abiertos.",
-                "caption": "Plano presentado como Nolli de Luxor en el documento: relación entre tejido urbano y espacios abiertos.",
+                "caption": "Nolli · entorno urbano de Luxor",
                 "source": "Imagen incluida en el PDF aportado; autor original y fecha no indicados.",
                 "author": "",
                 "title": "",
