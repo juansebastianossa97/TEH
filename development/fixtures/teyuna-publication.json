@@ -2,7 +2,7 @@
   "exhibition_id": "teyuna",
   "revision_id": "teyuna-static-v1",
   "author": "Tomás Esguerra",
-  "description": "Análisis arquitectónico e histórico preparado a partir del trabajo de Tomás Esguerra.",
+  "description": "Terrazas, caminos y patrimonio vivo en la Sierra Nevada de Santa Marta.",
   "categories": [
     "Arquitectura",
     "Patrimonio"
@@ -23,7 +23,7 @@
         "layout": "reading",
         "title": "Habitar la montaña.",
         "eyebrow": "SIERRA NEVADA DE SANTA MARTA, COLOMBIA",
-        "description": "En la cuenca del río Buritaca, Teyuna convierte la pendiente en una secuencia de terrazas, caminos y espacios de encuentro. La piedra organiza el suelo mientras el bosque y el agua forman parte de la experiencia del lugar.\n\nEl trabajo de Tomás Esguerra destaca los muros de contención, el drenaje y las viviendas circulares. Su lectura permite entender la ciudad como una adaptación al relieve y como parte de un territorio que conserva vínculos culturales vivos.",
+        "description": "En la cuenca del río Buritaca, Teyuna convierte la pendiente en una secuencia de terrazas, caminos y espacios de encuentro. La piedra organiza el suelo mientras el bosque y el agua forman parte de la experiencia del lugar.\n\nLos muros de contención, el drenaje y las viviendas circulares muestran cómo la ciudad se adapta al relieve. Sus terrazas forman parte de un territorio que conserva vínculos culturales vivos.",
         "cover": {
           "src": "/assets/teyuna/terrazas.webp",
           "alt": "Terrazas de piedra de Ciudad Perdida, integradas en la ladera. Fotografía citada por el documento; sin fecha indicada.",
@@ -60,7 +60,7 @@
             "type": "text",
             "layout": "reading",
             "title": "02 / Darle un camino al agua",
-            "body": "El documento destaca canales de drenaje que conducen la lluvia y ayudan a proteger las terrazas frente a la erosión. La conservación del sitio depende de atender tanto las estructuras como el suelo, la vegetación y los recorridos del agua."
+            "body": "Los canales de drenaje conducen la lluvia y ayudan a proteger las terrazas frente a la erosión. La conservación del sitio depende de atender tanto las estructuras como el suelo, la vegetación y los recorridos del agua."
           },
           {
             "id": "habitar",

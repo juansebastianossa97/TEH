@@ -17,7 +17,7 @@
         "layout": "reading",
         "title": "Un templo construido a través del tiempo.",
         "eyebrow": "TEBAS / ANTIGUO EGIPTO",
-        "description": "En la antigua Tebas, junto al Nilo, Karnak reunió espacios de culto dedicados principalmente a Amón-Ra. Su crecimiento durante sucesivas dinastías convirtió el conjunto en una expresión del vínculo entre poder, religión y sociedad.\n\nPilonos, patios y salas de columnas organizan un recorrido axial hacia ámbitos cada vez más restringidos. La piedra, los dinteles y la repetición de soportes dan forma a una arquitectura monumental, sostenida por el trabajo de artesanos y los recursos del territorio.\n\nAnálisis de Maria Antonia Guerrero, Salome Agudelo y Manuela Agudelo.",
+        "description": "En la antigua Tebas, junto al Nilo, Karnak reunió espacios de culto dedicados principalmente a Amón-Ra. Su crecimiento durante sucesivas dinastías convirtió el conjunto en una expresión del vínculo entre poder, religión y sociedad.\n\nPilonos, patios y salas de columnas organizan un recorrido axial hacia ámbitos cada vez más restringidos. La piedra, los dinteles y la repetición de soportes dan forma a una arquitectura monumental, sostenida por el trabajo de artesanos y los recursos del territorio.",
         "cover": {
           "alt": "Antes · Reconstrucción ilustrada de Karnak incluida en el documento. Representación interpretativa, no fotografía antigua.",
           "caption": "Karnak · reconstrucción ilustrada",
@@ -42,7 +42,7 @@
         "type": "section",
         "layout": "reading",
         "title": "La masa y el vacío.",
-        "description": "Tres lecturas del entorno urbano de Tebas/Luxor extraídas del documento. Estas láminas estudian la ciudad; no son plantas interiores del templo de Karnak. Abre cada una para observarla en detalle.",
+        "description": "Tres lecturas del entorno urbano de Tebas/Luxor. Estas láminas estudian la ciudad; no son plantas interiores del templo de Karnak. Abre cada una para observarla en detalle.",
         "children": [
           {
             "id": "laminas",

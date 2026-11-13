@@ -2,7 +2,7 @@
   "exhibition_id": "mesopotamia-ur",
   "revision_id": "mesopotamia-ur-static-v1",
   "author": "Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano",
-  "description": "Análisis arquitectónico e histórico preparado a partir del trabajo de Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano.",
+  "description": "Arquitectura, poder y religión en el Zigurat de Ur.",
   "categories": [
     "Arquitectura",
     "Patrimonio"
@@ -23,7 +23,7 @@
         "layout": "reading",
         "title": "Elevar el templo. Organizar la ciudad.",
         "eyebrow": "UR, DHI QAR, IRAK",
-        "description": "Entre el Tigris y el Éufrates, la agricultura, el riego y los intercambios favorecieron sociedades urbanas capaces de movilizar materiales y trabajo. El Zigurat de Ur expresa esa relación entre territorio, poder y religión.\n\nEl estudio de Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano toma esta obra como referente principal. Su volumen escalonado y sus escaleras dominaban el paisaje urbano; el santuario superior, dedicado al dios lunar Nanna, no se conserva íntegro.",
+        "description": "Entre el Tigris y el Éufrates, la agricultura, el riego y los intercambios favorecieron sociedades urbanas capaces de movilizar materiales y trabajo. El Zigurat de Ur expresa esa relación entre territorio, poder y religión.\n\nSu volumen escalonado y sus escaleras dominaban el paisaje urbano; el santuario superior, dedicado al dios lunar Nanna, no se conserva íntegro.",
         "cover": {
           "src": "/assets/ur/reconstruccion.webp",
           "alt": "Reconstrucción ilustrada del Zigurat de Ur incluida en el PDF. La parte superior es interpretativa; no se conserva íntegra.",
@@ -53,7 +53,7 @@
             "type": "text",
             "layout": "reading",
             "title": "01 / La masa construida",
-            "body": "El adobe forma el núcleo y el ladrillo cocido protege el exterior. El sistema depende de una gran masa escalonada, distinta de un edificio compuesto principalmente por salas interiores. El documento destaca la capacidad de organizar materiales, trabajadores y recursos."
+            "body": "El adobe forma el núcleo y el ladrillo cocido protege el exterior. El sistema depende de una gran masa escalonada, distinta de un edificio compuesto principalmente por salas interiores. Su construcción requirió organizar materiales, trabajadores y recursos."
           },
           {
             "id": "ascenso",
@@ -113,7 +113,7 @@
             "date": "c. 2112–2095 a. C.",
             "era": "III Dinastía de Ur",
             "title": "El poder constructor de Ur-Nammu",
-            "body": "El reinado de Ur-Nammu impulsa un programa de construcción religiosa. El documento sitúa en él el inicio del gran zigurat dedicado a Nanna.",
+            "body": "El reinado de Ur-Nammu impulsa un programa de construcción religiosa. Durante este periodo comienza la construcción del gran zigurat dedicado a Nanna.",
             "tags": [
               "Política",
               "Arquitectura"
@@ -141,7 +141,7 @@
             "date": "c. 2094–2047 a. C.",
             "era": "Reinado de Shulgi",
             "title": "Continuidad de la obra",
-            "body": "El documento atribuye a Shulgi, sucesor de Ur-Nammu, la continuación y conclusión del proyecto. El intervalo corresponde al reinado, no a una duración exacta de construcción.",
+            "body": "Shulgi, sucesor de Ur-Nammu, continúa y completa el proyecto. El intervalo corresponde al reinado, no a una duración exacta de construcción.",
             "tags": [
               "Política",
               "Arquitectura"
