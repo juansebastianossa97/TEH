@@ -1,3 +1,5 @@
+import {places} from '../../dist/original-places.js';
+import {staticPublications} from './static-publications.js';
 import {checkSophiaSubmission} from '../blocks/sophia-template.js';
 import {setupRecovery} from './recovery.js';
 import {setupAuthMode} from './auth-mode.js';
@@ -9,9 +11,26 @@ const authMode=setupAuthMode(document, new URLSearchParams(location.search).get(
 const recovery=setupRecovery({auth:supabase.auth,status,run,checked});
 const editorURL=id=>`/dev/?revision=${id}`;
 function card(title){const c=el('article',undefined,'card');c.append(el('h3',title));return c}
+async function loadAnalysisPlaces(){
+ const select=$('#analysis-place'), notice=$('#places-status');
+ const options=new Map(places.map(p=>[p.id,p.name]));
+ for(const p of staticPublications) options.set(p.exhibition_id,p.document.title);
+ notice.hidden=true;
+ try {
+  const rows=await checked(supabase.from('atlas_publications').select('exhibition_id,title:document->>title').is('document->>analysisTarget',null).order('published_at'));
+  for(const row of rows) if(!options.has(row.exhibition_id)) options.set(row.exhibition_id,row.title);
+ } catch {
+  notice.textContent='Solo se han cargado los lugares incluidos con el mapa. Recarga para consultar los demás.';
+  notice.hidden=false;
+ }
+ const selected=select.value;
+ select.replaceChildren(new Option('Selecciona un lugar',''), ...Array.from(options,([id,title])=>new Option(title||'Exposición sin título',id)));
+ select.value=selected;
+}
 async function refresh(){
  me=await profile();$('#auth').hidden=!!me;$('#account').hidden=!me;$('#signout').hidden=!me;
  if(!me){status('Explora libremente o entra para contribuir.');return}
+ await loadAnalysisPlaces();
  $('#identity').textContent=me.display_name;
  $('#permission').textContent=me.role==='admin'?'Administrador · Revisa las propuestas antes de publicarlas.':'Puedes preparar y enviar tus propuestas.';
  $('#workspace').hidden=false;$('#admin').hidden=me.role!=='admin';

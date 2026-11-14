@@ -1,3 +1,5 @@
+import {mountAnalysis} from '../../dist/sophia-analysis.js';
+import {publishedAnswers} from './analysis-contributions.js';
 import {combinePublications} from './static-publications.js';
 import {supabase,checked} from './client.js';
 import {loadDraft} from '../blocks/model.js';
@@ -100,7 +102,9 @@ function chapter(row, number, id) {
   const more = node('a','sophia-more','Ver más');
   const arrow=node('span','','↗');arrow.setAttribute('aria-hidden','true');more.append(' ',arrow);
   more.href = '/dev/exhibition.html?id='+encodeURIComponent(row.exhibition_id);
-  copy.append(more);
+  const tiles = node('div','analysis-tiles');
+  mountAnalysis(tiles, doc.analysis, false, row.exhibition_id);
+  copy.append(tiles, more);
   body.append(copy);
   const footer = node('div','chapter-next');
   const back = node('a','','↖ Volver al mapa');
@@ -119,9 +123,13 @@ export function mountPublications(getMap) {
     loading=true;
     try {
       const remote=await checked(supabase.from('atlas_publications').select('exhibition_id,revision_id,document,author,description,categories,published_at').order('published_at').order('exhibition_id')).catch(error=>{console.warn('Publicaciones remotas no disponibles:',error.message);return []});
-      const rows=combinePublications(remote);
-      const signature=rows.map(r=>r.revision_id).join();
+      const rows=combinePublications(remote.filter(row => !row.document.analysisTarget));
+      const signature=remote.map(r=>r.revision_id).join();
       if(last===signature) return;
+      for (const section of chapters.querySelectorAll(':scope > section[id]:not([id^="ex-"])')) {
+        const tiles = section.querySelector('.analysis-tiles');
+        if (tiles) tiles.analysisAnswers = publishedAnswers(section.id, {}, remote);
+      }
       for(const item of mounted){item.marker?.remove();item.tab.remove();item.section.remove();item.fallback.remove();}
       mounted=[];
       const map=getMap();
@@ -129,6 +137,7 @@ export function mountPublications(getMap) {
         const doc=row.document, {lat,lon}=doc.location, id='ex-'+row.exhibition_id;
         const number=String(originals+i+1).padStart(2,'0');
         const section=chapter(row,number,id);
+        section.querySelector('.analysis-tiles').analysisAnswers = publishedAnswers(row.exhibition_id, doc.analysis, remote);
         chapters.append(section);
         const tab=node('a','chapter-tab');
         tab.href='#'+id;tab.dataset.destination=id;

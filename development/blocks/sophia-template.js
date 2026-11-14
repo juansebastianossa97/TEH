@@ -18,5 +18,6 @@ export function isSophiaDocument(doc) {
 }
 
 export function checkSophiaSubmission(doc) {
+  if (doc.analysisTarget && !Object.values(doc.analysis || {}).some(value => typeof value === 'string' && value.trim())) throw Error('Completa al menos un punto para enviar el aporte.');
   if (!isSophiaDocument(doc)) throw Error('Usa la plantilla de Santa Sofía: portada, análisis con tres láminas y línea de tiempo.');
 }

@@ -1,6 +1,12 @@
+import {places} from '../../dist/original-places.js';
+import {findStaticPublication} from './static-publications.js';
+import {checked,supabase} from './client.js';
+import {editAnalysis} from '../tools/analysis-editor.js';
+import {publishedAnswers} from './analysis-contributions.js';
+import {sophiaAnswers} from '../../dist/sophia-analysis.js';
 import {newSophiaDocument,checkSophiaSubmission} from '../blocks/sophia-template.js';
 import {profile,revision,hydrate,prepareProposal,saveCloud,uploadAssets,command} from './client.js';
-export async function connectCloudEditor({getDocument,setDocument,confirm,message,busy}){
+export async function connectCloudEditor({getDocument,setDocument,confirm,message,busy,changed}){
  let current=null;
  const save=document.querySelector('#cloud-save');
  document.addEventListener('atlas:replace-local',()=>{current=null});
@@ -27,8 +33,39 @@ export async function connectCloudEditor({getDocument,setDocument,confirm,messag
   }catch(error){message(error.message,true)}
   finally{send.disabled=false;busy(false)}
  };
- const id=new URLSearchParams(location.search).get('revision');if(!id)return;
+ async function analysisSources(target) {
+   const original = places.find(place => place.id === target);
+   const rows = await checked(supabase.from('atlas_publications').select('exhibition_id,document').order('published_at').order('exhibition_id'));
+   const publication = findStaticPublication(target) || rows.find(row => row.exhibition_id === target && !row.document.analysisTarget);
+   if (!original && !publication) throw Error('No se encontró el lugar del aporte.');
+   return {original, publication, previous: publishedAnswers(target, original?.id === 'bizantino' ? sophiaAnswers : publication?.document.analysis, rows)};
+ }
+ const params = new URLSearchParams(location.search);
+ const target = params.get('analisis');
+ const id = params.get('revision');
+ if (target && !id) {
+   busy(true);
+   try {
+     const {original, publication, previous} = await analysisSources(target);
+     const title = original?.name || publication.document.title;
+     if (getDocument().analysisTarget !== target) {
+       if (!await confirm('¿Abrir el análisis de '+title+'? Guarda una copia de tu borrador actual si quieres conservarlo.')) return;
+       const draft = newSophiaDocument();
+       draft.title = title;
+       draft.analysisTarget = target;
+       draft.analysis = {};
+       draft.location = original ? {lat:original.lat,lon:original.lon,label:title,provider:'manual'} : publication.document.location;
+       setDocument(draft);
+     }
+     getDocument().analysisReference = previous;
+     editAnalysis(getDocument(), changed);
+     message('Aporte a '+title+' · Envía tus cambios a revisión cuando estén listos.');
+   } catch(error) {message(error.message,true)} finally {busy(false)}
+   return;
+ }
+ if (!id) return;
  busy(true);try{await profile();const row=await revision(id);if(row.state!=='draft')throw Error('Esta versión está congelada. Revísala desde Mis exposiciones.');if(!await confirm('¿Abrir este borrador de la nube en el editor? Exporta antes tu borrador local si quieres conservarlo.'))return;await hydrate(row.document,row.id,message);const document = structuredClone(row.document);
  if (!document.blocks.length) document.blocks = newSophiaDocument().blocks;
+ if (document.analysisTarget) document.analysisReference = (await analysisSources(document.analysisTarget)).previous;
  setDocument(document);current=row;message('Borrador de la nube abierto. Cuando termines, pulsa Enviar a revisión.')}catch(e){message(e.message,true)}finally{busy(false)}
 }

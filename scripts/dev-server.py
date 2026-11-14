@@ -19,6 +19,8 @@ class Handler(SimpleHTTPRequestHandler):
         return str(target if target.is_relative_to(base) else base/'__forbidden__')
     def do_GET(self):
         u=urlparse(self.path)
+        if u.path == '/editor/':
+            self.send_response(302);self.send_header('Location','/dev/?'+u.query);self.end_headers();return
         if u.path in ('/', '/index.html', '/dev/mapa'):
             html=(ROOT/'dist/index.html').read_text()
             html=re.sub(r'(src|href)="(?!https?:|/|#|data:)([^"]+)"', r'\1="/\2"', html)

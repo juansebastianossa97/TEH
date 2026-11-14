@@ -4,7 +4,7 @@ import {$,el,button,status,run,ask,states} from './ui.js';
 await run(async()=>{
  const me=await profile();if(!me)throw Error('Inicia sesión en Comunidad para revisar esta versión.');
  const r=await revision(new URLSearchParams(location.search).get('id'));$('#title').textContent=r.document.title||'Exposición sin título';
- $('#summary').append(el('span',states[r.state],'badge'),el('p',r.kind==='withdraw'?'Se propone retirar esta exposición del mapa.':'Propuesta de publicación'),el('p',r.change_note||'Todavía es un borrador.'),el('p',r.review_note||''));
+ $('#summary').append(el('span',states[r.state],'badge'),el('p',r.kind==='withdraw'?'Se propone retirar esta exposición del mapa.':r.document.analysisTarget ? 'Aporte de análisis a '+r.document.title : 'Propuesta de publicación'),el('p',r.change_note||'Todavía es un borrador.'),el('p',r.review_note||''));
  const published=await checked(supabase.from('atlas_publications').select('*').eq('exhibition_id',r.exhibition_id).maybeSingle());
  if(published)renderDocument(await hydrate(published.document,published.revision_id,status),$('#before'));else $('#before').textContent='Esta exposición no tiene una versión pública.';
  renderDocument(await hydrate(r.document,r.id,status),$('#after'));

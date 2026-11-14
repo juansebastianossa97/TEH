@@ -10,6 +10,7 @@ export async function profile(){const {data:{user}}=await supabase.auth.getUser(
 // Freeze linked images into the same immutable asset format as uploaded photos.
 export async function prepareProposal(document) {
  const draft = structuredClone(document);
+ delete draft.analysisReference;
  async function prepare(item) {
   if (!item?.src) return;
   const url = new URL(item.src, location.href);

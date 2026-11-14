@@ -1,3 +1,4 @@
+import {editAnalysis} from './tools/analysis-editor.js';
 import {newSophiaDocument,isSophiaDocument,plateLabels} from './blocks/sophia-template.js';
 import {connectCloudEditor} from './cloud/editor-bridge.js';
 import {runTask} from './tools/worker-client.js';
@@ -64,7 +65,7 @@ enableImageDrag($('#preview'),{
 function confirmChange(text){return new Promise(resolve=>{const dialog=element('dialog'),form=element('form'),body=element('p',text);form.method='dialog';dialog.className='editor-confirm';form.append(body);for(const [value,label] of [['cancel','Cancelar'],['accept','Continuar']]){const button=element('button',label);button.value=value;form.append(button)}dialog.append(form);document.body.append(dialog);dialog.addEventListener('close',()=>{const accepted=dialog.returnValue==='accept';dialog.remove();resolve(accepted)},{once:true});dialog.showModal()})}
 function persist(){clearTimeout(timer);try{const record=saveDraft(localStorage,doc,revision);revision=record.revision;dirty=false;message(`Guardado en este navegador · ${new Date(record.savedAt).toLocaleTimeString('es-CO')}`);return true}catch(e){message(e.message,true);return false}}
 function changed(){dirty=true;message('Cambios pendientes de guardar…');clearTimeout(timer);timer=setTimeout(persist,800);refreshOutline();try{renderCanvas()}catch(e){message(e.message,true)}}
-function replaceDocument(next){document.dispatchEvent(new Event('atlas:replace-local'));clearTimeout(timer);clearAssetURLs();doc=clone(next);selected=doc.blocks[0]?.id;$('#document-title').value=doc.title;refreshOutline();fields();renderCanvas()}
+function replaceDocument(next){document.dispatchEvent(new Event('atlas:replace-local'));clearTimeout(timer);clearAssetURLs();doc=clone(next);document.body.classList.toggle('analysis-only', Boolean(doc.analysisTarget));$('#document-title').readOnly=Boolean(doc.analysisTarget);selected=doc.blocks[0]?.id;$('#document-title').value=doc.title;refreshOutline();fields();renderCanvas()}
 function refreshOutline(){
  const fixed=isSophiaDocument(doc);
  $('.add-block-panel').hidden=fixed;
@@ -175,7 +176,7 @@ $('#reference').addEventListener('click',async()=>{if(doc&&!await confirmChange(
 $('#recover').addEventListener('click',async()=>{try{const saved=loadDraft(localStorage);if(!saved){message('Todavía no hay un borrador guardado.');return}if(dirty&&!await confirmChange('¿Descartar los cambios pendientes y recuperar la copia guardada?'))return;revision=saved.revision;replaceDocument(saved.document);dirty=false;message('Borrador recuperado.')}catch(e){message(e.message,true)}});
 $('#document-title').addEventListener('input',e=>{doc.title=e.target.value;changed()});
 $('#save').addEventListener('click', () => {
- if (persist() && doc.location) previewDraftMap(14, $('#save'));
+ if (persist() && doc.location && !doc.analysisTarget) previewDraftMap(14, $('#save'));
 });
 function add(child=false){const b=newBlock($('#block-type').value);if(child){const parent=findBlock(doc.blocks,selected);if(parent?.type!=='section')return;parent.children.push(b)}else doc.blocks.push(b);selected=b.id;changed();selectBlock(b.id)}
 $('#add-root').addEventListener('click',()=>add());$('#add-child').addEventListener('click',()=>add(true));
@@ -200,4 +201,5 @@ for(const button of $('.file-menu').querySelectorAll('button'))button.addEventLi
 
 $('#new-document').onclick=async()=>{if(!await confirmChange('¿Empezar una exposición con la plantilla de Santa Sofía? Exporta el borrador actual si quieres conservarlo.'))return;replaceDocument(newSophiaDocument());changed();message('Plantilla de Santa Sofía lista para completar.')};
 
-await connectCloudEditor({getDocument:()=>doc,setDocument:next=>{replaceDocument(next);persist()},confirm:confirmChange,message,busy});
+$('#analysis-editor').onclick = () => editAnalysis(doc, changed);
+await connectCloudEditor({getDocument:()=>doc,setDocument:next=>{replaceDocument(next);persist()},confirm:confirmChange,message,busy,changed});

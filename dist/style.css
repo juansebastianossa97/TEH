@@ -53,3 +53,28 @@
   .header:has(.map-actions) { flex-wrap: wrap; gap: 8px; }
   .header .map-actions { margin-left: auto; gap: 14px; }
 }
+
+.analysis-tiles { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1.4rem }
+.analysis-tiles button { width:4.8rem; min-height:4.8rem; display:grid; align-content:center; gap:.25rem; padding:.3rem; border:1px solid #95a399; background:transparent; color:#16282b; cursor:pointer }
+.analysis-tiles button strong { font:2rem/1 Italiana,Georgia,serif }
+.analysis-tiles button span { font-size:.65rem; line-height:1.15 }
+.analysis-tiles button:is(:hover,:focus-visible) { background:#182a2e; color:white }
+html:has(.analysis-dialog[open]) { overflow:hidden }
+.analysis-dialog { margin:auto; width:min(40rem,92vw); max-height:84dvh; padding:0; border:0; background:#faf9f4; color:#182a2e; overflow:hidden }
+.analysis-dialog[open] { display:flex; flex-direction:column }
+.analysis-dialog::backdrop { background:#11232aca; backdrop-filter:blur(3px) }
+.analysis-dialog header { position:static; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex:none; padding:1rem 1.3rem; border-bottom:1px solid #cad0c9 }
+.analysis-dialog h2 { margin:0; font:2rem/1.1 Italiana,Georgia,serif }
+.analysis-dialog button { padding:.7rem 1rem; background:#16282b; color:white; border:0; cursor:pointer }
+.analysis-scroll { min-height:3rem; overflow-y:auto; overscroll-behavior:contain; padding:1rem 1.3rem }
+.analysis-scroll h3 { margin:.4rem 0 1rem; font:1.65rem Italiana,Georgia,serif }
+.analysis-scroll h4 { margin:0 0 .3rem }
+.analysis-scroll p { line-height:1.55; margin:0 0 1.1rem }
+.analysis-scroll img { display:block; max-width:100%; max-height:18rem; margin:0 auto 1.2rem }
+.analysis-scroll footer { position:static; background:transparent; color:inherit; padding:.7rem 0; font-size:.8rem }
+.analysis-contribute { flex-basis:100%; font-size:.8rem; text-decoration:underline; margin:.25rem 0 .6rem }
+.analysis-scroll details { padding:.6rem 0; border-bottom:1px solid #cad0c9 }
+.analysis-scroll summary { cursor:pointer; font-weight:600 }
+.analysis-scroll label { display:block; margin:1rem 0 }
+.analysis-scroll textarea { display:block; width:100%; margin-top:.4rem; resize:vertical }
+.analysis-scroll p { white-space:pre-line }
