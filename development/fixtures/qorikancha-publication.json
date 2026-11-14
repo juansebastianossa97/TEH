@@ -1,0 +1,189 @@
+{
+  "exhibition_id": "qorikancha",
+  "revision_id": "qorikancha-static-v1",
+  "author": "Isabella, María José, Zamara y Salomé",
+  "description": "El Templo del Sol y el convento de Santo Domingo en Cusco.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Qorikancha",
+    "location": {
+      "lat": -13.5202,
+      "lon": -71.9753,
+      "label": "Cusco, Perú",
+      "provider": "manual"
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "Un santuario bajo el convento",
+        "eyebrow": "CUSCO / TEMPLO DEL SOL",
+        "description": "En Cusco, el muro curvo del Qorikancha sobresale por debajo de la iglesia de Santo Domingo. Sus hiladas de piedra dibujan el borde del antiguo santuario de Inti. Desde allí partían los ceques, líneas rituales que vinculaban los lugares sagrados del valle con la capital inca.\n\nDentro del convento se conservan recintos del templo. Sus puertas trapezoidales y sus piedras de juntas estrechas conviven con los arcos y las galerías que los dominicos levantaron alrededor del patio.",
+        "cover": {
+          "src": "/assets/qorikancha/conjunto.jpg",
+          "caption": "El conjunto de Santo Domingo y Qorikancha",
+          "alt": "Vista aérea del convento, el muro curvo y las terrazas en el centro de Cusco.",
+          "source": "Análisis arquitectónico del Qorikancha · material gráfico del documento"
+        },
+        "secondCover": {
+          "src": "/assets/qorikancha/recintos.jpg",
+          "caption": "Los recintos incas",
+          "alt": "Muros de piedra tallada con nichos y vanos trapezoidales en el interior del conjunto.",
+          "source": "Análisis arquitectónico del Qorikancha · material gráfico del documento"
+        }
+      },
+      {
+        "id": "analisis",
+        "type": "section",
+        "layout": "reading",
+        "title": "Del muro curvo al patio",
+        "description": "El acceso desde la calle atraviesa un umbral estrecho y desemboca en el patio. Desde ese vacío se reconocen los recintos rectangulares y las galerías del claustro. Las tres láminas interpretan esta relación a partir de la misma planta.",
+        "children": [
+          {
+            "id": "laminas",
+            "type": "plates",
+            "layout": "three-columns",
+            "title": "",
+            "items": [
+              {
+                "src": "/assets/qorikancha/vacios.jpg",
+                "caption": "01 / Vacíos",
+                "alt": "Patios y pasos que comunican los recintos.",
+                "source": "Análisis arquitectónico del Qorikancha · material gráfico del documento"
+              },
+              {
+                "src": "/assets/qorikancha/llenos.jpg",
+                "caption": "02 / Llenos",
+                "alt": "Cuerpos edificados alrededor del patio y del perímetro curvo.",
+                "source": "Análisis arquitectónico del Qorikancha · material gráfico del documento"
+              },
+              {
+                "src": "/assets/qorikancha/nolli.jpg",
+                "caption": "03 / Nolli",
+                "alt": "Relación entre el espacio construido, las áreas abiertas y la circulación.",
+                "source": "Análisis arquitectónico del Qorikancha · material gráfico del documento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "historia",
+        "type": "timeline",
+        "layout": "reading",
+        "title": "Del culto a Inti al Cusco contemporáneo",
+        "description": "Cronología del análisis arquitectónico de Qorikancha, desde el santuario de Inti hasta la conservación del conjunto.",
+        "range": "Siglo XV — 1983",
+        "events": [
+          {
+            "date": "Siglo XV",
+            "title": "El santuario de Pachacútec",
+            "body": "La reorganización de Cusco bajo Pachacútec da al santuario del Sol un lugar destacado en la capital.",
+            "era": "",
+            "tags": [
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "UNESCO · Ciudad del Cusco",
+              "url": "https://whc.unesco.org/en/list/273/"
+            }
+          },
+          {
+            "date": "Antes de 1532",
+            "title": "Un calendario de ceremonias",
+            "body": "El culto a Inti reúne a sacerdotes y autoridades. Los ceques enlazan el recinto con otros santuarios del valle.",
+            "era": "",
+            "tags": [
+              "Religión"
+            ]
+          },
+          {
+            "date": "1533",
+            "title": "La conquista de Cusco",
+            "body": "Con la ocupación española se retiran objetos y revestimientos de metales preciosos del santuario.",
+            "era": "",
+            "tags": [
+              "Política"
+            ]
+          },
+          {
+            "date": "Décadas de 1530 y 1540",
+            "title": "Llegan los dominicos",
+            "body": "La orden se instala en el antiguo recinto sagrado. Sus construcciones aprovechan parte de los muros incas.",
+            "era": "",
+            "tags": [
+              "Religión"
+            ]
+          },
+          {
+            "date": "Siglos XVI y XVII",
+            "title": "Se construye el convento",
+            "body": "La iglesia, las galerías y las dependencias conventuales cambian los recorridos entre el templo y la ciudad.",
+            "era": "",
+            "tags": [
+              "Arquitectura"
+            ]
+          },
+          {
+            "date": "1650",
+            "title": "Un terremoto daña Santo Domingo",
+            "body": "El sismo del 31 de marzo daña la iglesia y el convento. La reconstrucción abre una nueva etapa de obras.",
+            "era": "",
+            "tags": [
+              "Sociedad"
+            ]
+          },
+          {
+            "date": "Siglos XVII y XVIII",
+            "title": "El perfil barroco",
+            "body": "Las reconstrucciones consolidan la torre y las cubiertas que hoy se distinguen sobre el basamento de piedra.",
+            "era": "",
+            "tags": [
+              "Arquitectura"
+            ]
+          },
+          {
+            "date": "1950",
+            "title": "La cantería queda expuesta",
+            "body": "El terremoto del 21 de mayo daña estructuras coloniales y deja a la vista sectores del recinto inca.",
+            "era": "",
+            "tags": [
+              "Patrimonio"
+            ]
+          },
+          {
+            "date": "1976",
+            "title": "Restauración del conjunto",
+            "body": "La ficha patrimonial de Cusco registra una intervención de restauración en Santo Domingo.",
+            "era": "",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "Municipalidad Provincial del Cusco",
+              "url": "https://centrohistorico.cusco.gob.pe/media/inmuebles_religiosos/FICHA_ARQUITECTONICA_SANTO_DOMINGO.pdf"
+            }
+          },
+          {
+            "date": "1983",
+            "title": "Cusco, patrimonio mundial",
+            "body": "La UNESCO inscribe la ciudad de Cusco en la Lista del Patrimonio Mundial. El Qorikancha forma parte de ese paisaje urbano.",
+            "era": "",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "UNESCO · Ciudad del Cusco",
+              "url": "https://whc.unesco.org/en/list/273/"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
