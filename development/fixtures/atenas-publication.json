@@ -1,0 +1,360 @@
+{
+  "exhibition_id": "atenas-partenon",
+  "revision_id": "atenas-partenon-static-v1",
+  "author": "",
+  "description": "Atenas y el Partenón, arquitectura de la Grecia clásica.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Atenas · Partenón",
+    "location": {
+      "lat": 37.9715,
+      "lon": 23.7267,
+      "label": "Acrópolis de Atenas, Grecia",
+      "provider": "manual"
+    },
+    "analysis": {
+      "1": "El Partenón se inicia en 447 a. C. dentro del programa de obras de Pericles, después de las Guerras Médicas.",
+      "2": "La colina rocosa domina el paisaje urbano. Su pendiente concentra los accesos y distingue el recinto monumental.",
+      "3": "Ciudadanos, mujeres, extranjeros y personas esclavizadas tenían posiciones y derechos distintos dentro de la sociedad ateniense.",
+      "4": "El culto a Atenea vinculaba las celebraciones colectivas con la identidad de la ciudad. El arte monumental expresaba ese vínculo.",
+      "5": "Atenas era una polis con instituciones propias. El programa monumental de Pericles expresaba su poder político.",
+      "6": "La construcción movilizó canteros, escultores y transporte de mármol. Parte de los tributos de la Liga de Delos financió las obras de la Acrópolis.",
+      "7": "Las fachadas se ordenan mediante columnas, entablamento y frontones. El ritmo de los soportes permite leer el perímetro.",
+      "8": "La Acrópolis reúne templos y espacios ceremoniales sobre una plataforma elevada respecto de la ciudad.",
+      "9": "La lámina relaciona edificios y espacios libres de la Acrópolis. El Partenón aparece como una pieza principal del conjunto.",
+      "10": "La lámina destaca la masa del templo dentro del perímetro de la Acrópolis.",
+      "11": "Los espacios abiertos permiten circular y observar el Partenón desde distintos ángulos.",
+      "12": "Los recorridos se adaptan a la topografía de la colina y enlazan los monumentos.",
+      "13": "Los caminos y espacios abiertos articulan edificios con orientaciones y dimensiones distintas.",
+      "14": "El conjunto se forma por la relación entre templos, explanadas, recorridos y paisaje.",
+      "15": "El desnivel de la colina marca una separación visible entre la Acrópolis y la ciudad.",
+      "16": "El perímetro del recinto monumental diferencia el santuario de su entorno urbano.",
+      "17": "Templo de planta rectangular, períptero y octástilo. Presenta ocho columnas en los frentes cortos y diecisiete en los laterales.",
+      "18": "Pronaos, cella y cámara occidental organizan el interior. Estilóbato, columnas, entablamento y frontones construyen su imagen exterior.",
+      "19": "La repetición de columnas y la correspondencia entre fachadas producen ritmo y unidad.",
+      "20": "La cella es la sala principal del templo y alojaba la imagen de Atenea.",
+      "21": "Los pórticos y la columnata exterior median entre el espacio abierto y los recintos interiores.",
+      "22": "El edificio contiene recintos cerrados con funciones diferenciadas dentro del santuario.",
+      "23": "La llegada a través de la Acrópolis permite descubrir el templo progresivamente y desde vistas oblicuas.",
+      "24": "La plataforma, los muros y las columnas expresan una construcción de piedra. Los intervalos entre soportes aligeran la lectura del volumen.",
+      "25": "La columnata exterior repite soportes y vanos alrededor del templo.",
+      "26": "La sala de Atenea se distingue de la cámara occidental por su dimensión y función.",
+      "27": "El eje longitudinal organiza la correspondencia de las partes. Las correcciones ópticas matizan la regularidad geométrica.",
+      "28": "El acceso, la cella y la escultura de Atenea organizan una secuencia de importancia espacial.",
+      "29": "La planta rectangular y la modulación de columnas establecen relaciones proporcionales entre las partes.",
+      "30": "El templo reúne el culto a Atenea y la representación monumental de Atenas.",
+      "31": "Ritmo, proporción y equilibrio caracterizan la composición de sus fachadas.",
+      "32": "El Partenón ejemplifica el templo griego períptero, rodeado por una columnata.",
+      "33": "Pertenece a la arquitectura religiosa de la Grecia clásica.",
+      "34": "Su lenguaje integra arquitectura, escultura y relieves en frontones, frisos y metopas.",
+      "35": "La obra vincula religión, arte e identidad cívica.",
+      "36": "Su función ceremonial y su escala monumental lo distinguen de los edificios domésticos.",
+      "37": "Albergaba la imagen de Atenea y custodiaba bienes. Sus funciones religiosas, políticas y económicas se superponían.",
+      "38": "Ofrendas, celebraciones, procesiones y custodia de bienes formaban parte de la vida del santuario.",
+      "39": "Sacerdotes y sacerdotisas, ciudadanos y visitantes participaban de forma diferenciada en el conjunto religioso.",
+      "40": "El mármol pentélico es el material principal. Madera y piezas metálicas participaban en la cubierta y en las uniones.",
+      "41": "El sistema adintelado transmite las cargas de los elementos horizontales hacia columnas y muros.",
+      "42": "Estrías, capiteles dóricos, juntas de piedra y grapas metálicas resuelven la forma y las uniones. La éntasis modifica sutilmente el perfil de las columnas."
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "El equilibrio sobre la ciudad",
+        "eyebrow": "ATENAS / GRECIA CLÁSICA",
+        "description": "Atenas, una de las ciudades-estado más importantes de la antigua Grecia, se destacó por sus aportes a la filosofía, la democracia, el arte y la arquitectura. Dentro de su legado histórico se encuentra el Partenón, un templo construido en el siglo V a. C. en honor a la diosa Atenea, protectora de la ciudad.\n\nUbicado en la Acrópolis de Atenas, representa los ideales de belleza, equilibrio, proporción y armonía que caracterizaron la arquitectura griega, convirtiéndose en uno de sus mayores referentes arquitectónicos.",
+        "cover": {
+          "src": "/assets/atenas/atenas-ilustracion.webp",
+          "title": "Atenas en una ilustración histórica",
+          "alt": "Ilustración reconstructiva de Atenas y la Acrópolis; autor y fecha sin identificar.",
+          "caption": "Atenas en una ilustración histórica",
+          "label": "",
+          "source": "Imagen aportada para la exposición"
+        },
+        "secondCover": {
+          "src": "/assets/atenas/acropolis-actual.webp",
+          "title": "La Acrópolis en la ciudad contemporánea",
+          "alt": "Fotografía de la Acrópolis con el Partenón y el tejido urbano de Atenas; fecha de toma sin identificar.",
+          "caption": "La Acrópolis en la ciudad contemporánea",
+          "label": "",
+          "source": "Imagen aportada para la exposición"
+        }
+      },
+      {
+        "id": "analisis",
+        "type": "section",
+        "layout": "wide",
+        "title": "La colina, el templo y sus recorridos",
+        "description": "Los espacios abiertos enlazan los edificios de la Acrópolis. El Partenón concentra el ritmo de sus columnas alrededor de un recinto rectangular.",
+        "children": [
+          {
+            "id": "laminas",
+            "type": "plates",
+            "layout": "three-columns",
+            "title": "",
+            "items": [
+              {
+                "src": "/assets/atenas/vacios.png",
+                "title": "Vacíos",
+                "alt": "Diagrama de espacios abiertos de la Acrópolis extraído de la página 9.",
+                "caption": "Vacíos",
+                "label": "01 / VACÍOS",
+                "source": "Bitácora investigativa · Partenón"
+              },
+              {
+                "src": "/assets/atenas/llenos.png",
+                "title": "Llenos",
+                "alt": "Diagrama de masa construida extraído de la página 9.",
+                "caption": "Llenos",
+                "label": "02 / LLENOS",
+                "source": "Bitácora investigativa · Partenón"
+              },
+              {
+                "src": "/assets/atenas/nolli.png",
+                "title": "Nolli",
+                "alt": "Lámina de espacios abiertos y edificaciones de la Acrópolis extraída de la página 8.",
+                "caption": "Nolli",
+                "label": "03 / NOLLI",
+                "source": "Bitácora investigativa · Partenón"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cronologia",
+        "type": "timeline",
+        "layout": "wide",
+        "title": "Un templo, muchas transformaciones",
+        "description": "Del santuario clásico a la conservación de la Acrópolis.",
+        "range": "480 a. C. — 2009",
+        "events": [
+          {
+            "date": "480 a. C.",
+            "title": "La Acrópolis es destruida",
+            "body": "La invasión persa destruye los santuarios de la colina. Su reconstrucción marcará el programa monumental de Atenas.",
+            "tags": [
+              "Política",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis",
+              "url": "https://www.theacropolismuseum.gr/en/exhibit-halls/parthenon-gallery"
+            },
+            "era": ""
+          },
+          {
+            "date": "447 a. C.",
+            "title": "Comienza el Partenón",
+            "body": "El programa de Pericles impulsa el nuevo templo. Ictino y Calícrates dirigen su arquitectura.",
+            "tags": [
+              "Política",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis",
+              "url": "https://www.theacropolismuseum.gr/en/exhibit-halls/parthenon-gallery"
+            },
+            "era": ""
+          },
+          {
+            "date": "438 a. C.",
+            "title": "Se completa el templo",
+            "body": "Concluye la construcción principal del edificio dedicado a Atenea. La decoración escultórica continúa.",
+            "tags": [
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "433 a. C.",
+            "title": "El tesoro de la ciudad",
+            "body": "La cámara occidental empieza a custodiar fondos públicos, reforzando la función económica del santuario.",
+            "tags": [
+              "Economía"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "432 a. C.",
+            "title": "Se completa la escultura",
+            "body": "Concluye la decoración de los frontones. Arquitectura y escultura articulan el relato de Atenea.",
+            "tags": [
+              "Cultura",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "Antigüedad tardía",
+            "title": "De templo a iglesia",
+            "body": "Tras reparaciones y transformaciones, el edificio se adapta al culto cristiano. Cambian su uso y sus espacios.",
+            "tags": [
+              "Religión",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "1205",
+            "title": "Una nueva etapa religiosa",
+            "body": "Bajo dominio latino, el antiguo templo queda dedicado a la Madre de Dios de Atenas.",
+            "tags": [
+              "Política",
+              "Religión"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "Finales del siglo XV",
+            "title": "El edificio se convierte en mezquita",
+            "body": "Durante la etapa otomana cambia su uso religioso y una torre de escalera se transforma en minarete.",
+            "tags": [
+              "Religión",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Servicio de Restauración de la Acrópolis",
+              "url": "https://www.ysma.gr/en/monuments/parthenon/"
+            },
+            "era": ""
+          },
+          {
+            "date": "1687",
+            "title": "La explosión del Partenón",
+            "body": "El bombardeo veneciano alcanza la pólvora almacenada en el edificio. La explosión provoca el derrumbe de grandes sectores.",
+            "tags": [
+              "Política",
+              "Arquitectura"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis · Historia",
+              "url": "https://www.theacropolismuseum.gr/en/museum-history"
+            },
+            "era": ""
+          },
+          {
+            "date": "Comienzos del siglo XIX",
+            "title": "Dispersión de las esculturas",
+            "body": "El equipo de Lord Elgin retira numerosas esculturas del Partenón y las transporta a Gran Bretaña.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis · Historia",
+              "url": "https://www.theacropolismuseum.gr/en/museum-history"
+            },
+            "era": ""
+          },
+          {
+            "date": "1834",
+            "title": "La Acrópolis se protege como sitio arqueológico",
+            "body": "El Estado griego declara el conjunto sitio arqueológico e impulsa la reunión y protección de sus antigüedades.",
+            "tags": [
+              "Política",
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis · Historia",
+              "url": "https://www.theacropolismuseum.gr/en/museum-history"
+            },
+            "era": ""
+          },
+          {
+            "date": "1975",
+            "title": "Se organiza la conservación moderna",
+            "body": "Se crea el Comité para la Conservación de los Monumentos de la Acrópolis, ESMA.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "YSMA · Cronología de intervenciones",
+              "url": "https://www.ysma.gr/en/the-service/timeline-of-interventions/"
+            },
+            "era": ""
+          },
+          {
+            "date": "1987",
+            "title": "Patrimonio mundial",
+            "body": "La UNESCO inscribe la Acrópolis de Atenas en la Lista del Patrimonio Mundial.",
+            "tags": [
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "UNESCO · Acrópolis de Atenas",
+              "url": "https://whc.unesco.org/en/list/404/"
+            },
+            "era": ""
+          },
+          {
+            "date": "2009",
+            "title": "Abre el nuevo Museo de la Acrópolis",
+            "body": "El museo abre el 20 de junio. Su galería del Partenón permite relacionar las esculturas con el monumento.",
+            "tags": [
+              "Cultura",
+              "Patrimonio"
+            ],
+            "source": {
+              "name": "Museo de la Acrópolis · Historia",
+              "url": "https://www.theacropolismuseum.gr/en/museum-history"
+            },
+            "era": ""
+          }
+        ]
+      },
+      {
+        "id": "fuentes",
+        "type": "sources",
+        "layout": "reading",
+        "title": "Fuentes",
+        "items": [
+          {
+            "name": "Museo de la Acrópolis",
+            "url": "https://www.theacropolismuseum.gr/en/exhibit-halls/parthenon-gallery"
+          },
+          {
+            "name": "Servicio de Restauración de la Acrópolis",
+            "url": "https://www.ysma.gr/en/monuments/parthenon/"
+          },
+          {
+            "name": "Museo de la Acrópolis · Historia",
+            "url": "https://www.theacropolismuseum.gr/en/museum-history"
+          },
+          {
+            "name": "UNESCO · Acrópolis de Atenas",
+            "url": "https://whc.unesco.org/en/list/404/"
+          },
+          {
+            "name": "YSMA · Cronología de intervenciones",
+            "url": "https://www.ysma.gr/en/the-service/timeline-of-interventions/"
+          }
+        ]
+      }
+    ]
+  }
+}
