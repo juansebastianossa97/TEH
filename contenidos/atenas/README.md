@@ -10,4 +10,4 @@ Los 42 apartados se sintetizan a partir de la bitácora. Se omiten las afirmacio
 
 El PDF no contiene cronología. Los 14 acontecimientos añadidos incluyen enlaces al Museo de la Acrópolis, YSMA y UNESCO. Las fechas de conversión religiosa se mantienen aproximadas.
 
-Autoría del trabajo pendiente de los nombres del grupo, ausentes del documento. Registro directo al final del recorrido mediante static-publications.js, con numeración automática y acceso Ver más.
+Autoras confirmadas por el usuario: Zamara Rojas, Sharit Henao y Maria Jose. Registro directo al final del recorrido mediante static-publications.js, con numeración automática y acceso Ver más.
