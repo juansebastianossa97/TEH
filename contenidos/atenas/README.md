@@ -10,4 +10,4 @@ Los campos de Contexto, Forma, Significado, Uso y Técnica quedan vacíos para q
 
 El PDF no contiene cronología. Los 14 acontecimientos añadidos incluyen enlaces al Museo de la Acrópolis, YSMA y UNESCO. Las fechas de conversión religiosa se mantienen aproximadas.
 
-Autoras confirmadas por el usuario: Zamara Rojas, Sharit Henao y Maria Jose. Registro directo al final del recorrido mediante static-publications.js, con numeración automática y acceso Ver más.
+Autoras confirmadas por el usuario: Zamara Rojas, Sharit Henao y Maria Jose Pineda Ramirez. Registro directo al final del recorrido mediante static-publications.js, con numeración automática y acceso Ver más.
