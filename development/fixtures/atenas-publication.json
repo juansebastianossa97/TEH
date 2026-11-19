@@ -87,199 +87,105 @@
         "id": "cronologia",
         "type": "timeline",
         "layout": "wide",
-        "title": "Un templo, muchas transformaciones",
-        "description": "Del santuario clásico a la conservación de la Acrópolis.",
-        "range": "480 a. C. — 2009",
+        "title": "Evolución de la civilización griega",
+        "description": "Periodos históricos y obras arquitectónicas de la civilización griega.",
+        "range": "3000 a. C. — siglo IV d. C.",
         "events": [
           {
-            "date": "480 a. C.",
-            "title": "La Acrópolis es destruida",
-            "body": "La invasión persa destruye los santuarios de la colina. Su reconstrucción marcará el programa monumental de Atenas.",
+            "date": "3000–1100 a. C.",
+            "title": "Civilización minoica",
+            "body": "Se desarrolla principalmente en Creta. Destacan los palacios, como Cnosos, y una importante actividad comercial marítima.",
             "tags": [
-              "Política",
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis",
-              "url": "https://www.theacropolismuseum.gr/en/exhibit-halls/parthenon-gallery"
-            },
-            "era": ""
-          },
-          {
-            "date": "447 a. C.",
-            "title": "Comienza el Partenón",
-            "body": "El programa de Pericles impulsa el nuevo templo. Ictino y Calícrates dirigen su arquitectura.",
-            "tags": [
-              "Política",
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis",
-              "url": "https://www.theacropolismuseum.gr/en/exhibit-halls/parthenon-gallery"
-            },
-            "era": ""
-          },
-          {
-            "date": "438 a. C.",
-            "title": "Se completa el templo",
-            "body": "Concluye la construcción principal del edificio dedicado a Atenea. La decoración escultórica continúa.",
-            "tags": [
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
-            "era": ""
-          },
-          {
-            "date": "433 a. C.",
-            "title": "El tesoro de la ciudad",
-            "body": "La cámara occidental empieza a custodiar fondos públicos, reforzando la función económica del santuario.",
-            "tags": [
+              "Sociedad",
               "Economía"
             ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
             "era": ""
           },
           {
-            "date": "432 a. C.",
-            "title": "Se completa la escultura",
-            "body": "Concluye la decoración de los frontones. Arquitectura y escultura articulan el relato de Atenea.",
+            "date": "1600–1100 a. C.",
+            "title": "Civilización micénica",
+            "body": "Se desarrolla en la Grecia continental. Destacan las ciudades fortificadas y los grandes centros palaciales.",
+            "tags": [
+              "Sociedad",
+              "Arquitectura"
+            ],
+            "era": ""
+          },
+          {
+            "date": "1100–800 a. C.",
+            "title": "Edad Oscura",
+            "body": "Después de la caída micénica disminuyen las ciudades y la escritura. Poco a poco se reorganiza la sociedad griega.",
+            "tags": [
+              "Sociedad"
+            ],
+            "era": ""
+          },
+          {
+            "date": "800–500 a. C.",
+            "title": "Época arcaica",
+            "body": "Aparecen y se consolidan las polis, como Atenas y Esparta. Se desarrollan la colonización, el comercio y los primeros templos griegos.",
+            "tags": [
+              "Política",
+              "Economía",
+              "Arquitectura"
+            ],
+            "era": ""
+          },
+          {
+            "date": "520–132 a. C.",
+            "title": "Templo de Zeus Olímpico",
+            "body": "Construcción del Templo de Zeus Olímpico.",
+            "tags": [
+              "Arquitectura"
+            ],
+            "era": ""
+          },
+          {
+            "date": "480–323 a. C.",
+            "title": "Época clásica",
+            "body": "Periodo de gran desarrollo cultural. Atenas alcanza importancia política y artística. Se construyen obras como el Partenón.",
+            "tags": [
+              "Cultura",
+              "Política"
+            ],
+            "era": ""
+          },
+          {
+            "date": "447–432 a. C.",
+            "title": "Partenón",
+            "body": "Construcción del Partenón.",
+            "tags": [
+              "Arquitectura"
+            ],
+            "era": ""
+          },
+          {
+            "date": "449–415 a. C.",
+            "title": "Templo de Hefesto",
+            "body": "Construcción del Templo de Hefesto.",
+            "tags": [
+              "Arquitectura"
+            ],
+            "era": ""
+          },
+          {
+            "date": "323–31 a. C.",
+            "title": "Época helenística",
+            "body": "Tras la muerte de Alejandro Magno, la cultura griega se expande por el Mediterráneo y Oriente. La arquitectura se vuelve más monumental y diversa.",
             "tags": [
               "Cultura",
               "Arquitectura"
             ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
             "era": ""
           },
           {
-            "date": "Antigüedad tardía",
-            "title": "De templo a iglesia",
-            "body": "Tras reparaciones y transformaciones, el edificio se adapta al culto cristiano. Cambian su uso y sus espacios.",
-            "tags": [
-              "Religión",
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
-            "era": ""
-          },
-          {
-            "date": "1205",
-            "title": "Una nueva etapa religiosa",
-            "body": "Bajo dominio latino, el antiguo templo queda dedicado a la Madre de Dios de Atenas.",
+            "date": "31 a. C. – siglo IV d. C.",
+            "title": "Grecia bajo Roma",
+            "body": "Grecia queda integrada al mundo romano. La cultura y el arte griegos continúan influyendo en la arquitectura romana y en la tradición occidental.",
             "tags": [
               "Política",
-              "Religión"
+              "Cultura"
             ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
-            "era": ""
-          },
-          {
-            "date": "Finales del siglo XV",
-            "title": "El edificio se convierte en mezquita",
-            "body": "Durante la etapa otomana cambia su uso religioso y una torre de escalera se transforma en minarete.",
-            "tags": [
-              "Religión",
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Servicio de Restauración de la Acrópolis",
-              "url": "https://www.ysma.gr/en/monuments/parthenon/"
-            },
-            "era": ""
-          },
-          {
-            "date": "1687",
-            "title": "La explosión del Partenón",
-            "body": "El bombardeo veneciano alcanza la pólvora almacenada en el edificio. La explosión provoca el derrumbe de grandes sectores.",
-            "tags": [
-              "Política",
-              "Arquitectura"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis · Historia",
-              "url": "https://www.theacropolismuseum.gr/en/museum-history"
-            },
-            "era": ""
-          },
-          {
-            "date": "Comienzos del siglo XIX",
-            "title": "Dispersión de las esculturas",
-            "body": "El equipo de Lord Elgin retira numerosas esculturas del Partenón y las transporta a Gran Bretaña.",
-            "tags": [
-              "Patrimonio"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis · Historia",
-              "url": "https://www.theacropolismuseum.gr/en/museum-history"
-            },
-            "era": ""
-          },
-          {
-            "date": "1834",
-            "title": "La Acrópolis se protege como sitio arqueológico",
-            "body": "El Estado griego declara el conjunto sitio arqueológico e impulsa la reunión y protección de sus antigüedades.",
-            "tags": [
-              "Política",
-              "Patrimonio"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis · Historia",
-              "url": "https://www.theacropolismuseum.gr/en/museum-history"
-            },
-            "era": ""
-          },
-          {
-            "date": "1975",
-            "title": "Se organiza la conservación moderna",
-            "body": "Se crea el Comité para la Conservación de los Monumentos de la Acrópolis, ESMA.",
-            "tags": [
-              "Patrimonio"
-            ],
-            "source": {
-              "name": "YSMA · Cronología de intervenciones",
-              "url": "https://www.ysma.gr/en/the-service/timeline-of-interventions/"
-            },
-            "era": ""
-          },
-          {
-            "date": "1987",
-            "title": "Patrimonio mundial",
-            "body": "La UNESCO inscribe la Acrópolis de Atenas en la Lista del Patrimonio Mundial.",
-            "tags": [
-              "Patrimonio"
-            ],
-            "source": {
-              "name": "UNESCO · Acrópolis de Atenas",
-              "url": "https://whc.unesco.org/en/list/404/"
-            },
-            "era": ""
-          },
-          {
-            "date": "2009",
-            "title": "Abre el nuevo Museo de la Acrópolis",
-            "body": "El museo abre el 20 de junio. Su galería del Partenón permite relacionar las esculturas con el monumento.",
-            "tags": [
-              "Cultura",
-              "Patrimonio"
-            ],
-            "source": {
-              "name": "Museo de la Acrópolis · Historia",
-              "url": "https://www.theacropolismuseum.gr/en/museum-history"
-            },
             "era": ""
           }
         ]

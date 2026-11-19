@@ -8,6 +8,6 @@ Las láminas se extraen sin redibujarlas del PDF: Vacíos (p. 9, 282 × 425 px),
 
 Los campos de Contexto, Forma, Significado, Uso y Técnica quedan vacíos para que los complete el grupo, según la corrección del usuario.
 
-El PDF no contiene cronología. Los 14 acontecimientos añadidos incluyen enlaces al Museo de la Acrópolis, YSMA y UNESCO. Las fechas de conversión religiosa se mantienen aproximadas.
+La cronología reproduce los diez periodos y acontecimientos de la imagen «Evolución de la civilización griega» aportada posteriormente por el usuario, con su orden y sus fechas. Reemplaza la cronología anterior del Partenón. Se conserva 520–132 a. C. para Zeus Olímpico tal como figura en la lámina; es una fecha del material proporcionado, no una verificación histórica independiente.
 
 Autoras confirmadas por el usuario: Zamara Rojas, Sharit Henao y Maria Jose Pineda Ramirez. Registro directo al final del recorrido mediante static-publications.js, con numeración automática y acceso Ver más.
