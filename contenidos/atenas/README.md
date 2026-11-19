@@ -6,7 +6,7 @@ La introducción conserva el texto aportado con una corrección histórica: Aten
 
 Las láminas se extraen sin redibujarlas del PDF: Vacíos (p. 9, 282 × 425 px), Llenos (p. 9, 265 × 400 px), Nolli (p. 8, 252 × 376 px). Son lecturas gráficas del trabajo académico y conservan su resolución original.
 
-Los 42 apartados se sintetizan a partir de la bitácora. Se omiten las afirmaciones no contrastadas de proporción áurea y tonelaje exacto, y se precisa la financiación del programa según el Museo de la Acrópolis.
+Los campos de Contexto, Forma, Significado, Uso y Técnica quedan vacíos para que los complete el grupo, según la corrección del usuario.
 
 El PDF no contiene cronología. Los 14 acontecimientos añadidos incluyen enlaces al Museo de la Acrópolis, YSMA y UNESCO. Las fechas de conversión religiosa se mantienen aproximadas.
 
