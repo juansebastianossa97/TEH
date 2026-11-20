@@ -1,3 +1,5 @@
+import {places} from '../dist/original-places.js';
+import {mountAnalysis} from '../dist/sophia-analysis.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,9 +9,9 @@ import {validateDocument} from '../development/blocks/model.js';
 import {renderDocument} from '../development/blocks/render.js';
 
 test('las exposiciones curadas conservan orden, no duplican IDs y se abren sin consulta remota',()=>{
- const rows=combinePublications([{exhibition_id:'barcelona'},{exhibition_id:'karnak'}]);
- assert.deepEqual(rows.map(r=>r.exhibition_id),['barcelona','karnak','teyuna','mesopotamia-ur','san-juan-letran','qorikancha','atenas-partenon']);
- assert.deepEqual(rows.map((_,i)=>String(8+i).padStart(2,'0')),['08','09','10','11','12','13','14']);
+ const rows=combinePublications([{exhibition_id:'karnak'}]);
+ assert.deepEqual(rows.map(r=>r.exhibition_id),['karnak','teyuna','mesopotamia-ur','san-juan-letran','qorikancha','atenas-partenon']);
+ assert.deepEqual(rows.map((_,i)=>String(places.length+i+1).padStart(2,'0')),['02','03','04','05','06','07']);
  assert.equal(findStaticPublication('teyuna').author,'Alejandro Velez Escobar, Tomás Alejandro Rubio y Santiago Hernández');
  assert.equal(findStaticPublication('mesopotamia-ur').author,'Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano');
  assert.equal(findStaticPublication('unknown'),undefined);
@@ -28,4 +30,17 @@ test('documentos válidos, portadas distintas, recursos presentes y cronologías
   assert.equal(root.querySelectorAll('.timeline-event:not([hidden])').length,timeline.events.filter(e=>e.tags.includes('Arquitectura')).length);
  }
  delete globalThis.document;
+});
+
+test('el recorrido inicial contiene solo Santa Sofía y su último enlace funciona',()=>{
+ assert.deepEqual(places.map(p=>p.id),['bizantino']);
+ const dom=new JSDOM('<div id="destination-nav"></div><div id="markers"></div><div id="chapters"></div>',{url:'https://example.org'});
+ globalThis.document=dom.window.document;
+ try {
+  const source=fs.readFileSync(new URL('../dist/app.js',import.meta.url),'utf8').split('for(let lon=')[0].replace(/^import .*;$/gm,'');
+  new Function('places','mountAnalysis','document','location',source)(places,mountAnalysis,document,dom.window.location);
+  assert.equal(document.querySelectorAll('.chapter').length,1);
+  assert.equal(document.querySelector('.chapter').id,'bizantino');
+  assert.equal(document.querySelector('.chapter-next a:last-child').getAttribute('href'),'#mapa');
+ }finally{delete globalThis.document;dom.window.close()}
 });
