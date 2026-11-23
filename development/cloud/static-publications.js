@@ -1,3 +1,4 @@
+import batllo from '../fixtures/batllo-publication.json' with {type:'json'};
 import atenas from '../fixtures/atenas-publication.json' with {type:'json'};
 import karnak from '../fixtures/karnak-publication.json' with {type:'json'};
 import teyuna from '../fixtures/teyuna-publication.json' with {type:'json'};
@@ -8,7 +9,7 @@ import letran from '../fixtures/letran-publication.json' with {type:'json'};
 import qorikancha from '../fixtures/qorikancha-publication.json' with {type:'json'};
 
 // Curated publications ship with the site and do not enter the submission queue.
-export const staticPublications = [karnak, {...teyuna, mapOffset:[18,-52]}, {...ur, mapOffset:[24,-20]}, {...letran, mapOffset:[28,28]}, {...qorikancha, mapOffset:[-115,-35]}, {...atenas, mapOffset:[-115,28]}];
+export const staticPublications = [karnak, {...teyuna, mapOffset:[18,-52]}, {...ur, mapOffset:[24,-20]}, {...letran, mapOffset:[28,28]}, {...qorikancha, mapOffset:[-115,-35]}, {...atenas, mapOffset:[-115,28]}, batllo];
 export const findStaticPublication = id => staticPublications.find(row => row.exhibition_id === id);
 export function combinePublications(remote) {
   const ids = new Set(staticPublications.map(row => row.exhibition_id));

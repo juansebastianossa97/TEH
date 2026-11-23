@@ -1,0 +1,105 @@
+{
+  "exhibition_id": "casa-batllo",
+  "revision_id": "casa-batllo-static-v1",
+  "author": "Ana Sofía Gálvez García y Lina Marcela Bueno",
+  "description": "Reformada entre 1904 y 1906 por encargo de Josep Batlló, la Casa Batlló es una obra emblemática del modernismo catalán en el Passeig de Gràcia. Antoni Gaudí transformó el inmueble original de 1877 mediante formas orgánicas, superficies onduladas, el patio de luces en degradado azul y una fachada cargada de simbolismo.\n\nEl edificio se conserva en Barcelona, con intervenciones y restauraciones de distintas etapas. Tras su etapa residencial y de oficinas, abrió a visitas culturales en 2002 y fue declarada Patrimonio Mundial de la UNESCO en 2005.",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "analysisPanels": {
+    "C": [
+      {
+        "src": "/assets/casa-batllo/c-1.webp",
+        "alt": "Casa Batlló · análisis C · lámina 1"
+      }
+    ],
+    "F": [
+      {
+        "src": "/assets/casa-batllo/f-1.webp",
+        "alt": "Casa Batlló · análisis F · lámina 1"
+      },
+      {
+        "src": "/assets/casa-batllo/f-2.webp",
+        "alt": "Casa Batlló · análisis F · lámina 2"
+      },
+      {
+        "src": "/assets/casa-batllo/f-3.webp",
+        "alt": "Casa Batlló · análisis F · lámina 3"
+      },
+      {
+        "src": "/assets/casa-batllo/f-4.webp",
+        "alt": "Casa Batlló · análisis F · lámina 4"
+      }
+    ],
+    "S": [
+      {
+        "src": "/assets/casa-batllo/s-1.webp",
+        "alt": "Casa Batlló · análisis S · lámina 1"
+      },
+      {
+        "src": "/assets/casa-batllo/s-2.webp",
+        "alt": "Casa Batlló · análisis S · lámina 2"
+      }
+    ],
+    "U": [
+      {
+        "src": "/assets/casa-batllo/u-1.webp",
+        "alt": "Casa Batlló · análisis U · lámina 1"
+      }
+    ],
+    "T": [
+      {
+        "src": "/assets/casa-batllo/t-1.webp",
+        "alt": "Casa Batlló · análisis T · lámina 1"
+      },
+      {
+        "src": "/assets/casa-batllo/t-2.webp",
+        "alt": "Casa Batlló · análisis T · lámina 2"
+      }
+    ]
+  },
+  "chronicleFiles": [
+    {
+      "src": "/assets/casa-batllo/cronica-ana-sofia.pdf",
+      "name": "Cuando la tierra tembló · Ana Sofía Gálvez García"
+    },
+    {
+      "src": "/assets/casa-batllo/cronica-lina.pdf",
+      "name": "Un minuto que parecía eterno · Lina Marcela Bueno"
+    }
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Casa Batlló",
+    "location": {
+      "lat": 41.3917,
+      "lon": 2.165,
+      "label": "Barcelona, España",
+      "provider": "manual"
+    },
+    "analysis": {},
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "Una casa transformada por la naturaleza",
+        "eyebrow": "BARCELONA / MODERNISMO CATALÁN",
+        "description": "Reformada entre 1904 y 1906 por encargo de Josep Batlló, la Casa Batlló es una obra emblemática del modernismo catalán en el Passeig de Gràcia. Antoni Gaudí transformó el inmueble original de 1877 mediante formas orgánicas, superficies onduladas, el patio de luces en degradado azul y una fachada cargada de simbolismo.\n\nEl edificio se conserva en Barcelona, con intervenciones y restauraciones de distintas etapas. Tras su etapa residencial y de oficinas, abrió a visitas culturales en 2002 y fue declarada Patrimonio Mundial de la UNESCO en 2005.",
+        "cover": {
+          "src": "/assets/casa-batllo/historica.webp",
+          "title": "Vista histórica",
+          "caption": "Casa Batlló · vista histórica",
+          "alt": "Casa Batlló con su fachada reformada en una fotografía histórica sin fecha identificada."
+        },
+        "secondCover": {
+          "src": "/assets/casa-batllo/actual.webp",
+          "title": "El edificio hoy",
+          "caption": "Casa Batlló · vista contemporánea",
+          "alt": "Fachada de Casa Batlló en una fotografía contemporánea."
+        }
+      }
+    ]
+  }
+}

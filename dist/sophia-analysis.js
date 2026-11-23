@@ -87,7 +87,25 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
     button.onclick = () => {
       heading.textContent = name;
       content.replaceChildren();
+      if (!points.length && container.showChronicle) container.showChronicle(content);
       let shown = 0;
+      for (const panel of container.analysisPanels?.[initial] || []) {
+        const figure = document.createElement('figure');
+        const image = document.createElement('img');
+        image.src = panel.src;
+        image.alt = panel.alt;
+        image.loading = 'lazy';
+        image.style.cssText = 'display:block;width:100%;height:auto;max-width:none';
+        const link = document.createElement('a');
+        link.href = panel.src;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = 'Ampliar lámina ↗';
+        figure.style.margin = '0 0 24px';
+        figure.append(image, link);
+        content.append(figure);
+        shown++;
+      }
       points.forEach(([label, example, plate], index) => {
         const number = start + index;
         const answer = container.analysisAnswers?.[number];

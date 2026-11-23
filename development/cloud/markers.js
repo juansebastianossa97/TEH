@@ -1,3 +1,4 @@
+import {attachCuratedMedia} from './curated-media.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
 import {publishedAnswers} from './analysis-contributions.js';
 import {combinePublications} from './static-publications.js';
@@ -138,6 +139,7 @@ export function mountPublications(getMap) {
         const number=String(originals+i+1).padStart(2,'0');
         const section=chapter(row,number,id);
         section.querySelector('.analysis-tiles').analysisAnswers = publishedAnswers(row.exhibition_id, doc.analysis, remote);
+        attachCuratedMedia(section.querySelector('.analysis-tiles'), row);
         chapters.append(section);
         const tab=node('a','chapter-tab');
         tab.href='#'+id;tab.dataset.destination=id;
