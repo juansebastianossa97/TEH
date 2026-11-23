@@ -10,52 +10,192 @@
   "analysisPanels": {
     "C": [
       {
-        "src": "/assets/casa-batllo/c-1.webp",
-        "alt": "Casa Batlló · análisis C · lámina 1"
+        "src": "/assets/casa-batllo/c-detalle-01.webp",
+        "alt": "Casa Batlló · C · apartado 1"
+      },
+      {
+        "src": "/assets/casa-batllo/c-detalle-02.webp",
+        "alt": "Casa Batlló · C · apartado 2"
+      },
+      {
+        "src": "/assets/casa-batllo/c-detalle-03.webp",
+        "alt": "Casa Batlló · C · apartado 3"
+      },
+      {
+        "src": "/assets/casa-batllo/c-detalle-04.webp",
+        "alt": "Casa Batlló · C · apartado 4"
+      },
+      {
+        "src": "/assets/casa-batllo/c-detalle-05.webp",
+        "alt": "Casa Batlló · C · apartado 5"
+      },
+      {
+        "src": "/assets/casa-batllo/c-detalle-06.webp",
+        "alt": "Casa Batlló · C · apartado 6"
       }
     ],
     "F": [
       {
-        "src": "/assets/casa-batllo/f-1.webp",
-        "alt": "Casa Batlló · análisis F · lámina 1"
+        "src": "/assets/casa-batllo/f-detalle-01.webp",
+        "alt": "Casa Batlló · F · apartado 1"
       },
       {
-        "src": "/assets/casa-batllo/f-2.webp",
-        "alt": "Casa Batlló · análisis F · lámina 2"
+        "src": "/assets/casa-batllo/f-detalle-02.webp",
+        "alt": "Casa Batlló · F · apartado 2"
       },
       {
-        "src": "/assets/casa-batllo/f-3.webp",
-        "alt": "Casa Batlló · análisis F · lámina 3"
+        "src": "/assets/casa-batllo/f-detalle-03.webp",
+        "alt": "Casa Batlló · F · apartado 3"
       },
       {
-        "src": "/assets/casa-batllo/f-4.webp",
-        "alt": "Casa Batlló · análisis F · lámina 4"
+        "src": "/assets/casa-batllo/f-detalle-04.webp",
+        "alt": "Casa Batlló · F · apartado 4"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-05.webp",
+        "alt": "Casa Batlló · F · apartado 5"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-06.webp",
+        "alt": "Casa Batlló · F · apartado 6"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-07.webp",
+        "alt": "Casa Batlló · F · apartado 7"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-08.webp",
+        "alt": "Casa Batlló · F · apartado 8"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-09.webp",
+        "alt": "Casa Batlló · F · apartado 9"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-10.webp",
+        "alt": "Casa Batlló · F · apartado 10"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-11.webp",
+        "alt": "Casa Batlló · F · apartado 11"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-12.webp",
+        "alt": "Casa Batlló · F · apartado 12"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-13.webp",
+        "alt": "Casa Batlló · F · apartado 13"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-14.webp",
+        "alt": "Casa Batlló · F · apartado 14"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-15.webp",
+        "alt": "Casa Batlló · F · apartado 15"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-16.webp",
+        "alt": "Casa Batlló · F · apartado 16"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-17.webp",
+        "alt": "Casa Batlló · F · apartado 17"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-18.webp",
+        "alt": "Casa Batlló · F · apartado 18"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-19.webp",
+        "alt": "Casa Batlló · F · apartado 19"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-20.webp",
+        "alt": "Casa Batlló · F · apartado 20"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-21.webp",
+        "alt": "Casa Batlló · F · apartado 21"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-22.webp",
+        "alt": "Casa Batlló · F · apartado 22"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-23.webp",
+        "alt": "Casa Batlló · F · apartado 23"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-24.webp",
+        "alt": "Casa Batlló · F · apartado 24"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-25.webp",
+        "alt": "Casa Batlló · F · apartado 25"
+      },
+      {
+        "src": "/assets/casa-batllo/f-detalle-26.webp",
+        "alt": "Casa Batlló · F · apartado 26"
       }
     ],
     "S": [
       {
-        "src": "/assets/casa-batllo/s-1.webp",
-        "alt": "Casa Batlló · análisis S · lámina 1"
+        "src": "/assets/casa-batllo/s-detalle-01.webp",
+        "alt": "Casa Batlló · S · apartado 1"
       },
       {
-        "src": "/assets/casa-batllo/s-2.webp",
-        "alt": "Casa Batlló · análisis S · lámina 2"
+        "src": "/assets/casa-batllo/s-detalle-02.webp",
+        "alt": "Casa Batlló · S · apartado 2"
+      },
+      {
+        "src": "/assets/casa-batllo/s-detalle-03.webp",
+        "alt": "Casa Batlló · S · apartado 3"
+      },
+      {
+        "src": "/assets/casa-batllo/s-detalle-04.webp",
+        "alt": "Casa Batlló · S · apartado 4"
+      },
+      {
+        "src": "/assets/casa-batllo/s-detalle-05.webp",
+        "alt": "Casa Batlló · S · apartado 5"
+      },
+      {
+        "src": "/assets/casa-batllo/s-detalle-06.webp",
+        "alt": "Casa Batlló · S · apartado 6"
+      },
+      {
+        "src": "/assets/casa-batllo/s-detalle-07.webp",
+        "alt": "Casa Batlló · S · apartado 7"
       }
     ],
     "U": [
       {
-        "src": "/assets/casa-batllo/u-1.webp",
-        "alt": "Casa Batlló · análisis U · lámina 1"
+        "src": "/assets/casa-batllo/u-detalle-01.webp",
+        "alt": "Casa Batlló · U · apartado 1"
+      },
+      {
+        "src": "/assets/casa-batllo/u-detalle-02.webp",
+        "alt": "Casa Batlló · U · apartado 2"
+      },
+      {
+        "src": "/assets/casa-batllo/u-detalle-03.webp",
+        "alt": "Casa Batlló · U · apartado 3"
       }
     ],
     "T": [
       {
-        "src": "/assets/casa-batllo/t-1.webp",
-        "alt": "Casa Batlló · análisis T · lámina 1"
+        "src": "/assets/casa-batllo/t-detalle-01.webp",
+        "alt": "Casa Batlló · T · apartado 1"
       },
       {
-        "src": "/assets/casa-batllo/t-2.webp",
-        "alt": "Casa Batlló · análisis T · lámina 2"
+        "src": "/assets/casa-batllo/t-detalle-02.webp",
+        "alt": "Casa Batlló · T · apartado 2"
+      },
+      {
+        "src": "/assets/casa-batllo/t-detalle-03.webp",
+        "alt": "Casa Batlló · T · apartado 3"
       }
     ]
   },

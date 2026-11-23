@@ -95,7 +95,7 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         image.src = panel.src;
         image.alt = panel.alt;
         image.loading = 'lazy';
-        image.style.cssText = 'display:block;width:100%;height:auto;max-width:none';
+        image.style.cssText = 'display:block;width:100%;height:auto;max-width:none;max-height:none';
         const link = document.createElement('a');
         link.href = panel.src;
         link.target = '_blank';
