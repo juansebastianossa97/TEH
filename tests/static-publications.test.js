@@ -115,3 +115,20 @@ test('The Red House: la exposición de Supabase suma láminas y autores sin perd
  for(const file of [...Object.values(row.analysisPanels).flat(),...row.chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
  assert.equal(combinePublications([{exhibition_id:'ee7a78c2-62fc-4c24-8756-514ad5c72130',author:'Santiago Ramirez',description:'',document:{}}])[0].author,'Santiago Ramírez Ospina y Thomas García Chica');
 });
+
+test('los nombres de exposición comparten formato y las nuevas aprobadas van al final del recorrido', async ()=>{
+ const {formatTitle}=await import('../development/blocks/title-format.js');
+ assert.equal(formatTitle('HACIENDA CAÑASGORDAS'),'Hacienda Cañasgordas');
+ assert.equal(formatTitle('THE RED HOUSE'),'The Red House');
+ assert.equal(formatTitle('pabellón de la secesión'),'Pabellón de la Secesión');
+ assert.equal(formatTitle('  teoría   E historia III '),'Teoría e Historia III');
+ assert.equal(formatTitle('Mesopotamia · Zigurat de Ur'),'Mesopotamia · Zigurat de Ur');
+ for(const row of staticPublications)assert.equal(formatTitle(row.document.title),row.document.title);
+ const early={exhibition_id:'a',published_at:'2026-11-23T13:47:24+00:00',document:{title:'ANTES'}};
+ const late={exhibition_id:'b',published_at:'2026-11-25T19:09:49.736369+00:00',document:{title:'HACIENDA CAÑASGORDAS'}};
+ const later={exhibition_id:'c',published_at:'2026-12-01T10:00:00+00:00',document:{title:'otra casa'}};
+ const rows=combinePublications([early,late,later]);
+ assert.deepEqual(rows.map(r=>r.exhibition_id),['a',...staticPublications.map(r=>r.exhibition_id),'b','c']);
+ assert.deepEqual([rows[0].document.title,rows.at(-2).document.title,rows.at(-1).document.title],['Antes','Hacienda Cañasgordas','Otra Casa']);
+ assert.equal(late.document.title,'HACIENDA CAÑASGORDAS');
+});

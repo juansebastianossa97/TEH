@@ -10,6 +10,7 @@ import {restoreBackup} from './tools/backup.js';
 import {mountLocation,previewDraftMap} from './tools/location.js';
 import {clone,uid,duplicateBlock,validateDocument,findBlock,moveBlock,removeBlock,newBlock,saveDraft,loadDraft,MAX_BYTES} from './blocks/model.js';
 import {renderDocument} from './blocks/render.js';
+import {formatTitle} from './blocks/title-format.js';
 const $=s=>document.querySelector(s);
 const icons={heading:'H',hero:'◧',section:'≡',text:'T',plates:'▧',timeline:'◷',comparison:'◫',sources:'↗'};
 const descriptions={heading:'Solo un título. Nada más es obligatorio.',hero:'La primera impresión de tu exposición.',section:'Agrupa las piezas de tu historia.',text:'Dale voz a lo que quieres contar.',plates:'Imágenes, planos y sus detalles.',timeline:'Conecta los momentos de la historia.',comparison:'Dos miradas, una misma obra.',sources:'Las referencias que acompañan tu relato.'};
@@ -177,6 +178,7 @@ async function reference(){const response=await fetch('/dev/fixtures/santa-sofia
 $('#reference').addEventListener('click',async()=>{if(doc&&!await confirmChange('¿Reemplazar el borrador del taller por la referencia de Santa Sofía? Exporta antes si quieres conservarlo.'))return;try{replaceDocument(await reference());changed()}catch(e){message(e.message,true)}});
 $('#recover').addEventListener('click',async()=>{try{const saved=loadDraft(localStorage);if(!saved){message('Todavía no hay un borrador guardado.');return}if(dirty&&!await confirmChange('¿Descartar los cambios pendientes y recuperar la copia guardada?'))return;revision=saved.revision;replaceDocument(saved.document);dirty=false;message('Borrador recuperado.')}catch(e){message(e.message,true)}});
 $('#document-title').addEventListener('input',e=>{doc.title=e.target.value;changed()});
+$('#document-title').addEventListener('change',e=>{if(e.target.readOnly)return;const value=formatTitle(e.target.value);if(value!==e.target.value){e.target.value=value;doc.title=value;changed()}});
 $('#save').addEventListener('click', () => {
  if (persist() && doc.location && !doc.analysisTarget) previewDraftMap(14, $('#save'));
 });

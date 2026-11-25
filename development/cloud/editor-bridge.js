@@ -1,5 +1,6 @@
 import {places} from '../../dist/original-places.js';
 import {findStaticPublication} from './static-publications.js';
+import {formatTitle} from '../blocks/title-format.js';
 import {checked,supabase} from './client.js';
 import {editAnalysis} from '../tools/analysis-editor.js';
 import {publishedAnswers} from './analysis-contributions.js';
@@ -20,7 +21,7 @@ export async function connectCloudEditor({getDocument,setDocument,confirm,messag
    const me=await profile();
    if(!me)throw Error('Inicia sesión en Comunidad para enviar tu propuesta.');
    checkSophiaSubmission(getDocument());
-   const doc=await prepareProposal(getDocument());
+   const doc=await prepareProposal(getDocument());doc.title=formatTitle(doc.title);
    if(!doc.title.trim()||!doc.blocks.length||!doc.location)throw Error('Añade un nombre, contenido y ubicación antes de enviar.');
    message('Guardando las imágenes de tu propuesta…');
    await uploadAssets(doc,message);
