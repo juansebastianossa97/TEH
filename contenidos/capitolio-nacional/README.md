@@ -14,13 +14,12 @@ Autoría: Mariana Bustamante Duque y Tamara Montesdeoca Anaya (portada del traba
 
 - Portada: ilustración de 1893 (Wikimedia Commons, dominio público) y la fotografía de la portada del trabajo como imagen actual. Créditos en `fuentes-imagenes.json`.
 - `analysisPanels`: 47 láminas recortadas del PDF sin redibujar (C 6, F 25, S 7, U 6, T 3), a 220 ppp. Archivos `<categoría>-<n>-<apartado>.webp`.
-- `document.analysis`: texto para 35 de los 42 puntos, tomado solo de las palabras del PDF (etiquetas, leyendas y párrafos), sin agregar datos.
+- `document.analysis` vacío, como en Casa Batlló: cada apartado se presenta solo con su lámina (corrección del usuario, 25 de noviembre de 2026).
 - `chronicleFiles`: las dos crónicas en PDF, accesibles desde **Cr**.
 - Sin bloque de cronología: la línea de tiempo del PDF tiene solo tres periodos (el modelo de cronología exige al menos 10). Va en el punto 1 de Contexto y en la primera lámina.
 
 ## Lo que no se pudo sacar del PDF
 
-- Puntos sin texto (solo gráfico, visibles en las láminas): 24 Masa, 25 Espacios repetitivos, 26 Espacios singulares, 27 Simetría, 28 Jerarquía, 29 Geometría y 35 Vinculación.
 - El punto 1 en la guía es «Histórico»; el trabajo usa «Línea de tiempo».
 - Apartados del PDF sin número en la guía de 42 puntos, incluidos solo como láminas: Relación interior-exterior (sólidos y cavidades), Ritmo arquitectónico, Patrones de uso temporal, Horarios y momentos clave y Frecuencia de uso.
 - Las cifras sociodemográficas (18.500 residentes, más de 1.000.000 de población flotante al día, 8.922 visitantes) no indican fuente ni año en el PDF.
