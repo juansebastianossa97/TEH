@@ -102,6 +102,11 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         link.rel = 'noopener';
         link.textContent = 'Ampliar lámina ↗';
         figure.style.margin = '0 0 24px';
+        if (panel.title) {
+          const caption = document.createElement('h4');
+          caption.textContent = panel.title;
+          figure.append(caption);
+        }
         figure.append(image, link);
         content.append(figure);
         shown++;

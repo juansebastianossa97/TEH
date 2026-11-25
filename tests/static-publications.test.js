@@ -76,6 +76,7 @@ test('Capitolio Nacional: 42 puntos válidos, láminas por categoría y dos cró
  assert.equal(row.author,'Mariana Bustamante Duque y Tamara Montesdeoca Anaya');
  assert.deepEqual(Object.keys(row.analysisPanels),['C','F','S','U','T']);
  assert.equal(row.chronicleFiles.length,2);
+ assert.equal(Object.values(row.analysisPanels).flat().filter(p=>/^\d+\. /.test(p.title)).length,42);
  assert.deepEqual(validateDocument(row.document),[]);
  for(const key of Object.keys(row.document.analysis))assert.ok(Number(key)>=1&&Number(key)<=42);
  for(const file of [...Object.values(row.analysisPanels).flat(),...row.chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));

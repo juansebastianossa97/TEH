@@ -11,199 +11,246 @@
     "C": [
       {
         "src": "/assets/capitolio-nacional/c-01-linea-tiempo.webp",
-        "alt": "Capitolio Nacional · Línea de tiempo · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Línea de tiempo · lámina del trabajo final, p. 4",
+        "title": "1. Histórico: línea de tiempo"
       },
       {
         "src": "/assets/capitolio-nacional/c-02-ecologico.webp",
-        "alt": "Capitolio Nacional · Ecológico-ambiental · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Ecológico-ambiental · lámina del trabajo final, p. 4",
+        "title": "2. Ecológico-ambiental"
       },
       {
         "src": "/assets/capitolio-nacional/c-03-sociodemografico.webp",
-        "alt": "Capitolio Nacional · Sociodemográfico · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Sociodemográfico · lámina del trabajo final, p. 4",
+        "title": "3. Sociodemográfico"
       },
       {
         "src": "/assets/capitolio-nacional/c-04-antropologico.webp",
-        "alt": "Capitolio Nacional · Antropológico-cultural · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Antropológico-cultural · lámina del trabajo final, p. 4",
+        "title": "4. Antropológico-cultural"
       },
       {
         "src": "/assets/capitolio-nacional/c-05-juridico.webp",
-        "alt": "Capitolio Nacional · Jurídico-político · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Jurídico-político · lámina del trabajo final, p. 4",
+        "title": "5. Jurídico-político"
       },
       {
         "src": "/assets/capitolio-nacional/c-06-economico.webp",
-        "alt": "Capitolio Nacional · Económico-productivo · lámina del trabajo final, p. 4"
+        "alt": "Capitolio Nacional · Económico-productivo · lámina del trabajo final, p. 4",
+        "title": "6. Económico-productivo"
       }
     ],
     "F": [
       {
         "src": "/assets/capitolio-nacional/f-01-paramentacion.webp",
-        "alt": "Capitolio Nacional · Paramentación · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Paramentación · lámina del trabajo final, p. 5",
+        "title": "7. Paramentación"
       },
       {
         "src": "/assets/capitolio-nacional/f-02-tipologia.webp",
-        "alt": "Capitolio Nacional · Tipología · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Tipología · lámina del trabajo final, p. 5",
+        "title": "8. Tipología"
       },
       {
         "src": "/assets/capitolio-nacional/f-03-nolli.webp",
-        "alt": "Capitolio Nacional · Plano de Nolli · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Plano de Nolli · lámina del trabajo final, p. 5",
+        "title": "9. Plano de Nolli"
       },
       {
         "src": "/assets/capitolio-nacional/f-04-llenos.webp",
-        "alt": "Capitolio Nacional · Plano de llenos · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Plano de llenos · lámina del trabajo final, p. 5",
+        "title": "10. Plano de llenos"
       },
       {
         "src": "/assets/capitolio-nacional/f-05-vacios.webp",
-        "alt": "Capitolio Nacional · Plano de vacíos · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Plano de vacíos · lámina del trabajo final, p. 5",
+        "title": "11. Plano de vacíos"
       },
       {
         "src": "/assets/capitolio-nacional/f-06-traza.webp",
-        "alt": "Capitolio Nacional · Traza · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Traza · lámina del trabajo final, p. 5",
+        "title": "12. Traza"
       },
       {
         "src": "/assets/capitolio-nacional/f-07-trama.webp",
-        "alt": "Capitolio Nacional · Trama · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Trama · lámina del trabajo final, p. 5",
+        "title": "13. Trama"
       },
       {
         "src": "/assets/capitolio-nacional/f-08-tejido.webp",
-        "alt": "Capitolio Nacional · Tejido · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Tejido · lámina del trabajo final, p. 5",
+        "title": "14. Tejido"
       },
       {
         "src": "/assets/capitolio-nacional/f-09-borde.webp",
-        "alt": "Capitolio Nacional · Borde · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Borde · lámina del trabajo final, p. 5",
+        "title": "15. Borde"
       },
       {
         "src": "/assets/capitolio-nacional/f-10-limite.webp",
-        "alt": "Capitolio Nacional · Límite · lámina del trabajo final, p. 5"
+        "alt": "Capitolio Nacional · Límite · lámina del trabajo final, p. 5",
+        "title": "16. Límite"
       },
       {
         "src": "/assets/capitolio-nacional/f-11-tipo-edificatorio.webp",
-        "alt": "Capitolio Nacional · Tipo edificatorio · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Tipo edificatorio · lámina del trabajo final, p. 6",
+        "title": "17. Tipo edificatorio"
       },
       {
         "src": "/assets/capitolio-nacional/f-12-elementos.webp",
-        "alt": "Capitolio Nacional · Elementos o partes · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Elementos o partes · lámina del trabajo final, p. 6",
+        "title": "18. Elementos o partes"
       },
       {
         "src": "/assets/capitolio-nacional/f-13-relaciones-formales.webp",
-        "alt": "Capitolio Nacional · Relaciones formales · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Relaciones formales · lámina del trabajo final, p. 6",
+        "title": "19. Relaciones formales"
       },
       {
         "src": "/assets/capitolio-nacional/f-14-aula.webp",
-        "alt": "Capitolio Nacional · Aula · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Aula · lámina del trabajo final, p. 6",
+        "title": "20. Aula"
       },
       {
         "src": "/assets/capitolio-nacional/f-15-portico.webp",
-        "alt": "Capitolio Nacional · Pórtico · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Pórtico · lámina del trabajo final, p. 6",
+        "title": "21. Pórtico"
       },
       {
         "src": "/assets/capitolio-nacional/f-16-recinto.webp",
-        "alt": "Capitolio Nacional · Recinto · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Recinto · lámina del trabajo final, p. 6",
+        "title": "22. Recinto"
       },
       {
         "src": "/assets/capitolio-nacional/f-17-aproximacion.webp",
-        "alt": "Capitolio Nacional · Aproximación al edificio · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Aproximación al edificio · lámina del trabajo final, p. 6",
+        "title": "23. Aproximación al edificio"
       },
       {
         "src": "/assets/capitolio-nacional/f-18-masa.webp",
-        "alt": "Capitolio Nacional · Masa · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Masa · lámina del trabajo final, p. 6",
+        "title": "24. Masa"
       },
       {
         "src": "/assets/capitolio-nacional/f-19-repetitivos.webp",
-        "alt": "Capitolio Nacional · Espacios repetitivos · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Espacios repetitivos · lámina del trabajo final, p. 6",
+        "title": "25. Espacios repetitivos"
       },
       {
         "src": "/assets/capitolio-nacional/f-20-singulares.webp",
-        "alt": "Capitolio Nacional · Espacios singulares · lámina del trabajo final, p. 6"
+        "alt": "Capitolio Nacional · Espacios singulares · lámina del trabajo final, p. 6",
+        "title": "26. Espacios singulares"
       },
       {
         "src": "/assets/capitolio-nacional/f-21-simetria.webp",
-        "alt": "Capitolio Nacional · Simetría (equilibrio) · lámina del trabajo final, p. 7"
+        "alt": "Capitolio Nacional · Simetría (equilibrio) · lámina del trabajo final, p. 7",
+        "title": "27. Simetría (equilibrio)"
       },
       {
         "src": "/assets/capitolio-nacional/f-22-jerarquia.webp",
-        "alt": "Capitolio Nacional · Jerarquía · lámina del trabajo final, p. 7"
+        "alt": "Capitolio Nacional · Jerarquía · lámina del trabajo final, p. 7",
+        "title": "28. Jerarquía"
       },
       {
         "src": "/assets/capitolio-nacional/f-23-geometria.webp",
-        "alt": "Capitolio Nacional · Geometría · lámina del trabajo final, p. 7"
+        "alt": "Capitolio Nacional · Geometría · lámina del trabajo final, p. 7",
+        "title": "29. Geometría"
       },
       {
         "src": "/assets/capitolio-nacional/f-24-interior-exterior.webp",
-        "alt": "Capitolio Nacional · Relación interior-exterior: sólidos y cavidades · lámina del trabajo final, p. 7"
+        "alt": "Capitolio Nacional · Relación interior-exterior: sólidos y cavidades · lámina del trabajo final, p. 7",
+        "title": "Relación interior-exterior: sólidos y cavidades"
       },
       {
         "src": "/assets/capitolio-nacional/f-25-ritmo.webp",
-        "alt": "Capitolio Nacional · Ritmo arquitectónico · lámina del trabajo final, p. 7"
+        "alt": "Capitolio Nacional · Ritmo arquitectónico · lámina del trabajo final, p. 7",
+        "title": "Ritmo arquitectónico"
       }
     ],
     "S": [
       {
         "src": "/assets/capitolio-nacional/s-01-nocion.webp",
-        "alt": "Capitolio Nacional · Noción · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Noción · lámina del trabajo final, p. 8",
+        "title": "30. Noción"
       },
       {
         "src": "/assets/capitolio-nacional/s-02-caracterizacion.webp",
-        "alt": "Capitolio Nacional · Caracterización · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Caracterización · lámina del trabajo final, p. 8",
+        "title": "31. Caracterización"
       },
       {
         "src": "/assets/capitolio-nacional/s-03-ejemplificacion.webp",
-        "alt": "Capitolio Nacional · Ejemplificación · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Ejemplificación · lámina del trabajo final, p. 8",
+        "title": "32. Ejemplificación"
       },
       {
         "src": "/assets/capitolio-nacional/s-04-categorizacion.webp",
-        "alt": "Capitolio Nacional · Categorización · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Categorización · lámina del trabajo final, p. 8",
+        "title": "33. Categorización"
       },
       {
         "src": "/assets/capitolio-nacional/s-05-subdivision.webp",
-        "alt": "Capitolio Nacional · Subdivisión · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Subdivisión · lámina del trabajo final, p. 8",
+        "title": "34. Subdivisión"
       },
       {
         "src": "/assets/capitolio-nacional/s-06-vinculacion.webp",
-        "alt": "Capitolio Nacional · Vinculación · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Vinculación · lámina del trabajo final, p. 8",
+        "title": "35. Vinculación"
       },
       {
         "src": "/assets/capitolio-nacional/s-07-diferenciacion.webp",
-        "alt": "Capitolio Nacional · Diferenciación · lámina del trabajo final, p. 8"
+        "alt": "Capitolio Nacional · Diferenciación · lámina del trabajo final, p. 8",
+        "title": "36. Diferenciación"
       }
     ],
     "U": [
       {
         "src": "/assets/capitolio-nacional/u-01-funcion.webp",
-        "alt": "Capitolio Nacional · Función · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Función · lámina del trabajo final, p. 9",
+        "title": "37. Función"
       },
       {
         "src": "/assets/capitolio-nacional/u-02-actividad.webp",
-        "alt": "Capitolio Nacional · Actividad · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Actividad · lámina del trabajo final, p. 9",
+        "title": "38. Actividad"
       },
       {
         "src": "/assets/capitolio-nacional/u-03-usuarios.webp",
-        "alt": "Capitolio Nacional · Usuario, perfiles de usuario y distribución de actividad por jornada · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Usuario, perfiles de usuario y distribución de actividad por jornada · lámina del trabajo final, p. 9",
+        "title": "39. Usuario"
       },
       {
         "src": "/assets/capitolio-nacional/u-04-patrones.webp",
-        "alt": "Capitolio Nacional · Patrones de uso temporal · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Patrones de uso temporal · lámina del trabajo final, p. 9",
+        "title": "Patrones de uso temporal"
       },
       {
         "src": "/assets/capitolio-nacional/u-05-horarios.webp",
-        "alt": "Capitolio Nacional · Horarios y momentos clave · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Horarios y momentos clave · lámina del trabajo final, p. 9",
+        "title": "Horarios y momentos clave"
       },
       {
         "src": "/assets/capitolio-nacional/u-06-frecuencia.webp",
-        "alt": "Capitolio Nacional · Frecuencia de uso · lámina del trabajo final, p. 9"
+        "alt": "Capitolio Nacional · Frecuencia de uso · lámina del trabajo final, p. 9",
+        "title": "Frecuencia de uso"
       }
     ],
     "T": [
       {
         "src": "/assets/capitolio-nacional/t-01-materialidad.webp",
-        "alt": "Capitolio Nacional · Materialidad · lámina del trabajo final, p. 10"
+        "alt": "Capitolio Nacional · Materialidad · lámina del trabajo final, p. 10",
+        "title": "40. Materialidad"
       },
       {
         "src": "/assets/capitolio-nacional/t-02-soporte.webp",
-        "alt": "Capitolio Nacional · Sistemas de soporte · lámina del trabajo final, p. 10"
+        "alt": "Capitolio Nacional · Sistemas de soporte · lámina del trabajo final, p. 10",
+        "title": "41. Sistemas de soporte"
       },
       {
         "src": "/assets/capitolio-nacional/t-03-detalle.webp",
-        "alt": "Capitolio Nacional · Detalles constructivos · lámina del trabajo final, p. 10"
+        "alt": "Capitolio Nacional · Detalles constructivos · lámina del trabajo final, p. 10",
+        "title": "42. Detalles constructivos"
       }
     ]
   },
