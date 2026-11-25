@@ -1,0 +1,216 @@
+{
+  "exhibition_id": "5bab803f-bed9-4204-ac80-56f62ef28d99",
+  "author": "Juan José Giraldo Díaz y Juan José Aristizábal",
+  "analysisPanels": {
+    "C": [
+      {
+        "src": "/assets/red-house/c-01-historico.webp",
+        "title": "1. Histórico",
+        "alt": "The Red House · Histórico · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/red-house/c-02-ecologico.webp",
+        "title": "2. Ecológico-ambiental",
+        "alt": "The Red House · Ecológico-ambiental · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/red-house/c-03-sociodemografico.webp",
+        "title": "3. Sociodemográfico",
+        "alt": "The Red House · Sociodemográfico · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/red-house/c-04-antropologico.webp",
+        "title": "4. Antropológico-cultural",
+        "alt": "The Red House · Antropológico-cultural · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/red-house/c-05-juridico.webp",
+        "title": "5. Jurídico-político",
+        "alt": "The Red House · Jurídico-político · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/red-house/c-06-economico.webp",
+        "title": "6. Económico-productivo",
+        "alt": "The Red House · Económico-productivo · lámina del trabajo final, p. 2"
+      }
+    ],
+    "F": [
+      {
+        "src": "/assets/red-house/f-01-paramentacion.webp",
+        "title": "7. Paramentación",
+        "alt": "The Red House · Paramentación · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-02-tipologia.webp",
+        "title": "8. Tipología",
+        "alt": "The Red House · Tipología · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-03-nolli.webp",
+        "title": "9. Plano de Nolli",
+        "alt": "The Red House · Plano de Nolli · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-04-llenos.webp",
+        "title": "10. Plano de llenos",
+        "alt": "The Red House · Plano de llenos · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-05-vacios.webp",
+        "title": "11. Plano de vacíos",
+        "alt": "The Red House · Plano de vacíos · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-06-traza.webp",
+        "title": "12. Traza",
+        "alt": "The Red House · Traza · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-07-trama.webp",
+        "title": "13. Trama",
+        "alt": "The Red House · Trama · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-08-tejido.webp",
+        "title": "14. Tejido",
+        "alt": "The Red House · Tejido · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-09-borde.webp",
+        "title": "15. Borde",
+        "alt": "The Red House · Borde · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/red-house/f-10-limite.webp",
+        "title": "16. Límite",
+        "alt": "The Red House · Límite · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-11-tipo-edificatorio.webp",
+        "title": "17. Tipo edificatorio",
+        "alt": "The Red House · Tipo edificatorio · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-12-elementos.webp",
+        "title": "18. Elementos o partes",
+        "alt": "The Red House · Elementos o partes · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-13-relaciones-formales.webp",
+        "title": "19. Relaciones formales",
+        "alt": "The Red House · Relaciones formales · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-14-aula.webp",
+        "title": "20. Aula",
+        "alt": "The Red House · Aula · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-15-portico.webp",
+        "title": "21. Pórtico",
+        "alt": "The Red House · Pórtico · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-16-recinto.webp",
+        "title": "22. Recinto",
+        "alt": "The Red House · Recinto · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/red-house/f-17-aproximacion.webp",
+        "title": "23. Aproximación al edificio",
+        "alt": "The Red House · Aproximación al edificio · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-18-masa.webp",
+        "title": "24. Masa",
+        "alt": "The Red House · Masa · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-19-repetitivos.webp",
+        "title": "25. Espacios repetitivos",
+        "alt": "The Red House · Espacios repetitivos · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-20-singulares.webp",
+        "title": "26. Espacios singulares",
+        "alt": "The Red House · Espacios singulares · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-21-simetria.webp",
+        "title": "27. Simetría (equilibrio)",
+        "alt": "The Red House · Simetría (equilibrio) · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-22-jerarquia.webp",
+        "title": "28. Jerarquía",
+        "alt": "The Red House · Jerarquía · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/f-23-geometria.webp",
+        "title": "29. Geometría",
+        "alt": "The Red House · Geometría · lámina del trabajo final, p. 5"
+      }
+    ],
+    "S": [
+      {
+        "src": "/assets/red-house/s-01-nocion.webp",
+        "title": "30. Noción",
+        "alt": "The Red House · Noción · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/s-02-caracterizacion.webp",
+        "title": "31. Caracterización",
+        "alt": "The Red House · Caracterización · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/s-03-ejemplificacion.webp",
+        "title": "32. Ejemplificación",
+        "alt": "The Red House · Ejemplificación · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/s-04-categorizacion.webp",
+        "title": "33. Categorización",
+        "alt": "The Red House · Categorización · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/red-house/s-05-subdivision.webp",
+        "title": "34. Subdivisión",
+        "alt": "The Red House · Subdivisión · lámina del trabajo final, p. 5"
+      }
+    ],
+    "U": [
+      {
+        "src": "/assets/red-house/u-01-funcion.webp",
+        "title": "37. Función",
+        "alt": "The Red House · Función · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/red-house/u-02-actividad.webp",
+        "title": "38. Actividad",
+        "alt": "The Red House · Actividad · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/red-house/u-03-usuarios.webp",
+        "title": "39. Usuario",
+        "alt": "The Red House · Usuario · lámina del trabajo final, p. 6"
+      }
+    ],
+    "T": [
+      {
+        "src": "/assets/red-house/t-01-materialidad.webp",
+        "title": "40. Materialidad",
+        "alt": "The Red House · Materialidad · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/red-house/t-02-soporte.webp",
+        "title": "41. Sistemas de soporte",
+        "alt": "The Red House · Sistemas de soporte · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/red-house/t-03-detalle.webp",
+        "title": "42. Detalles constructivos",
+        "alt": "The Red House · Detalles constructivos · lámina del trabajo final, p. 6"
+      }
+    ]
+  }
+}
