@@ -87,7 +87,10 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
     button.onclick = () => {
       heading.textContent = name;
       content.replaceChildren();
-      if (!points.length && container.showChronicle) container.showChronicle(content);
+      if (!points.length) {
+        if (container.showChronicle) container.showChronicle(content);
+        else content.textContent = 'Aún no hay documentos en esta crónica.';
+      }
       let shown = 0;
       for (const panel of container.analysisPanels?.[initial] || []) {
         const figure = document.createElement('figure');

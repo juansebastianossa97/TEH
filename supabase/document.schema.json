@@ -45,6 +45,36 @@
         "label",
         "provider"
       ]
+    },
+    "chronicle": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "assetId",
+          "name",
+          "mime"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "assetId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "mime": {
+            "enum": [
+              "application/pdf",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            ]
+          }
+        }
+      }
     }
   },
   "required": [

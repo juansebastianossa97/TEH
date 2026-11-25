@@ -59,3 +59,12 @@ Referencias: https://supabase.com/docs/guides/auth/redirect-urls y https://supab
 3. Verificar móvil real: el override del navegador no aplicó el ancho solicitado; no se declara validada esa vista.
 4. Prueba del mapa con una publicación real aprobada y su retirada. La base pública está vacía intencionadamente.
 5. Para producción, preparar rutas, URL de autenticación, empaquetado y verificación final en staging. No es necesario rehacer el modelo de bloques. Ninguna de estas páginas está publicada en Vercel.
+
+
+## Documentos de crónica
+
+En **Análisis arquitectónico → Crónica** se pueden soltar o seleccionar hasta cinco PDF o Word `.docx`, de hasta 25 MiB cada uno. Los `.doc` antiguos deben guardarse como `.docx` o PDF. Cada archivo permite abrir una vista previa y quitarlo de la propuesta. Los PDF se muestran mediante el visor del navegador, con un enlace alternativo para abrir o descargar. Los Word se convierten a una vista de lectura con imágenes, párrafos y tablas. La disposición exacta del Word se conserva en el archivo descargable.
+
+Los binarios se guardan en IndexedDB y se incluyen en el respaldo ZIP existente. Exportar solamente JSON conserva las referencias, por lo que el respaldo completo de archivos se realiza con ZIP. Guardar en la nube o enviar a revisión sube los documentos a Storage y los vincula con la revisión. El acceso utiliza las mismas políticas de propietario, administrador y publicación aprobada que las imágenes. Los documentos de aportes aprobados se consultan desde **Cr** en el destino correspondiente.
+
+La migración `chronicle_documents` habilita los tipos de archivo y valida las referencias en las revisiones y publicaciones. Las pruebas `tests/chronicle.test.js` cubren carga, recuperación ZIP, arrastre, eliminación, asociación al lugar y visualización PDF/Word con DOM simulado. La comprobación final con una sesión real y los visores PDF de Safari/Chrome móvil se hace en el entorno desplegado.

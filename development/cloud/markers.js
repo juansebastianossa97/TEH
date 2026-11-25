@@ -1,8 +1,9 @@
 import {attachCuratedMedia} from './curated-media.js';
+import {renderChronicle} from '../tools/chronicle.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
-import {publishedAnswers} from './analysis-contributions.js';
+import {publishedAnswers, publishedChronicle} from './analysis-contributions.js';
 import {combinePublications} from './static-publications.js';
-import {supabase,checked} from './client.js';
+import {supabase,checked,chronicleURL} from './client.js';
 import {loadDraft} from '../blocks/model.js';
 
 import {renderDocument} from '../blocks/render.js';
@@ -129,7 +130,10 @@ export function mountPublications(getMap) {
       if(last===signature) return;
       for (const section of chapters.querySelectorAll(':scope > section[id]:not([id^="ex-"])')) {
         const tiles = section.querySelector('.analysis-tiles');
-        if (tiles) tiles.analysisAnswers = publishedAnswers(section.id, {}, remote);
+        if (tiles) {
+          tiles.analysisAnswers = publishedAnswers(section.id, {}, remote);
+          tiles.showChronicle = content => renderChronicle(publishedChronicle(section.id, remote), content, chronicleURL);
+        }
       }
       for(const item of mounted){item.marker?.remove();item.tab.remove();item.section.remove();item.fallback.remove();}
       mounted=[];
@@ -139,6 +143,7 @@ export function mountPublications(getMap) {
         const number=String(originals+i+1).padStart(2,'0');
         const section=chapter(row,number,id);
         section.querySelector('.analysis-tiles').analysisAnswers = publishedAnswers(row.exhibition_id, doc.analysis, remote);
+        section.querySelector('.analysis-tiles').showChronicle = content => renderChronicle(publishedChronicle(row.exhibition_id, remote), content, chronicleURL);
         attachCuratedMedia(section.querySelector('.analysis-tiles'), row);
         chapters.append(section);
         const tab=node('a','chapter-tab');

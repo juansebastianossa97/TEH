@@ -61,7 +61,7 @@ export async function uploadAssets(doc,onProgress=()=>{}){
  const existing=new Set(uploaded.map(row=>row.id));
  for(const [index,id] of ids.entries()){
   if(existing.has(id))continue;
-  onProgress(`Subiendo imagen ${index+1} de ${ids.length}…`);const record=await getAsset(id);if(!record)throw Error('Falta una imagen local: restaura el ZIP antes de guardar.');
+  onProgress(`Subiendo archivo ${index+1} de ${ids.length}…`);const record=await getAsset(id);if(!record)throw Error('Falta una imagen local: restaura el ZIP antes de guardar.');
   if(await hashBlob(record.blob)!==id)throw Error('La imagen local no coincide con su identificador.');
   const path=`${user.user.id}/${id}`;
   for(const [variant,blob] of [['full',record.blob],['thumb',record.thumbnail]]){
@@ -76,7 +76,7 @@ export async function hydrate(doc,revisionId,onProgress=()=>{}){
  const refs=await checked(supabase.from('atlas_revision_media').select('asset_id,owner_id').eq('revision_id',revisionId));
  const records=[];for(const [index,id] of assetReferences(doc).entries()){
   if(await getAsset(id))continue;const ref=refs.find(r=>r.asset_id===id);if(!ref)throw Error('Falta una referencia de imagen.');
-  onProgress(`Recuperando imagen ${index+1}…`);
+  onProgress(`Recuperando archivo ${index+1}…`);
   const metadata=await checked(supabase.from('atlas_media').select('*').eq('owner_id',ref.owner_id).eq('id',id).single());
   const path=`${ref.owner_id}/${id}`;const [blob,thumbnail]=await Promise.all(['full','thumb'].map(v=>checked(supabase.storage.from(BUCKET).download(`${path}/${v}`))));
   if(await hashBlob(blob)!==id)throw Error('La imagen almacenada no supera la verificación de integridad.');
@@ -91,4 +91,10 @@ export async function saveCloud(doc,current,metadata,onProgress){
  await uploadAssets(doc,onProgress);
  if(!current)current=await command('create');
  return command('save',{id:current.id,expected_version:current.lock_version,document:doc,...metadata});
+}
+
+export async function chronicleURL(file) {
+ const ref = await checked(supabase.from('atlas_revision_media').select('owner_id').eq('revision_id',file.revisionId).eq('asset_id',file.assetId).single());
+ const {signedUrl} = await checked(supabase.storage.from(BUCKET).createSignedUrl(`${ref.owner_id}/${file.assetId}/full`,3600));
+ return signedUrl;
 }

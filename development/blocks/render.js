@@ -1,3 +1,4 @@
+import {renderChronicle} from '../tools/chronicle.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
 import {renderRich} from '../tools/rich-content.js';
 import {resolveAsset} from '../tools/assets.js';
@@ -73,9 +74,8 @@ export function renderDocument(doc,root){
   return fig}
  function openImage(item,opener){const dialog=el('dialog','block-viewer'),header=el('div','viewer-toolbar'),close=el('button','','Cerrar ×'),image=el('img');header.append(el('h2','',item.title || item.caption || 'Imagen ampliada'),close);if(item.assetId)resolveAsset(item.assetId).then(url=>{if(image.isConnected)image.src=url}).catch(()=>{image.alt='Imagen local ausente: importa la copia ZIP'});else image.src=item.src;image.alt=item.alt;dialog.append(header,image);document.body.append(dialog);close.addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{dialog.remove();opener.focus()});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});dialog.showModal()}
  if (!doc.analysisTarget) doc.blocks.forEach(block=>root.append(draw(block)));
- if(doc.analysis || doc.analysisTarget) {
-   const tiles=el('div','analysis-tiles');
-   root.append(tiles);
-   mountAnalysis(tiles,doc.analysis);
- }
+ const tiles=el('div','analysis-tiles');
+ root.append(tiles);
+ mountAnalysis(tiles,doc.analysis);
+ tiles.showChronicle = content => renderChronicle(doc.chronicle, content);
 }
