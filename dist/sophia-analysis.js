@@ -118,7 +118,8 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         const number = start + index;
         const answer = container.analysisAnswers?.[number];
         const body = typeof answer === 'string' && answer.trim() ? answer : sophia ? example : '';
-        if (!body) return;
+        const picture = container.analysisImages?.[number];
+        if (!body && !picture) return;
         shown++;
         if (number === 7 || number === 17) {
           const group = document.createElement('h3');
@@ -127,9 +128,33 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         }
         const title = document.createElement('h4');
         title.textContent = number + '. ' + label;
-        const paragraph = document.createElement('p');
-        paragraph.textContent = body;
-        content.append(title, paragraph);
+        content.append(title);
+        // Contributed image under its numbered subtitle, as in the curated plates.
+        if (picture && container.resolveAnalysisImage) {
+          const figure = document.createElement('figure');
+          figure.style.margin = '0 0 16px';
+          const image = document.createElement('img');
+          image.alt = picture.alt || number + '. ' + label;
+          image.loading = 'lazy';
+          image.style.cssText = 'display:block;width:100%;height:auto;max-width:none;max-height:none';
+          const link = document.createElement('a');
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = 'Ampliar lámina ↗';
+          link.hidden = true;
+          figure.append(image, link);
+          content.append(figure);
+          Promise.resolve(container.resolveAnalysisImage(picture)).then(url => {
+            image.src = url;
+            link.href = url;
+            link.hidden = false;
+          }).catch(() => { image.alt = 'Imagen no disponible · ' + image.alt; });
+        }
+        if (body) {
+          const paragraph = document.createElement('p');
+          paragraph.textContent = body;
+          content.append(paragraph);
+        }
         if (sophia && plate) {
           const image = document.createElement('img');
           image.src = '/assets/sophia-' + plate + '.svg';

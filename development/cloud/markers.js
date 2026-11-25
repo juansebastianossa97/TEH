@@ -1,7 +1,7 @@
 import {attachCuratedMedia} from './curated-media.js';
-import {renderChronicle} from '../tools/chronicle.js';
+import {renderChronicle, renderChronicleText} from '../tools/chronicle.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
-import {publishedAnswers, publishedChronicle} from './analysis-contributions.js';
+import {publishedAnswers, publishedChronicle, publishedImages, publishedChronicleTexts} from './analysis-contributions.js';
 import {combinePublications} from './static-publications.js';
 import {supabase,checked,chronicleURL} from './client.js';
 import {loadDraft} from '../blocks/model.js';
@@ -132,7 +132,9 @@ export function mountPublications(getMap) {
         const tiles = section.querySelector('.analysis-tiles');
         if (tiles) {
           tiles.analysisAnswers = publishedAnswers(section.id, {}, remote);
-          tiles.showChronicle = content => renderChronicle(publishedChronicle(section.id, remote), content, chronicleURL);
+          tiles.showChronicle = content => { renderChronicleText(publishedChronicleTexts(section.id, remote), content); renderChronicle(publishedChronicle(section.id, remote), content, chronicleURL); };
+          tiles.analysisImages = publishedImages(section.id, null, remote);
+          tiles.resolveAnalysisImage = chronicleURL;
         }
       }
       for(const item of mounted){item.marker?.remove();item.tab.remove();item.section.remove();item.fallback.remove();}
@@ -143,7 +145,9 @@ export function mountPublications(getMap) {
         const number=String(originals+i+1).padStart(2,'0');
         const section=chapter(row,number,id);
         section.querySelector('.analysis-tiles').analysisAnswers = publishedAnswers(row.exhibition_id, doc.analysis, remote);
-        section.querySelector('.analysis-tiles').showChronicle = content => renderChronicle(publishedChronicle(row.exhibition_id, remote), content, chronicleURL);
+        section.querySelector('.analysis-tiles').showChronicle = content => { renderChronicleText(publishedChronicleTexts(row.exhibition_id, remote), content); renderChronicle(publishedChronicle(row.exhibition_id, remote), content, chronicleURL); };
+        section.querySelector('.analysis-tiles').analysisImages = publishedImages(row.exhibition_id, {images:doc.analysisImages, revisionId:row.revision_id}, remote);
+        section.querySelector('.analysis-tiles').resolveAnalysisImage = chronicleURL;
         attachCuratedMedia(section.querySelector('.analysis-tiles'), row);
         chapters.append(section);
         const tab=node('a','chapter-tab');

@@ -12,6 +12,14 @@ export function safeURL(value) {
   if (/^\/assets\/[a-zA-Z0-9_./-]+(?:\?v=\d+)?$/.test(value) && !value.includes('..')) return true;
   try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password; } catch { return false; }
 }
+// One uploaded image per analysis point (1–42). No URLs: only immutable uploaded assets.
+export function validAnalysisImages(images) {
+  return Boolean(images) && typeof images === 'object' && !Array.isArray(images) &&
+    Object.entries(images).every(([key,image]) => /^(?:[1-9]|[1-3][0-9]|4[0-2])$/.test(key) &&
+      image && typeof image === 'object' && !Array.isArray(image) && /^[a-f0-9]{64}$/.test(image.assetId) &&
+      typeof image.alt === 'string' && image.alt.length <= 1000 &&
+      Object.keys(image).every(name => ['assetId','alt'].includes(name)));
+}
 export function validateDocument(doc) {
   const errors=[]; const ids=new Set(); let total=0;
   const text=(v,label,max=12000)=>{if(typeof v!=='string'||v.length>max)errors.push(`${label}: texto no válido`)};
@@ -21,6 +29,8 @@ export function validateDocument(doc) {
   if(doc.chronicle !== undefined && !validChronicle(doc.chronicle)) errors.push('Documentos de crónica no válidos');
   if(doc.analysis !== undefined && (!doc.analysis || typeof doc.analysis !== 'object' || Array.isArray(doc.analysis) ||
     Object.entries(doc.analysis).some(([key,value]) => !/^(?:[1-9]|[1-3][0-9]|4[0-2])$/.test(key) || typeof value !== 'string' || value.length > 12000))) errors.push('Análisis arquitectónico no válido');
+  if(doc.chronicleText !== undefined && (typeof doc.chronicleText !== 'string' || doc.chronicleText.length > 40000)) errors.push('Crónica escrita no válida');
+  if(doc.analysisImages !== undefined && !validAnalysisImages(doc.analysisImages)) errors.push('Imágenes del análisis no válidas');
   if(JSON.stringify(doc).length>MAX_BYTES)errors.push('Documento demasiado grande');
   if(doc.schemaVersion!==SCHEMA_VERSION)errors.push('Versión de documento no compatible');
   text(doc.title,'Nombre',200);if(doc.location!==undefined&&!validLocation(doc.location))errors.push('Ubicación no válida');

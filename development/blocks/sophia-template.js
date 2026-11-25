@@ -18,6 +18,6 @@ export function isSophiaDocument(doc) {
 }
 
 export function checkSophiaSubmission(doc) {
-  if (doc.analysisTarget && !doc.chronicle?.length && !Object.values(doc.analysis || {}).some(value => typeof value === 'string' && value.trim())) throw Error('Completa al menos un punto o añade un documento de crónica para enviar el aporte.');
+  if (doc.analysisTarget && !doc.chronicle?.length && !Object.keys(doc.analysisImages || {}).length && !doc.chronicleText?.trim() && !Object.values(doc.analysis || {}).some(value => typeof value === 'string' && value.trim())) throw Error('Completa al menos un punto, añade una imagen o escribe o adjunta una crónica para enviar el aporte.');
   if (!isSophiaDocument(doc)) throw Error('Usa la plantilla de Santa Sofía: portada, análisis con tres láminas y línea de tiempo.');
 }

@@ -56,7 +56,9 @@ function templateSlots(node,b){
   }});
  }
 }
-function renderCanvas(){renderDocument(doc,$('#preview'));for(const node of $('#preview').querySelectorAll('[data-block-id]')){const block=findBlock(doc.blocks,node.dataset.blockId);const button=element('button');button.textContent='✎ Editar '+labels[block.type].toLowerCase();if(isSophiaDocument(doc)&&['hero','plates'].includes(block.type)){templateSlots(node,block)}else if(node.dataset.empty){const hint=element('span',labels[block.type]+' vacío · pulsa Editar para empezar');hint.className='empty-block-hint';node.append(hint)}button.className='edit-block-button';button.type='button';button.addEventListener('click',()=>selectBlock(block.id,false));node.append(button)}markSelection()}
+function renderCanvas(){renderDocument(doc,$('#preview'));for(const node of $('#preview').querySelectorAll('[data-block-id]')){const block=findBlock(doc.blocks,node.dataset.blockId);const button=element('button');button.textContent='✎ Editar '+labels[block.type].toLowerCase();if(isSophiaDocument(doc)&&['hero','plates'].includes(block.type)){templateSlots(node,block)}else if(node.dataset.empty){const hint=element('span',labels[block.type]+' vacío · pulsa Editar para empezar');hint.className='empty-block-hint';node.append(hint)}button.className='edit-block-button';button.type='button';button.addEventListener('click',()=>selectBlock(block.id,false));node.append(button)}editableTiles();markSelection()}
+// In the editor, C·F·S·U·T·Cr open that category to write or add images; Preview keeps the reader view.
+function editableTiles(){for(const tile of $('#preview').querySelectorAll('.analysis-tiles > button'))tile.addEventListener('click',event=>{if(document.body.classList.contains('preview-mode'))return;event.stopImmediatePropagation();editAnalysis(doc,changed,tile.querySelector('strong').textContent)},{capture:true});for(const tiles of $('#preview').querySelectorAll('.analysis-tiles'))tiles.title='Pulsa una letra para escribir o añadir imágenes'}
 enableImageDrag($('#preview'),{
  getBlock:id=>isSophiaDocument(doc)?null:findBlock(doc.blocks,id),
  commit:id=>{changed();selectBlock(id,false)},

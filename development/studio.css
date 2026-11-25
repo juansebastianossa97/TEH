@@ -39,3 +39,9 @@ body.analysis-only #outline-panel, body.analysis-only #settings-panel, body.anal
 body.analysis-only #inspector-toggle, body.analysis-only #location, body.analysis-only #preview .block,
 body.analysis-only #preview .edit-block-button { display:none }
 body.analysis-only #editor-workspace { grid-template-columns:minmax(0,1fr) }
+.analysis-image-field { display:grid; gap:.45rem; margin:-.2rem 0 1.2rem; padding:.7rem; border:1px dashed #95a399 }
+.analysis-image-pick { display:block; font-size:.85rem; cursor:pointer }
+.analysis-image-pick input { display:block; margin-top:.35rem; font-size:.8rem }
+.analysis-image-field img[src] { display:block; max-width:100%; max-height:220px; object-fit:contain; background:#fff }
+.analysis-image-field button { justify-self:start }
+.analysis-image-field p:empty { display:none }

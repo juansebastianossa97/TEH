@@ -1,4 +1,4 @@
-import {renderChronicle} from '../tools/chronicle.js';
+import {renderChronicle, renderChronicleText} from '../tools/chronicle.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
 import {renderRich} from '../tools/rich-content.js';
 import {resolveAsset} from '../tools/assets.js';
@@ -77,5 +77,7 @@ export function renderDocument(doc,root){
  const tiles=el('div','analysis-tiles');
  root.append(tiles);
  mountAnalysis(tiles,doc.analysis);
- tiles.showChronicle = content => renderChronicle(doc.chronicle, content);
+ tiles.showChronicle = content => { renderChronicleText([doc.chronicleText], content); renderChronicle(doc.chronicle, content); };
+ tiles.analysisImages = doc.analysisImages || {};
+ tiles.resolveAnalysisImage = image => resolveAsset(image.assetId);
 }

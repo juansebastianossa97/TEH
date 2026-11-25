@@ -5,6 +5,21 @@ export const PDF = 'application/pdf';
 export const DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 export const DOCUMENT_TYPES = [PDF, DOCX];
 export const MAX_DOCUMENTS = 5;
+export const MAX_CHRONICLE_TEXT = 40000;
+
+// Written chronicles are shown as plain paragraphs before the attached documents.
+export function renderChronicleText(texts, root) {
+  for (const text of texts.filter(value => typeof value === 'string' && value.trim())) {
+    const section = document.createElement('section');
+    section.className = 'chronicle-document chronicle-text';
+    for (const part of text.split(/\n\s*\n/).map(value => value.trim()).filter(Boolean)) {
+      const paragraph = document.createElement('p');
+      paragraph.textContent = part;
+      section.append(paragraph);
+    }
+    root.append(section);
+  }
+}
 
 export function validChronicle(files) {
   return Array.isArray(files) && files.length <= MAX_DOCUMENTS && files.every(file =>
@@ -42,6 +57,7 @@ export async function importChronicle(file) {
 
 export function renderChronicle(files, root, resolve = file => resolveAsset(file.assetId)) {
   if (!files?.length) {
+    if (root.querySelector('.chronicle-text')) return;
     const empty = document.createElement('p');
     empty.textContent = 'Aún no hay documentos en esta crónica.';
     root.append(empty);
