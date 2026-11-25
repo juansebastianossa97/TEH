@@ -1,0 +1,247 @@
+{
+  "exhibition_id": "ee7a78c2-62fc-4c24-8756-514ad5c72130",
+  "author": "Santiago Ramírez Ospina y Thomas García Chica",
+  "description": "El Pabellón de la Secesión, en Viena, fue diseñado por el arquitecto Joseph Maria Olbrich tras la fundación de la Secesión en 1897 y se inauguró en 1898 como el primer espacio dedicado al arte moderno en la ciudad. El trabajo lo lee como un pabellón expositivo exento, de composición centralizada: prismas rectangulares de distintas alturas y un volumen central coronado por una cúpula calada de hojas de laurel doradas.\n\nSu línea de tiempo recoge los graves daños y la destrucción de la cúpula durante la Segunda Guerra Mundial (1945), la reconstrucción de 1963–1964, la renovación de 1985–1986, que creó una sala subterránea para el Friso de Beethoven, y la restauración integral de 2017–2018, con el re-dorado de la cúpula.",
+  "analysisPanels": {
+    "C": [
+      {
+        "src": "/assets/pabellon-secesion/c-01-linea-tiempo.webp",
+        "title": "1. Histórico: línea de tiempo",
+        "alt": "Pabellón de la Secesión · Histórico: línea de tiempo · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/pabellon-secesion/c-02-ecologico.webp",
+        "title": "2. Ecológico-ambiental",
+        "alt": "Pabellón de la Secesión · Ecológico-ambiental · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/pabellon-secesion/c-03-sociodemografico.webp",
+        "title": "3. Sociodemográfico",
+        "alt": "Pabellón de la Secesión · Sociodemográfico · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/pabellon-secesion/c-04-antropologico.webp",
+        "title": "4. Antropológico-cultural",
+        "alt": "Pabellón de la Secesión · Antropológico-cultural · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/pabellon-secesion/c-05-juridico.webp",
+        "title": "5. Jurídico-político",
+        "alt": "Pabellón de la Secesión · Jurídico-político · lámina del trabajo final, p. 2"
+      },
+      {
+        "src": "/assets/pabellon-secesion/c-06-economico.webp",
+        "title": "6. Económico-productivo",
+        "alt": "Pabellón de la Secesión · Económico-productivo · lámina del trabajo final, p. 2"
+      }
+    ],
+    "F": [
+      {
+        "src": "/assets/pabellon-secesion/f-01-paramentacion.webp",
+        "title": "7. Paramentación",
+        "alt": "Pabellón de la Secesión · Paramentación · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-02-tipologia.webp",
+        "title": "8. Tipología",
+        "alt": "Pabellón de la Secesión · Tipología · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-03-nolli.webp",
+        "title": "9. Plano de Nolli",
+        "alt": "Pabellón de la Secesión · Plano de Nolli · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-04-llenos.webp",
+        "title": "10. Plano de llenos",
+        "alt": "Pabellón de la Secesión · Plano de llenos · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-05-vacios.webp",
+        "title": "11. Plano de vacíos",
+        "alt": "Pabellón de la Secesión · Plano de vacíos · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-06-traza.webp",
+        "title": "12. Traza",
+        "alt": "Pabellón de la Secesión · Traza · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-07-trama.webp",
+        "title": "13. Trama",
+        "alt": "Pabellón de la Secesión · Trama · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-08-tejido.webp",
+        "title": "14. Tejido",
+        "alt": "Pabellón de la Secesión · Tejido · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-09-borde.webp",
+        "title": "15. Borde",
+        "alt": "Pabellón de la Secesión · Borde · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-10-limite.webp",
+        "title": "16. Límite",
+        "alt": "Pabellón de la Secesión · Límite · lámina del trabajo final, p. 3"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-11-tipo-edificatorio.webp",
+        "title": "17. Tipo edificatorio",
+        "alt": "Pabellón de la Secesión · Tipo edificatorio · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-12-elementos.webp",
+        "title": "18. Elementos o partes",
+        "alt": "Pabellón de la Secesión · Elementos o partes · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-13-relaciones-formales.webp",
+        "title": "19. Relaciones formales",
+        "alt": "Pabellón de la Secesión · Relaciones formales · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-14-aula.webp",
+        "title": "20. Aula",
+        "alt": "Pabellón de la Secesión · Aula · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-15-portico-recinto.webp",
+        "title": "21. Pórtico · 22. Recinto",
+        "alt": "Pabellón de la Secesión · Pórtico · 22. Recinto · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-16-aproximacion.webp",
+        "title": "23. Aproximación al edificio",
+        "alt": "Pabellón de la Secesión · Aproximación al edificio · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-17-masa.webp",
+        "title": "24. Masa",
+        "alt": "Pabellón de la Secesión · Masa · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-18-repetitivos.webp",
+        "title": "25. Espacios repetitivos",
+        "alt": "Pabellón de la Secesión · Espacios repetitivos · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-19-singulares.webp",
+        "title": "26. Espacios singulares",
+        "alt": "Pabellón de la Secesión · Espacios singulares · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-20-simetria.webp",
+        "title": "27. Simetría (equilibrio)",
+        "alt": "Pabellón de la Secesión · Simetría (equilibrio) · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-21-jerarquia.webp",
+        "title": "28. Jerarquía",
+        "alt": "Pabellón de la Secesión · Jerarquía · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/pabellon-secesion/f-22-geometria.webp",
+        "title": "29. Geometría",
+        "alt": "Pabellón de la Secesión · Geometría · lámina del trabajo final, p. 4"
+      }
+    ],
+    "S": [
+      {
+        "src": "/assets/pabellon-secesion/s-01-nocion.webp",
+        "title": "30. Noción",
+        "alt": "Pabellón de la Secesión · Noción · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-02-caracterizacion.webp",
+        "title": "31. Caracterización",
+        "alt": "Pabellón de la Secesión · Caracterización · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-03-ejemplificacion.webp",
+        "title": "32. Ejemplificación",
+        "alt": "Pabellón de la Secesión · Ejemplificación · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-04-categorizacion.webp",
+        "title": "33. Categorización",
+        "alt": "Pabellón de la Secesión · Categorización · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-05-subdivision.webp",
+        "title": "34. Subdivisión",
+        "alt": "Pabellón de la Secesión · Subdivisión · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-06-vinculacion.webp",
+        "title": "35. Vinculación",
+        "alt": "Pabellón de la Secesión · Vinculación · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/pabellon-secesion/s-07-diferenciacion.webp",
+        "title": "36. Diferenciación",
+        "alt": "Pabellón de la Secesión · Diferenciación · lámina del trabajo final, p. 5"
+      }
+    ],
+    "U": [
+      {
+        "src": "/assets/pabellon-secesion/u-01-funcion.webp",
+        "title": "37. Función",
+        "alt": "Pabellón de la Secesión · Función · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/pabellon-secesion/u-02-actividad.webp",
+        "title": "38. Actividad",
+        "alt": "Pabellón de la Secesión · Actividad · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/pabellon-secesion/u-03-usuarios.webp",
+        "title": "39. Usuario",
+        "alt": "Pabellón de la Secesión · Usuario · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/pabellon-secesion/u-04-horarios.webp",
+        "title": "Horarios y momentos clave",
+        "alt": "Pabellón de la Secesión · Horarios y momentos clave · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/pabellon-secesion/u-05-frecuencia.webp",
+        "title": "Frecuencia de uso",
+        "alt": "Pabellón de la Secesión · Frecuencia de uso · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/pabellon-secesion/u-06-patrones.webp",
+        "title": "Afluencia diaria y patrones de uso temporal",
+        "alt": "Pabellón de la Secesión · Afluencia diaria y patrones de uso temporal · lámina del trabajo final, p. 6"
+      }
+    ],
+    "T": [
+      {
+        "src": "/assets/pabellon-secesion/t-01-materialidad.webp",
+        "title": "40. Materialidad",
+        "alt": "Pabellón de la Secesión · Materialidad · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/pabellon-secesion/t-02-soporte.webp",
+        "title": "41. Sistemas de soporte",
+        "alt": "Pabellón de la Secesión · Sistemas de soporte · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/pabellon-secesion/t-03-detalle.webp",
+        "title": "42. Detalles constructivos",
+        "alt": "Pabellón de la Secesión · Detalles constructivos · lámina del trabajo final, p. 7"
+      }
+    ]
+  },
+  "chronicleFiles": [
+    {
+      "src": "/assets/pabellon-secesion/cronica-thomas.pdf",
+      "name": "El día en que todo comenzó a moverse · Thomas García Chica"
+    },
+    {
+      "src": "/assets/pabellon-secesion/cronica-santiago.pdf",
+      "name": "La incertidumbre de no saber · Santiago Ramírez Ospina"
+    }
+  ]
+}

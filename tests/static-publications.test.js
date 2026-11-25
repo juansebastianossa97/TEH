@@ -4,7 +4,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {JSDOM} from 'jsdom';
-import {staticPublications,findStaticPublication,combinePublications} from '../development/cloud/static-publications.js';
+import {staticPublications,findStaticPublication,combinePublications,withSupplement} from '../development/cloud/static-publications.js';
 import {validateDocument} from '../development/blocks/model.js';
 import {renderDocument} from '../development/blocks/render.js';
 
@@ -80,4 +80,20 @@ test('Capitolio Nacional: 42 puntos válidos, láminas por categoría y dos cró
  assert.deepEqual(validateDocument(row.document),[]);
  for(const key of Object.keys(row.document.analysis))assert.ok(Number(key)>=1&&Number(key)<=42);
  for(const file of [...Object.values(row.analysisPanels).flat(),...row.chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
+});
+
+test('Pabellón de la Secesión: la exposición de Supabase conserva su documento y suma láminas de los 42 puntos y dos crónicas', ()=>{
+ const id='ee7a78c2-62fc-4c24-8756-514ad5c72130';
+ const remote={exhibition_id:id,description:'',document:{title:'Pabellón de la secesión'}};
+ const rows=combinePublications([remote]);
+ assert.equal(rows[0].exhibition_id,id);
+ assert.equal(rows[0].document,remote.document);
+ assert.match(rows[0].description,/Joseph Maria Olbrich/);
+ assert.equal(withSupplement({...remote,description:'Texto propio'}).description,'Texto propio');
+ assert.deepEqual(Object.keys(rows[0].analysisPanels),['C','F','S','U','T']);
+ const numbers=Object.values(rows[0].analysisPanels).flat().flatMap(p=>[...p.title.matchAll(/(\d+)\. /g)].map(m=>Number(m[1])));
+ assert.deepEqual([...new Set(numbers)].sort((a,b)=>a-b),Array.from({length:42},(_,i)=>i+1));
+ assert.equal(rows[0].chronicleFiles.length,2);
+ for(const file of [...Object.values(rows[0].analysisPanels).flat(),...rows[0].chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
+ assert.equal(withSupplement({exhibition_id:'otra'}).analysisPanels,undefined);
 });
