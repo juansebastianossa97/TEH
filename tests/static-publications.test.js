@@ -87,7 +87,7 @@ test('Pabellón de la Secesión: la exposición de Supabase conserva su document
  const remote={exhibition_id:id,description:'',document:{title:'Pabellón de la secesión'}};
  const rows=combinePublications([remote]);
  assert.equal(rows[0].exhibition_id,id);
- assert.equal(rows[0].document,remote.document);
+ assert.equal(rows[0].document.title,'Pabellón de la Secesión');
  assert.match(rows[0].description,/Joseph Maria Olbrich/);
  assert.equal(withSupplement({...remote,description:'Texto propio'}).description,'Texto propio');
  assert.deepEqual(Object.keys(rows[0].analysisPanels),['C','F','S','U','T']);

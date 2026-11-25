@@ -4,6 +4,7 @@ Estado: complementa la exposición 02 que vive en Supabase (`exhibition_id` `ee7
 
 La fila remota conserva su documento, sus imágenes (1897 y 2007) y su posición en el recorrido. El complemento solo aporta:
 
+- `title`: el nombre se muestra como «Pabellón de la Secesión» (en Supabase sigue como «Pabellón de la secesión»).
 - `description`: texto para la pestaña principal, tomado del trabajo final. Se usa solo si la fila de Supabase no tiene descripción propia.
 - `analysisPanels`: láminas del trabajo final, si la fila no trae las suyas.
 - `chronicleFiles`: las dos crónicas en PDF, que se suman a las que tenga la fila.
