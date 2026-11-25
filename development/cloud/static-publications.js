@@ -22,6 +22,7 @@ export function withSupplement(row) {
   if (!extra) return row;
   return {
     ...row,
+    document: extra.title ? {...row.document, title: extra.title} : row.document,
     author: extra.author || row.author,
     description: row.description?.trim() ? row.description : (extra.description ?? row.description),
     analysisPanels: row.analysisPanels || extra.analysisPanels,

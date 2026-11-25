@@ -5,6 +5,7 @@ Estado: complementa la exposición 03 que vive en Supabase (`exhibition_id` `5ba
 El complemento aporta:
 
 - `author`: «Juan José Giraldo Díaz y Juan José Aristizábal», según la portada del trabajo final (Teoría e Historia III). Sustituye en el sitio al autor guardado en Supabase.
+- `title`: el nombre se muestra como «The Red House», con el mismo formato que las demás exposiciones (en Supabase sigue como «THE RED HOUSE»).
 - `analysisPanels`: 40 láminas del trabajo final (C 6, F 23, S 5, U 3, T 3), cada una con su subtítulo numerado, recortadas de las páginas 2 a 6 a 220 ppp.
 
 ## Fuente aportada (25 de noviembre de 2026)

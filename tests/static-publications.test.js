@@ -100,9 +100,11 @@ test('Pabellón de la Secesión: la exposición de Supabase conserva su document
 
 test('The Red House: la exposición de Supabase suma láminas y autores sin perder su texto', ()=>{
  const id='5bab803f-bed9-4204-ac80-56f62ef28d99';
- const remote={exhibition_id:id,author:'Juan José Giraldo Díaz',description:'',document:{title:'THE RED HOUSE'}};
+ const remote={exhibition_id:id,author:'Juan José Giraldo Díaz',description:'',document:{title:'THE RED HOUSE',blocks:[]}};
  const [row]=combinePublications([remote]);
- assert.equal(row.document,remote.document);
+ assert.equal(row.document.title,'The Red House');
+ assert.equal(row.document.blocks,remote.document.blocks);
+ assert.equal(remote.document.title,'THE RED HOUSE');
  assert.equal(row.description,'');
  assert.equal(row.author,'Juan José Giraldo Díaz y Juan José Aristizábal');
  assert.deepEqual(row.chronicleFiles,[]);
