@@ -1,0 +1,289 @@
+{
+  "exhibition_id": "capitolio-nacional",
+  "revision_id": "capitolio-nacional-static-v1",
+  "author": "Mariana Bustamante Duque y Tamara Montesdeoca Anaya",
+  "description": "El Capitolio Nacional de Colombia, sede del Congreso, se levanta frente a la Plaza de Bolívar, en Bogotá. El trabajo lo lee como un edificio cívico-institucional de tipo claustral, organizado alrededor de patios, de estilo neoclásico y del siglo XIX.\n\nSu línea de tiempo distingue tres etapas: los primeros avances legales y constructivos (1830–1900), la construcción, modernización e integración al entorno cultural (1905–1975) y la restauración integral del edificio (1997–2007).",
+  "categories": [
+    "Arquitectura",
+    "Patrimonio"
+  ],
+  "analysisPanels": {
+    "C": [
+      {
+        "src": "/assets/capitolio-nacional/c-01-linea-tiempo.webp",
+        "alt": "Capitolio Nacional · Línea de tiempo · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/capitolio-nacional/c-02-ecologico.webp",
+        "alt": "Capitolio Nacional · Ecológico-ambiental · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/capitolio-nacional/c-03-sociodemografico.webp",
+        "alt": "Capitolio Nacional · Sociodemográfico · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/capitolio-nacional/c-04-antropologico.webp",
+        "alt": "Capitolio Nacional · Antropológico-cultural · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/capitolio-nacional/c-05-juridico.webp",
+        "alt": "Capitolio Nacional · Jurídico-político · lámina del trabajo final, p. 4"
+      },
+      {
+        "src": "/assets/capitolio-nacional/c-06-economico.webp",
+        "alt": "Capitolio Nacional · Económico-productivo · lámina del trabajo final, p. 4"
+      }
+    ],
+    "F": [
+      {
+        "src": "/assets/capitolio-nacional/f-01-paramentacion.webp",
+        "alt": "Capitolio Nacional · Paramentación · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-02-tipologia.webp",
+        "alt": "Capitolio Nacional · Tipología · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-03-nolli.webp",
+        "alt": "Capitolio Nacional · Plano de Nolli · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-04-llenos.webp",
+        "alt": "Capitolio Nacional · Plano de llenos · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-05-vacios.webp",
+        "alt": "Capitolio Nacional · Plano de vacíos · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-06-traza.webp",
+        "alt": "Capitolio Nacional · Traza · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-07-trama.webp",
+        "alt": "Capitolio Nacional · Trama · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-08-tejido.webp",
+        "alt": "Capitolio Nacional · Tejido · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-09-borde.webp",
+        "alt": "Capitolio Nacional · Borde · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-10-limite.webp",
+        "alt": "Capitolio Nacional · Límite · lámina del trabajo final, p. 5"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-11-tipo-edificatorio.webp",
+        "alt": "Capitolio Nacional · Tipo edificatorio · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-12-elementos.webp",
+        "alt": "Capitolio Nacional · Elementos o partes · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-13-relaciones-formales.webp",
+        "alt": "Capitolio Nacional · Relaciones formales · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-14-aula.webp",
+        "alt": "Capitolio Nacional · Aula · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-15-portico.webp",
+        "alt": "Capitolio Nacional · Pórtico · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-16-recinto.webp",
+        "alt": "Capitolio Nacional · Recinto · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-17-aproximacion.webp",
+        "alt": "Capitolio Nacional · Aproximación al edificio · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-18-masa.webp",
+        "alt": "Capitolio Nacional · Masa · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-19-repetitivos.webp",
+        "alt": "Capitolio Nacional · Espacios repetitivos · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-20-singulares.webp",
+        "alt": "Capitolio Nacional · Espacios singulares · lámina del trabajo final, p. 6"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-21-simetria.webp",
+        "alt": "Capitolio Nacional · Simetría (equilibrio) · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-22-jerarquia.webp",
+        "alt": "Capitolio Nacional · Jerarquía · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-23-geometria.webp",
+        "alt": "Capitolio Nacional · Geometría · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-24-interior-exterior.webp",
+        "alt": "Capitolio Nacional · Relación interior-exterior: sólidos y cavidades · lámina del trabajo final, p. 7"
+      },
+      {
+        "src": "/assets/capitolio-nacional/f-25-ritmo.webp",
+        "alt": "Capitolio Nacional · Ritmo arquitectónico · lámina del trabajo final, p. 7"
+      }
+    ],
+    "S": [
+      {
+        "src": "/assets/capitolio-nacional/s-01-nocion.webp",
+        "alt": "Capitolio Nacional · Noción · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-02-caracterizacion.webp",
+        "alt": "Capitolio Nacional · Caracterización · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-03-ejemplificacion.webp",
+        "alt": "Capitolio Nacional · Ejemplificación · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-04-categorizacion.webp",
+        "alt": "Capitolio Nacional · Categorización · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-05-subdivision.webp",
+        "alt": "Capitolio Nacional · Subdivisión · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-06-vinculacion.webp",
+        "alt": "Capitolio Nacional · Vinculación · lámina del trabajo final, p. 8"
+      },
+      {
+        "src": "/assets/capitolio-nacional/s-07-diferenciacion.webp",
+        "alt": "Capitolio Nacional · Diferenciación · lámina del trabajo final, p. 8"
+      }
+    ],
+    "U": [
+      {
+        "src": "/assets/capitolio-nacional/u-01-funcion.webp",
+        "alt": "Capitolio Nacional · Función · lámina del trabajo final, p. 9"
+      },
+      {
+        "src": "/assets/capitolio-nacional/u-02-actividad.webp",
+        "alt": "Capitolio Nacional · Actividad · lámina del trabajo final, p. 9"
+      },
+      {
+        "src": "/assets/capitolio-nacional/u-03-usuarios.webp",
+        "alt": "Capitolio Nacional · Usuario, perfiles de usuario y distribución de actividad por jornada · lámina del trabajo final, p. 9"
+      },
+      {
+        "src": "/assets/capitolio-nacional/u-04-patrones.webp",
+        "alt": "Capitolio Nacional · Patrones de uso temporal · lámina del trabajo final, p. 9"
+      },
+      {
+        "src": "/assets/capitolio-nacional/u-05-horarios.webp",
+        "alt": "Capitolio Nacional · Horarios y momentos clave · lámina del trabajo final, p. 9"
+      },
+      {
+        "src": "/assets/capitolio-nacional/u-06-frecuencia.webp",
+        "alt": "Capitolio Nacional · Frecuencia de uso · lámina del trabajo final, p. 9"
+      }
+    ],
+    "T": [
+      {
+        "src": "/assets/capitolio-nacional/t-01-materialidad.webp",
+        "alt": "Capitolio Nacional · Materialidad · lámina del trabajo final, p. 10"
+      },
+      {
+        "src": "/assets/capitolio-nacional/t-02-soporte.webp",
+        "alt": "Capitolio Nacional · Sistemas de soporte · lámina del trabajo final, p. 10"
+      },
+      {
+        "src": "/assets/capitolio-nacional/t-03-detalle.webp",
+        "alt": "Capitolio Nacional · Detalles constructivos · lámina del trabajo final, p. 10"
+      }
+    ]
+  },
+  "chronicleFiles": [
+    {
+      "src": "/assets/capitolio-nacional/cronica-tamara.pdf",
+      "name": "Cuando lo cotidiano se convirtió en privilegio · Tamara Montesdeoca Anaya"
+    },
+    {
+      "src": "/assets/capitolio-nacional/cronica-mariana.pdf",
+      "name": "Después del terremoto · Mariana Bustamante Duque"
+    }
+  ],
+  "document": {
+    "schemaVersion": 1,
+    "title": "Capitolio Nacional de Colombia",
+    "location": {
+      "lat": 4.5977,
+      "lon": -74.0761,
+      "label": "Bogotá, Colombia",
+      "provider": "manual"
+    },
+    "analysis": {
+      "1": "La línea de tiempo del trabajo distingue tres etapas. 1830–1900: se hacen los primeros avances legales y constructivos. 1905–1975: se construye, moderniza e integra al entorno cultural. 1997–2007: restauración integral del edificio; se reitera en la iniciativa de las 7 maravillas colombianas.",
+      "2": "La lámina estudia los vientos y la asoleación sobre el Capitolio y la Plaza de Bolívar.",
+      "3": "Residencial: 18.500 personas. Población flotante: más de 1.000.000 de personas al día. Visitantes: 8.922 personas. Grupos identificados: congresistas, ciudadanos, estudiantes, comerciantes y trabajadores, turistas y residentes.",
+      "4": "El entorno se lee por edificaciones, vías, zonas verdes, patrimonio histórico, museos, educación y conocimiento y espacios religiosos. Alrededor del Capitolio se señalan la Plaza de Bolívar, el Observatorio Astronómico Nacional, la Presidencia de la República de Colombia, el Museo Botero, el Santuario Nuestra Señora del Carmen y La Candelaria, centro histórico.",
+      "5": "El Capitolio Nacional (Poder Legislativo) aparece como centro de poder. Ejes de poder institucional lo unen con el Palacio de Justicia (Poder Judicial) y el Consejo de Bogotá (Gobierno Distrital). Relaciones de gestión administrativa lo vinculan con el Ministerio del Interior y la Rama Ejecutiva (Alcaldía Mayor de Bogotá). La Biblioteca Luis Ángel Arango y el Museo Botero representan la influencia cultural y educativa.",
+      "6": "La red económica alrededor del Capitolio incluye la Plaza de Bolívar (comercio y actividad social), un centro comercial de servicios (comercio, turismo, restaurantes), el Museo Botero (turismo y economía cultural), el Ministerio de Hacienda y Crédito Público (gestión financiera), el Banco de la República (sistema financiero) y el comercio local.",
+      "7": "La lámina señala la definición de andenes y la paramentación, entendida como la alineación de fachadas.",
+      "8": "Se identifican el Capitolio Nacional de Colombia, sede del Congreso de Colombia, el Colegio Mayor de San Bartolomé y la Secretaría de Cultura, Recreación y Deporte.",
+      "9": "Plano de Nolli con la distinción entre lo privado y lo público.",
+      "10": "Plano de llenos: lo construido aparece como lleno frente al vacío.",
+      "11": "Plano de vacíos: la lectura inversa, con el vacío como figura y lo construido como fondo.",
+      "12": "Circulación de las calles: vía principal, vías secundarias y sentidos de circulación.",
+      "13": "Grilla urbana.",
+      "14": "Se distinguen un tejido denso y un tejido abierto.",
+      "15": "La lámina marca el borde urbano, la topografía del terreno, la zona urbana y la zona de transición.",
+      "16": "El Capitolio se define por un límite físico, su volumen arquitectónico, y por un límite simbólico, su plaza pública.",
+      "17": "Genérico cívico-institucional. Tipo de edificación: claustral. Uso: institucional. Organización: patio central.",
+      "18": "Cubierta: volumen superior con el vacío del patio central. Volumetría arquitectónica: muros perimetrales, patio interior y pórtico de columnas. Columnas: soportan la estructura y jerarquizan el acceso principal. Basamento: plataforma, escalinatas y acceso principal.",
+      "19": "Relación por adición de volúmenes.",
+      "20": "Distribución de espacios.",
+      "21": "Columnas y accesos.",
+      "22": "Patios y espacios delimitados.",
+      "23": "La aproximación al Capitolio Nacional se produce principalmente desde la Plaza de Bolívar, mediante un recorrido frontal hacia su fachada principal y uno lineal que permite recorrer y apreciar su extensión arquitectónica.",
+      "30": "Forma de H. Poder.",
+      "31": "Cornisas: jerarquía. Escudo nacional: símbolo. Simetría: eje central. Columnas: ritmo.",
+      "32": "Capitolio Nacional: Colombia, siglo XIX, neoclásico; columnas, frontón, simetría y escudo nacional; función legislativa. Palacio de Versalles: Francia, siglos XVII–XVIII, clasicismo francés; fachada ordenada y ornamentación clásica; función real. Panteón de París: Francia, siglos XVIII–XIX, neoclásico; pórtico con columnas y cúpula; función religiosa.",
+      "33": "El edificio se ubica entre cuatro categorías: sagrado, profano, institucional y monumental.",
+      "34": "Cúpula y linterna; tambor; cubierta y cuerpo superior; podio y escalinatas.",
+      "36": "Capitolio Nacional: alta; legislativo; poder y nación; neoclásico; representación del Estado. Palacio de Versalles: muy alta; real; monarquía y lujo; barroco clásico; residencia real. Panteón de París: muy alta; nacional; república y fe; neoclásico; memoria y solemnidad.",
+      "37": "1. Ala de la Cámara de Representantes: oficinas de los representantes; Salón Boyacá (eventos institucionales, foros y audiencias públicas); Salón Luis Carlos Galán (capacitaciones y actos protocolarios); dependencias administrativas y de apoyo. 2. Ala del Senado: recinto de sesiones del Senado; presidencia y vicepresidencias; Salón Amarillo; Salón de la Constitución; oficinas y dependencias de apoyo. 3. Núcleo central, Salón Elíptico: sesiones plenarias de la Cámara, instalación del Congreso y actos institucionales de carácter nacional. 4. Patios interiores: Tomás Cipriano de Mosquera, Jorge Eliécer Gaitán, Rafael Núñez y Álvaro Gómez Hurtado. 5. Zonas perimetrales: oficinas, dependencias administrativas, servicios, corredores y escaleras; su distribución cambia según el piso.",
+      "38": "La planta marca las zonas de mayor y principal circulación, las zonas de mayor y principal actividad y la circulación vertical.",
+      "39": "Congresistas: senadores y representantes a la Cámara. Personal administrativo: funcionarios, asesores y secretarios. Visitantes: ciudadanos, estudiantes y turistas. Medios de comunicación: periodistas y reporteros. Personal de seguridad: vigilancia, mantenimiento y apoyo operativo.",
+      "40": "Piedra de cantería: fachada, columnas y estructura. Ladrillo: muros interiores. Madera: carpintería y ventanería. Teja cerámica: cubierta. Hierro forjado: puertas y rejas.",
+      "41": "El esquema muestra la carga vertical total y su distribución, las cargas laterales, la compresión y la tensión, los esfuerzos sobre arcos y columnas y el apoyo en cimientos.",
+      "42": "Cubierta y cerchas metálicas; encuentro muro-cubierta; mampostería de piedra de cantería; columnata de fachada; sistemas de arquerías y patios interiores. Detalles: ensamble de cercha metálica y apoyo, unión tectónica de sillería de piedra, encuentro de muro y cornisa, carpintería de vanos."
+    },
+    "blocks": [
+      {
+        "id": "portada",
+        "type": "hero",
+        "layout": "reading",
+        "title": "La sede del Congreso frente a la Plaza de Bolívar",
+        "eyebrow": "BOGOTÁ / NEOCLÁSICO",
+        "description": "El Capitolio Nacional de Colombia, sede del Congreso, se levanta frente a la Plaza de Bolívar, en Bogotá. El trabajo lo lee como un edificio cívico-institucional de tipo claustral, organizado alrededor de patios, de estilo neoclásico y del siglo XIX.\n\nSu línea de tiempo distingue tres etapas: los primeros avances legales y constructivos (1830–1900), la construcción, modernización e integración al entorno cultural (1905–1975) y la restauración integral del edificio (1997–2007).",
+        "cover": {
+          "src": "/assets/capitolio-nacional/historica.webp",
+          "title": "Ilustración de 1893",
+          "caption": "Capitolio Nacional · Clímaco Calderón, «Colombia 1893» (Wikimedia Commons, dominio público)",
+          "alt": "Ilustración en blanco y negro de 1893 con la fachada del Capitolio Nacional y un jardín con estatua en primer plano."
+        },
+        "secondCover": {
+          "src": "/assets/capitolio-nacional/actual.webp",
+          "title": "El edificio hoy",
+          "caption": "Capitolio Nacional · columnata y bandera de Colombia (imagen de la portada del trabajo final)",
+          "alt": "Columnata de piedra del Capitolio Nacional con la bandera de Colombia en lo alto, vista contemporánea."
+        }
+      }
+    ]
+  }
+}

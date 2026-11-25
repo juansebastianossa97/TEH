@@ -1,0 +1,24 @@
+{
+  "historica": {
+    "archivo": "dist/assets/capitolio-nacional/historica.webp",
+    "page": "https://commons.wikimedia.org/wiki/File:Capitolio_nacional_Colombia_1893.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Capitolio_nacional_Colombia_1893.jpg",
+    "autor": "Clímaco Calderón (1852-1913)",
+    "fuente": "Colombia 1893, p. 19",
+    "fecha": "1893",
+    "licencia": "Dominio público",
+    "cambios": "Reducida a 700 px de ancho, escala de grises y WebP"
+  },
+  "actual": {
+    "archivo": "dist/assets/capitolio-nacional/actual.webp",
+    "origen": "Portada del PDF «Teoría e Historia III - Trabajo final» (p. 1), imagen recortada sobre fondo blanco",
+    "autor": "No figura en el PDF",
+    "licencia": "No figura en el PDF",
+    "alternativa_wikimedia": {
+      "page": "https://commons.wikimedia.org/wiki/File:Capitolio_Nacional_Bogot%C3%A1.jpg",
+      "autor": "K.sarmientorojas",
+      "fecha": "2023-07-14",
+      "licencia": "CC BY-SA 4.0"
+    }
+  }
+}

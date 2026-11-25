@@ -10,12 +10,12 @@ import {renderDocument} from '../development/blocks/render.js';
 
 test('las exposiciones curadas conservan orden, no duplican IDs y se abren sin consulta remota',()=>{
  const rows=combinePublications([{exhibition_id:'karnak'}]);
- assert.deepEqual(rows.map(r=>r.exhibition_id),['karnak','teyuna','mesopotamia-ur','san-juan-letran','qorikancha','atenas-partenon','casa-batllo']);
- assert.deepEqual(rows.map((_,i)=>String(places.length+i+1).padStart(2,'0')),['02','03','04','05','06','07','08']);
+ assert.deepEqual(rows.map(r=>r.exhibition_id),['karnak','teyuna','mesopotamia-ur','san-juan-letran','qorikancha','atenas-partenon','casa-batllo','capitolio-nacional']);
+ assert.deepEqual(rows.map((_,i)=>String(places.length+i+1).padStart(2,'0')),['02','03','04','05','06','07','08','09']);
  assert.equal(findStaticPublication('teyuna').author,'Alejandro Velez Escobar, Tomás Alejandro Rubio y Santiago Hernández');
  assert.equal(findStaticPublication('mesopotamia-ur').author,'Jean Carlos Fuentes Urbano, Salomé Echeverri García y Juan José Varón Llano');
  assert.equal(findStaticPublication('unknown'),undefined);
- assert.equal(combinePublications([]).length,7);
+ assert.equal(combinePublications([]).length,8);
 });
 test('documentos válidos, portadas distintas, recursos presentes y cronologías filtrables',()=>{
  const dom=new JSDOM('<main></main>',{url:'https://example.org'});globalThis.document=dom.window.document;
@@ -24,7 +24,7 @@ test('documentos válidos, portadas distintas, recursos presentes y cronologías
   const hero=row.document.blocks[0];assert.notEqual(hero.cover.src,hero.secondCover.src);
   const root=document.querySelector('main');renderDocument(row.document,root);
   for(const img of root.querySelectorAll('img'))assert.ok(fs.existsSync(new URL('../dist'+img.getAttribute('src'),import.meta.url)));
-  const timeline=row.document.blocks.find(b=>b.type==='timeline');if (!timeline) { assert.equal(row.exhibition_id,'casa-batllo'); continue; } assert.ok(timeline.events.length>=10);
+  const timeline=row.document.blocks.find(b=>b.type==='timeline');if (!timeline) { assert.ok(['casa-batllo','capitolio-nacional'].includes(row.exhibition_id)); continue; } assert.ok(timeline.events.length>=10);
   assert.equal(root.querySelectorAll('.timeline-event').length,timeline.events.length);
   const filter=[...root.querySelectorAll('.timeline-filters button')].find(b=>b.textContent==='Arquitectura');filter.click();
   assert.equal(root.querySelectorAll('.timeline-event:not([hidden])').length,timeline.events.filter(e=>e.tags.includes('Arquitectura')).length);
@@ -69,4 +69,14 @@ test('Casa Batlló: cinco categorías ilustradas y dos crónicas independientes 
   buttons[0].click();buttons[1].click();
   const frames=[...document.querySelectorAll('iframe')];assert.equal(frames.length,2);assert.notEqual(frames[0].src,frames[1].src);
  }finally{delete globalThis.document;dom.window.close()}
+});
+
+test('Capitolio Nacional: 42 puntos válidos, láminas por categoría y dos crónicas', ()=>{
+ const row=findStaticPublication('capitolio-nacional');
+ assert.equal(row.author,'Mariana Bustamante Duque y Tamara Montesdeoca Anaya');
+ assert.deepEqual(Object.keys(row.analysisPanels),['C','F','S','U','T']);
+ assert.equal(row.chronicleFiles.length,2);
+ assert.deepEqual(validateDocument(row.document),[]);
+ for(const key of Object.keys(row.document.analysis))assert.ok(Number(key)>=1&&Number(key)<=42);
+ for(const file of [...Object.values(row.analysisPanels).flat(),...row.chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
 });
