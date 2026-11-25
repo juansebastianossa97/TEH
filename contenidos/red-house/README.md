@@ -5,6 +5,7 @@ Estado: complementa la exposición 03 que vive en Supabase (`exhibition_id` `5ba
 El complemento aporta:
 
 - `author`: «Juan José Giraldo Díaz y Juan José Aristizábal», según la portada del trabajo final (Teoría e Historia III). Sustituye en el sitio al autor guardado en Supabase.
+- `chronicleFiles`: dos crónicas en **Cr**: «La ciudad que no se quedó quieta» (Juan José Giraldo Díaz) y «Algo nunca previsto» (Juan José Aristizábal). Los textos no traen nombre; la autoría sale de los metadatos de cada PDF.
 - `title`: el nombre se muestra como «The Red House», con el mismo formato que las demás exposiciones (en Supabase sigue como «THE RED HOUSE»).
 - `analysisPanels`: 40 láminas del trabajo final (C 6, F 23, S 5, U 3, T 3), cada una con su subtítulo numerado, recortadas de las páginas 2 a 6 a 220 ppp.
 
@@ -16,5 +17,4 @@ El complemento aporta:
 
 - El PDF no incluye los puntos 35 Vinculación ni 36 Diferenciación.
 - La página 6 repite «Jerarquía» con el mismo texto de la página 5; solo se usó la de la página 5.
-- No llegaron crónicas con este trabajo.
 - La lámina de Pórtico conserva una frase sobrante de la plantilla («puedes analizar el acceso…»).

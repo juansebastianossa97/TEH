@@ -107,11 +107,11 @@ test('The Red House: la exposición de Supabase suma láminas y autores sin perd
  assert.equal(remote.document.title,'THE RED HOUSE');
  assert.equal(row.description,'');
  assert.equal(row.author,'Juan José Giraldo Díaz y Juan José Aristizábal');
- assert.deepEqual(row.chronicleFiles,[]);
+ assert.equal(row.chronicleFiles.length,2);
  assert.deepEqual(Object.keys(row.analysisPanels),['C','F','S','U','T']);
  const numbers=Object.values(row.analysisPanels).flat().map(p=>Number(p.title.split('.')[0]));
  assert.equal(numbers.length,40);
  assert.deepEqual(Array.from({length:42},(_,i)=>i+1).filter(n=>!numbers.includes(n)),[35,36]);
- for(const file of Object.values(row.analysisPanels).flat())assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
+ for(const file of [...Object.values(row.analysisPanels).flat(),...row.chronicleFiles])assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
  assert.equal(combinePublications([{exhibition_id:'ee7a78c2-62fc-4c24-8756-514ad5c72130',author:'Santiago Ramirez',description:'',document:{}}])[0].author,'Santiago Ramírez Ospina y Thomas García Chica');
 });

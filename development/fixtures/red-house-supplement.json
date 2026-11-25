@@ -213,5 +213,15 @@
         "alt": "The Red House · Detalles constructivos · lámina del trabajo final, p. 6"
       }
     ]
-  }
+  },
+  "chronicleFiles": [
+    {
+      "src": "/assets/red-house/cronica-giraldo.pdf",
+      "name": "La ciudad que no se quedó quieta · Juan José Giraldo Díaz"
+    },
+    {
+      "src": "/assets/red-house/cronica-aristizabal.pdf",
+      "name": "Algo nunca previsto · Juan José Aristizábal"
+    }
+  ]
 }
