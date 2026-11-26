@@ -272,7 +272,45 @@
           }
         ]
       }
-    ]
+    ],
+    "analysis": {
+      "1": "El Templo de Karnak fue construido y ampliado durante diferentes dinastías del antiguo Egipto, principalmente en el Imperio Nuevo. Cada faraón aportó nuevas construcciones al complejo.",
+      "2": "Se encuentra en Luxor, cerca del río Nilo, en una región desértica. Su arquitectura se relaciona con la luz solar y las condiciones climáticas del entorno.",
+      "3": "Representaba una sociedad jerárquica, encabezada por el faraón y seguida por sacerdotes, artesanos y trabajadores que participaban en su funcionamiento.",
+      "4": "Era un centro religioso dedicado principalmente al dios Amón-Ra, donde se realizaban ceremonias, ofrendas y procesiones propias de la cultura egipcia.",
+      "5": "El templo representaba el poder de los faraones, quienes financiaban su construcción y ampliación para demostrar su autoridad y relación con los dioses.",
+      "6": "Su construcción necesitó grandes cantidades de piedra, transporte y mano de obra. El río Nilo facilitaba el traslado de materiales.",
+      "7": "Los grandes muros y pilonos forman una fachada monumental que define la imagen exterior del templo y marca sus accesos.",
+      "8": "Karnak pertenece a la arquitectura religiosa monumental. Está compuesto por patios, salas, santuarios y espacios ceremoniales.",
+      "15": "Está definido por los grandes muros que separan el recinto sagrado del entorno exterior y marcan una transición espacial.",
+      "16": "El muro perimetral delimita el terreno del templo, controla sus accesos y separa las zonas sagradas del exterior.",
+      "17": "Es un templo religioso monumental destinado al culto de los dioses y a la realización de ceremonias.",
+      "18": "Está compuesto por pilonos, patios, columnas, sala hipóstila, santuarios y obeliscos, que conforman su estructura arquitectónica.",
+      "19": "Sus diferentes volúmenes se conectan mediante ejes, repeticiones y recorridos que generan continuidad entre los espacios.",
+      "20": "La sala hipóstila representa un espacio principal de permanencia, caracterizado por su amplitud y sus numerosas columnas.",
+      "21": "Las galerías de columnas funcionan como espacios de transición entre las zonas abiertas y cubiertas del templo.",
+      "22": "Los santuarios representan espacios delimitados y restringidos, destinados principalmente a las actividades religiosas de los sacerdotes.",
+      "23": "El recorrido comienza en la avenida de las esfinges y continúa por los pilonos, patios y salas interiores.",
+      "24": "Sus grandes muros, columnas y pilonos de piedra generan una imagen de solidez, monumentalidad y permanencia.",
+      "25": "Las columnas de la sala hipóstila se organizan de manera constante, creando ritmo visual y orden espacial.",
+      "26": "El santuario destaca por su carácter único y sagrado, diferenciándose de los demás espacios del conjunto.",
+      "27": "La organización alrededor del eje principal genera equilibrio entre los diferentes elementos arquitectónicos del templo.",
+      "28": "Los pilonos, patios y santuarios presentan diferentes niveles de importancia según su tamaño, ubicación y función.",
+      "29": "Se basa en ejes rectos, formas regulares y proporciones que organizan los espacios del complejo.",
+      "30": "Representa la conexión entre el mundo humano y el divino mediante el culto a Amón-Ra y las creencias egipcias.",
+      "31": "Se distingue por sus grandes columnas, jeroglíficos, relieves y decoraciones que representan la cultura y religión egipcia.",
+      "32": "Comparte características con otros templos egipcios, como el de Luxor, especialmente en sus pilonos, patios y columnas.",
+      "33": "Su significado comprende aspectos religiosos, políticos, culturales y monumentales que reflejan la sociedad egipcia.",
+      "34": "Sus elementos, como basamentos, columnas, dinteles y relieves, cumplen funciones arquitectónicas y simbólicas.",
+      "35": "Sus recorridos y ejes conectan visualmente al visitante con los espacios sagrados, representando la relación entre lo humano y lo divino.",
+      "36": "Se distingue por sus grandes dimensiones, su sala hipóstila y las diferentes construcciones incorporadas a lo largo de los siglos.",
+      "37": "Su función principal era religiosa, con espacios destinados al culto, las ceremonias y las actividades de carácter sagrado.",
+      "38": "Se realizaban rituales, procesiones y ofrendas que determinaban los recorridos y el uso de los espacios.",
+      "39": "Participaban faraones, sacerdotes, trabajadores y personas que asistían a las diferentes ceremonias religiosas.",
+      "40": "Se utilizaron principalmente arenisca, caliza y granito para construir columnas, muros y elementos decorativos.",
+      "41": "Su estructura utiliza columnas, muros y dinteles de piedra que transmiten las cargas hasta el suelo.",
+      "42": "Se destacan las uniones entre columnas y dinteles, los capiteles, los bloques de piedra y los relieves decorativos."
+    }
   },
   "author": "Maria Antonia Guerrero, Salome Agudelo y Manuela Agudelo",
   "description": "Análisis arquitectónico de Karnak, en Tebas/Luxor: reconstrucción, estado conservado, tres láminas urbanas y trece momentos históricos.",
@@ -280,5 +318,24 @@
     "Arquitectura",
     "Antiguo Egipto",
     "Patrimonio"
-  ]
+  ],
+  "analysisPanels": {
+    "F": [
+      {
+        "point": 9,
+        "src": "/assets/karnak/nolli.png",
+        "alt": "Karnak · Plano de Nolli del entorno urbano de Luxor"
+      },
+      {
+        "point": 10,
+        "src": "/assets/karnak/llenos.png",
+        "alt": "Karnak · Plano de llenos del entorno urbano de Luxor"
+      },
+      {
+        "point": 11,
+        "src": "/assets/karnak/vacios.png",
+        "alt": "Karnak · Plano de vacíos del entorno urbano de Luxor"
+      }
+    ]
+  }
 }

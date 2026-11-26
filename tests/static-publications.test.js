@@ -132,3 +132,27 @@ test('los nombres de exposición comparten formato y las nuevas aprobadas van al
  assert.deepEqual([rows[0].document.title,rows.at(-2).document.title,rows.at(-1).document.title],['Antes','Hacienda Cañasgordas','Otra Casa']);
  assert.equal(late.document.title,'HACIENDA CAÑASGORDAS');
 });
+
+test('Karnak: 36 puntos con texto y láminas urbanas 9–11 dentro de su punto', ()=>{
+ const row=findStaticPublication('karnak');
+ assert.deepEqual(validateDocument(row.document),[]);
+ const keys=Object.keys(row.document.analysis).map(Number);
+ assert.equal(keys.length,36);
+ assert.ok(keys.every(n=>n>=1&&n<=42));
+ assert.deepEqual(row.analysisPanels.F.map(p=>p.point),[9,10,11]);
+ for(const file of Object.values(row.analysisPanels).flat())assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
+});
+
+test('las láminas con punto se dibujan dentro de su punto y las demás arriba, como antes', ()=>{
+ const dom=new JSDOM('<div id="tiles"></div>',{url:'https://example.org'});globalThis.document=dom.window.document;
+ dom.window.HTMLDialogElement.prototype.showModal=function(){this.open=true};
+ try {
+  const tiles=document.querySelector('#tiles');
+  mountAnalysis(tiles,{7:'Texto del punto siete.',8:'Texto del punto ocho.'});
+  tiles.analysisPanels={F:[{src:'/a.png',alt:'Arriba',title:'Lámina general'},{point:9,src:'/nolli.png',alt:'Nolli'}]};
+  tiles.querySelectorAll('button')[1].click();
+  const scroll=document.querySelector('.analysis-scroll');
+  const order=[...scroll.querySelectorAll('h3,h4,p,img')].map(n=>n.tagName==='IMG'?'img:'+n.alt:n.tagName.toLowerCase()+':'+n.textContent);
+  assert.deepEqual(order,['h4:Lámina general','img:Arriba','h3:Forma urbana','h4:7. Paramentación','p:Texto del punto siete.','h4:8. Tipología','p:Texto del punto ocho.','h4:9. Plano de Nolli','img:Nolli']);
+ }finally{delete globalThis.document;dom.window.close()}
+});

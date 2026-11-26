@@ -92,7 +92,10 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         else content.textContent = 'Aún no hay documentos en esta crónica.';
       }
       let shown = 0;
-      for (const panel of container.analysisPanels?.[initial] || []) {
+      const panels = container.analysisPanels?.[initial] || [];
+      // Curated plates: those with a numeric `point` are drawn inside that point;
+      // the rest keep their place at the top of the category.
+      const drawPanel = (panel, margin) => {
         const figure = document.createElement('figure');
         const image = document.createElement('img');
         image.src = panel.src;
@@ -104,7 +107,7 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         link.target = '_blank';
         link.rel = 'noopener';
         link.textContent = 'Ampliar lámina ↗';
-        figure.style.margin = '0 0 24px';
+        figure.style.margin = margin;
         if (panel.title) {
           const caption = document.createElement('h4');
           caption.textContent = panel.title;
@@ -112,6 +115,10 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         }
         figure.append(image, link);
         content.append(figure);
+      };
+      for (const panel of panels) {
+        if (Number.isInteger(panel.point)) continue;
+        drawPanel(panel, '0 0 24px');
         shown++;
       }
       points.forEach(([label, example, plate], index) => {
@@ -119,7 +126,8 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         const answer = container.analysisAnswers?.[number];
         const body = typeof answer === 'string' && answer.trim() ? answer : sophia ? example : '';
         const picture = container.analysisImages?.[number];
-        if (!body && !picture) return;
+        const pointPanels = panels.filter(panel => panel.point === number);
+        if (!body && !picture && !pointPanels.length) return;
         shown++;
         if (number === 7 || number === 17) {
           const group = document.createElement('h3');
@@ -155,6 +163,7 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
           paragraph.textContent = body;
           content.append(paragraph);
         }
+        for (const panel of pointPanels) drawPanel(panel, '0 0 16px');
         if (sophia && plate) {
           const image = document.createElement('img');
           image.src = '/assets/sophia-' + plate + '.svg';
