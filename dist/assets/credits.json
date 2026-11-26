@@ -158,5 +158,121 @@
     "description": "Cathédrale d'Aix-la-Chapelle\nAix-la-Chapelle (Aachen)\n\nAllemagne",
     "date": "2009-12-22 15:35:18",
     "changes": "Redimensionada para web; mostrada sin recorte en la comparación."
+  },
+  {
+    "id": "santa-sofia-p14-tejido",
+    "path": "assets/santa-sofia/p14-tejido.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Fatihistanbul.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Fatihistanbul.jpg",
+    "credit": "Hunanuk",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "bytes": 233516,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p17-planta-secciones",
+    "path": "assets/santa-sofia/p17-planta-secciones.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Santa_Sophia_282.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Santa_Sophia_282.jpg",
+    "credit": "Banister Fletcher",
+    "license": "Dominio público",
+    "bytes": 401866,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p20-nave-fossati",
+    "path": "assets/santa-sofia/p20-nave-fossati.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Gaspare_Fossati_-_Louis_Haghe_-_Vue_g%C3%A9n%C3%A9rale_de_la_grande_nef,_en_regardant_l%27occident_(Hagia_Sophia_-_Ayasofya_Mosque_nave).jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Gaspare_Fossati_-_Louis_Haghe_-_Vue_g%C3%A9n%C3%A9rale_de_la_grande_nef%2C_en_regardant_l%27occident_%28Hagia_Sophia_-_Ayasofya_Mosque_nave%29.jpg",
+    "credit": "Gaspare Fossati y Louis Haghe (1852)",
+    "license": "Dominio público",
+    "bytes": 315228,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p21-narthex",
+    "path": "assets/santa-sofia/p21-narthex.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Inner_narthex_in_2016_9138.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hagia_Sophia_Inner_narthex_in_2016_9138.jpg",
+    "credit": "Dosseman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 441558,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p22-abside",
+    "path": "assets/santa-sofia/p22-abside.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Apse_in_2016_1304.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Hagia_Sophia_Apse_in_2016_1304.jpg",
+    "credit": "Dosseman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 235472,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p24-masa-1852",
+    "path": "assets/santa-sofia/p24-masa-1852.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_1852.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hagia_Sophia_1852.jpg",
+    "credit": "Louis Haghe según Gaspare Fossati (1852)",
+    "license": "Dominio público",
+    "bytes": 551040,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p29-cupula-pechinas",
+    "path": "assets/santa-sofia/p29-cupula-pechinas.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia%27s_%E2%8C%8030.6m_main_dome,_semidomes,_and_medallions_(8395018647).jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hagia_Sophia%27s_%E2%8C%8030.6m_main_dome%2C_semidomes%2C_and_medallions_%288395018647%29.jpg",
+    "credit": "Jorge Láscar",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "bytes": 279730,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p31-luz-cupula",
+    "path": "assets/santa-sofia/p31-luz-cupula.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Dome_of_Hagia_Sophia_(Ayasofya)_-_Flickr_-_brewbooks.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dome_of_Hagia_Sophia_%28Ayasofya%29_-_Flickr_-_brewbooks.jpg",
+    "credit": "brewbooks",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "bytes": 293836,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p37-mihrab",
+    "path": "assets/santa-sofia/p37-mihrab.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_mihrab_in_2009_6884.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Hagia_Sophia_mihrab_in_2009_6884.jpg",
+    "credit": "Dosseman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 407246,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p40-mosaico-deesis",
+    "path": "assets/santa-sofia/p40-mosaico-deesis.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Deesis_mosaic_Hagia_Sophia.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Deesis_mosaic_Hagia_Sophia.jpg",
+    "credit": "Myrabella",
+    "license": "Dominio público",
+    "bytes": 404828,
+    "changes": "Redimensionada y convertida a WebP"
+  },
+  {
+    "id": "santa-sofia-p41-seccion-1913",
+    "path": "assets/santa-sofia/p41-seccion-1913.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Byzantine_and_Romanesque_architecture_(1913)_(14589625139).jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Byzantine_and_Romanesque_architecture_%281913%29_%2814589625139%29.jpg",
+    "credit": "Internet Archive Book Images (Byzantine and Romanesque architecture, 1913)",
+    "license": "Sin restricciones conocidas",
+    "bytes": 288596,
+    "changes": "Redimensionada y convertida a WebP"
   }
 ]

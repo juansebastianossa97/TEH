@@ -63,6 +63,95 @@ export const sophiaAnswers = Object.fromEntries(categories.flatMap(([, , start, 
   points.map(([, body], index) => [start + index, body])
 ));
 
+// Santa Sofía: free-licensed images (Wikimedia Commons) for the points that need them most.
+export const sophiaPanels = {
+  "F": [
+    {
+      "point": 14,
+      "src": "/assets/santa-sofia/p14-tejido.webp",
+      "alt": "Vista aérea de la península histórica: Santa Sofía, la Mezquita Azul y el antiguo hipódromo",
+      "credit": "Hunanuk · CC0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Fatihistanbul.jpg"
+    },
+    {
+      "point": 17,
+      "src": "/assets/santa-sofia/p17-planta-secciones.webp",
+      "alt": "Planta y secciones de Santa Sofía (Banister Fletcher)",
+      "credit": "Banister Fletcher · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Sophia_282.jpg"
+    },
+    {
+      "point": 20,
+      "src": "/assets/santa-sofia/p20-nave-fossati.webp",
+      "alt": "La gran nave vista hacia el oeste, litografía de 1852",
+      "credit": "Gaspare Fossati y Louis Haghe (1852) · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Gaspare_Fossati_-_Louis_Haghe_-_Vue_g%C3%A9n%C3%A9rale_de_la_grande_nef,_en_regardant_l%27occident_(Hagia_Sophia_-_Ayasofya_Mosque_nave).jpg"
+    },
+    {
+      "point": 21,
+      "src": "/assets/santa-sofia/p21-narthex.webp",
+      "alt": "Nártex interior",
+      "credit": "Dosseman · CC BY-SA 4.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Inner_narthex_in_2016_9138.jpg"
+    },
+    {
+      "point": 22,
+      "src": "/assets/santa-sofia/p22-abside.webp",
+      "alt": "El ábside",
+      "credit": "Dosseman · CC BY-SA 4.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Apse_in_2016_1304.jpg"
+    },
+    {
+      "point": 24,
+      "src": "/assets/santa-sofia/p24-masa-1852.webp",
+      "alt": "Exterior con contrafuertes y minaretes, litografía de 1852",
+      "credit": "Louis Haghe según Gaspare Fossati (1852) · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_1852.jpg"
+    },
+    {
+      "point": 29,
+      "src": "/assets/santa-sofia/p29-cupula-pechinas.webp",
+      "alt": "Cúpula, semicúpulas y pechinas vistas desde la nave",
+      "credit": "Jorge Láscar · CC BY 2.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia%27s_%E2%8C%8030.6m_main_dome,_semidomes,_and_medallions_(8395018647).jpg"
+    }
+  ],
+  "S": [
+    {
+      "point": 31,
+      "src": "/assets/santa-sofia/p31-luz-cupula.webp",
+      "alt": "Ventanas en el arranque de la cúpula",
+      "credit": "brewbooks · CC BY-SA 2.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Dome_of_Hagia_Sophia_(Ayasofya)_-_Flickr_-_brewbooks.jpg"
+    }
+  ],
+  "U": [
+    {
+      "point": 37,
+      "src": "/assets/santa-sofia/p37-mihrab.webp",
+      "alt": "El mihrab en el ábside",
+      "credit": "Dosseman · CC BY-SA 4.0 · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_mihrab_in_2009_6884.jpg"
+    }
+  ],
+  "T": [
+    {
+      "point": 40,
+      "src": "/assets/santa-sofia/p40-mosaico-deesis.webp",
+      "alt": "Mosaico de la Déesis, teselas de vidrio y oro",
+      "credit": "Myrabella · Dominio público · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Deesis_mosaic_Hagia_Sophia.jpg"
+    },
+    {
+      "point": 41,
+      "src": "/assets/santa-sofia/p41-seccion-1913.webp",
+      "alt": "Sección transversal: cúpula, galerías y apoyos",
+      "credit": "Internet Archive Book Images (Byzantine and Romanesque architecture, 1913) · Sin restricciones conocidas · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Byzantine_and_Romanesque_architecture_(1913)_(14589625139).jpg"
+    }
+  ]
+};
+
 export function mountAnalysis(container, answers = {}, sophia = false, target = '', editorPath = '/editor/') {
   container.replaceChildren();
   container.classList.add('analysis-tiles');
@@ -92,7 +181,7 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
         else content.textContent = 'Aún no hay documentos en esta crónica.';
       }
       let shown = 0;
-      const panels = container.analysisPanels?.[initial] || [];
+      const panels = container.analysisPanels?.[initial] || (sophia ? sophiaPanels[initial] : undefined) || [];
       // Curated plates: those with a numeric `point` are drawn inside that point;
       // the rest keep their place at the top of the category.
       const drawPanel = (panel, margin) => {
@@ -114,6 +203,17 @@ export function mountAnalysis(container, answers = {}, sophia = false, target = 
           figure.append(caption);
         }
         figure.append(image, link);
+        if (panel.credit) {
+          const caption = document.createElement('figcaption');
+          caption.style.cssText = 'font-size:.8em;opacity:.7;margin-top:4px';
+          const credit = document.createElement('a');
+          credit.href = panel.source;
+          credit.target = '_blank';
+          credit.rel = 'noopener';
+          credit.textContent = panel.credit;
+          caption.append(credit);
+          figure.append(caption);
+        }
         content.append(figure);
       };
       for (const panel of panels) {

@@ -156,3 +156,33 @@ test('las láminas con punto se dibujan dentro de su punto y las demás arriba, 
   assert.deepEqual(order,['h4:Lámina general','img:Arriba','h3:Forma urbana','h4:7. Paramentación','p:Texto del punto siete.','h4:8. Tipología','p:Texto del punto ocho.','h4:9. Plano de Nolli','img:Nolli']);
  }finally{delete globalThis.document;dom.window.close()}
 });
+
+test('Santa Sofía: imágenes con crédito dentro de los puntos que más las necesitan', async ()=>{
+ const {sophiaPanels}=await import('../dist/sophia-analysis.js');
+ const panels=Object.values(sophiaPanels).flat();
+ assert.deepEqual(panels.map(p=>p.point).sort((a,b)=>a-b),[14,17,20,21,22,24,29,31,37,40,41]);
+ for(const panel of panels){
+  assert.ok(fs.existsSync(new URL('../dist'+panel.src,import.meta.url)));
+  assert.ok(panel.credit.includes('Wikimedia Commons'));
+  assert.match(panel.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+ }
+ const dom=new JSDOM('<div id="tiles"></div>',{url:'https://example.org'});globalThis.document=dom.window.document;
+ dom.window.HTMLDialogElement.prototype.showModal=function(){this.open=true};
+ try {
+  const tiles=document.querySelector('#tiles');
+  mountAnalysis(tiles,{},true);
+  tiles.querySelectorAll('button')[1].click();
+  const nodes=[...document.querySelectorAll('.analysis-scroll h4, .analysis-scroll img')];
+  const heading=nodes.findIndex(n=>n.textContent==='17. Tipo edificatorio');
+  const fletcher=nodes.findIndex(n=>n.tagName==='IMG'&&n.getAttribute('src')==='/assets/santa-sofia/p17-planta-secciones.webp');
+  assert.ok(heading>=0&&fletcher>heading);
+  assert.ok(nodes.slice(heading+1,fletcher).every(n=>n.tagName==='IMG'));
+  const caption=document.querySelector('img[src="/assets/santa-sofia/p17-planta-secciones.webp"]').closest('figure').querySelector('figcaption a');
+  assert.match(caption.textContent,/Banister Fletcher/);
+  assert.equal(caption.getAttribute('href'),'https://commons.wikimedia.org/wiki/File:Santa_Sophia_282.jpg');
+  // Other exhibitions without sophia keep no Santa Sofía images.
+  document.querySelectorAll('dialog').forEach(d=>d.remove());
+  mountAnalysis(tiles,{17:'Texto'});tiles.querySelectorAll('button')[1].click();
+  assert.equal(document.querySelectorAll('img[src^="/assets/santa-sofia/"]').length,0);
+ }finally{delete globalThis.document;dom.window.close()}
+});
