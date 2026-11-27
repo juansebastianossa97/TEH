@@ -7,6 +7,77 @@
     "Arquitectura",
     "Patrimonio"
   ],
+  "analysisPanels": {
+    "C": [
+      {
+        "src": "/assets/letran/analisis/c-01-cronologia.webp",
+        "alt": "San Juan de Letrán · Cronología de hitos arquitectónicos y urbanos · análisis contextual del grupo",
+        "title": "1. Histórico: cronología de hitos"
+      },
+      {
+        "src": "/assets/letran/analisis/c-02-solar.webp",
+        "alt": "San Juan de Letrán · Diagrama solar sobre la implantación · análisis contextual del grupo",
+        "title": "2. Ecológico-ambiental: recorrido solar"
+      },
+      {
+        "src": "/assets/letran/analisis/c-02-vientos.webp",
+        "alt": "San Juan de Letrán · Rosa de vientos de Roma · análisis contextual del grupo",
+        "title": "2. Ecológico-ambiental: rosa de vientos de Roma"
+      },
+      {
+        "src": "/assets/letran/analisis/c-02-topografia.webp",
+        "alt": "San Juan de Letrán · Mapa topográfico de elevaciones, 42 a 63 m s. n. m. · análisis contextual del grupo",
+        "title": "2. Ecológico-ambiental: topografía y altimetría"
+      },
+      {
+        "src": "/assets/letran/analisis/c-03-densidad.webp",
+        "alt": "San Juan de Letrán · Contraste de densidad urbana · análisis contextual del grupo",
+        "title": "3. Sociodemográfico: contraste de densidad urbana"
+      },
+      {
+        "src": "/assets/letran/analisis/c-06-patrocinio.webp",
+        "alt": "San Juan de Letrán · Patrocinio y financiamiento del tesoro imperial · análisis contextual del grupo",
+        "title": "6. Económico-productivo: patrocinio imperial"
+      },
+      {
+        "src": "/assets/letran/analisis/c-06-flujos.webp",
+        "alt": "San Juan de Letrán · Esquema de flujos económicos y abastecimiento · análisis contextual del grupo",
+        "title": "6. Económico-productivo: flujos de abastecimiento hacia Roma"
+      }
+    ],
+    "F": [
+      {
+        "src": "/assets/letran/analisis/f-07-paramentacion.webp",
+        "alt": "San Juan de Letrán · Dibujo de paramentación: frente urbano, obelisco y plaza · análisis contextual del grupo",
+        "title": "7. Paramentación"
+      },
+      {
+        "src": "/assets/letran/analisis/f-09-nolli.webp",
+        "alt": "San Juan de Letrán · Plano de Nolli del sector · análisis contextual del grupo",
+        "title": "9. Plano de Nolli"
+      },
+      {
+        "src": "/assets/letran/analisis/f-12-traza.webp",
+        "alt": "San Juan de Letrán · Estructura vial principal y ejes convergentes · análisis contextual del grupo",
+        "title": "12. Traza"
+      },
+      {
+        "src": "/assets/letran/analisis/f-13-trama.webp",
+        "alt": "San Juan de Letrán · Trama urbana y subdivisión de manzanas · análisis contextual del grupo",
+        "title": "13. Trama"
+      },
+      {
+        "src": "/assets/letran/analisis/f-14-tejido.webp",
+        "alt": "San Juan de Letrán · Tejido urbano: densidad, parcelación y masas construidas · análisis contextual del grupo",
+        "title": "14. Tejido"
+      },
+      {
+        "src": "/assets/letran/analisis/f-15-borde.webp",
+        "alt": "San Juan de Letrán · Borde contra la Muralla Aureliana y Porta Asinaria · análisis contextual del grupo",
+        "title": "15. Borde"
+      }
+    ]
+  },
   "document": {
     "schemaVersion": 1,
     "title": "San Juan de Letrán",
@@ -15,6 +86,22 @@
       "lon": 12.5057,
       "label": "Roma, Italia",
       "provider": "manual"
+    },
+    "analysis": {
+      "1": "La evolución urbana de San Juan de Letrán sintetiza el tránsito desde la Roma cívica y pagana de los Foros y las comunidades cristianas discretas hasta la fundación episcopal constantiniana en el borde periférico del monte Celio, su articulación renacentista-barroca bajo el plan de Sixto V y su transformación monumental.\n\nSiglos I–II d. C. — Centro pagano y basílica civil: desarrollo de naves longitudinales en los Foros imperiales como tipología cívica de referencia.\nSiglos I–III d. C. — Red cristiana oculta: práctica comunitaria discreta articulada mediante domus ecclesiae domésticas y catacumbas extramuros.\n271–275 d. C. — Murallas Aurelianas: construcción del recinto amurallado que define el límite defensivo y urbano en el borde del monte Celio.\n312–313 d. C. — Ruptura y cesión imperial: demolición del cuartel de los Equites Singulares (Castra Nova) tras la victoria de Constantino y promulgación del Edicto de Milán.\nca. 313–324 d. C. — Nuevo polo periférico: fundación de la basílica de Letrán mediante reutilización de spolia, consolidando una Roma policéntrica.\n1585–1590 — Conexión viaria: plan urbano de Sixto V con la apertura de la Vía Merulana y la erección de obeliscos como hitos de orientación.\nSiglos XVII–XVIII — Imagen barroca: intervención interior de Francesco Borromini (1646–1650) y fachada principal de Alessandro Galilei (1735).",
+      "2": "Recorrido solar y orientación: la implantación longitudinal del complejo en el monte Celio recibe incidencia solar directa desde el arco sur a lo largo del año (alcanzando mayor altura en el solsticio de verano y menor ángulo en invierno), favoreciendo la iluminación natural de las naves y el claustro.\n\nRégimen de vientos predominantes: según la rosa de vientos de Roma, predominan los flujos provenientes del noreste (NE – ENE) y las brisas del sur-suroeste (S – SSW), lo que incide en la ventilación cruzada y el confort térmico del conjunto perimetral en el borde junto a la Muralla Aureliana.\n\nTopografía y altimetría: el complejo se asienta sobre una meseta elevada del monte Celio en torno a los 56 m s. n. m. (en un sector que oscila entre los 42 m y 63 m, alcanzando mayor cota hacia el Palacio Lateranense y descendiendo hacia los 42–48 m en Giardini di Via Sannio), otorgándole dominancia visual y resguardo topográfico.",
+      "3": "Distribución y densidad urbana: contraste marcado entre la alta densidad del centro cívico y los Foros frente a la baja densidad del borde suroriental en el monte Celio y el entorno de Porta Asinaria junto a la Muralla Aureliana.\n\nEstructura social y cambio demográfico: frente a un núcleo central dominado por la aristocracia senatorial tradicional, el borde imperial permite dar cabida a una comunidad cristiana en expansión que pasa de reuniones domésticas (domus ecclesiae) a congregaciones públicas masivas.",
+      "4": "Cambio cultural y ritualidad: la consolidación cristiana transforma la experiencia del espacio sagrado, pasando de la discreción de las reuniones domésticas a una presencia pública, procesional y colectiva dentro de la ciudad.\n\nResignificación del lugar: levantar el complejo episcopal en un sector vinculado a la memoria imperial y al borde urbano implica reinterpretar el territorio desde una nueva identidad cultural y simbólica.",
+      "5": "Marco legal y patrocinio imperial: tras el Edicto de Milán (313 d. C.), la legalización del culto cristiano habilita el patrocinio directo del emperador Constantino para edificar una basílica pública de escala monumental.\n\nEstrategia política del emplazamiento: al ubicarse en predios de propiedad imperial directa (Fiscus) en el monte Celio —tras la disolución de los Equites Singulares—, se evita la confrontación jurídica y política directa con la aristocracia senatorial y los templos tradicionales del centro cívico.",
+      "6": "Patrocinio directo y financiamiento del tesoro imperial romano: el emplazamiento y sostén de San Juan de Letrán se apoyan en el respaldo estatal y patrimonial del emperador en un momento de reconfiguración de los flujos económicos imperiales.\n\nFlujos y rutas de abastecimiento: Roma dependía de una red logística estatal (Annona, puertos de Ostia/Portus, río Tíber y calzadas imperiales) que perdía dinamismo en el siglo IV hacia Constantinopla. Letrán, en el borde suroriental junto a las puertas de la muralla y calzadas principales, se conecta a los flujos terrestres y recibe mármoles, metales y bienes suntuarios por patrocinio imperial.\n\nEjes financieros (crisis vs. patrocinio): frente a la crisis económica, la inflación, la pérdida de capitalidad en Roma y una comunidad cristiana sin recursos propios para grandes obras, Constantino financia directamente la basílica y le asigna rentas agrícolas (en Italia, África y Oriente) para su sostenimiento continuo.\n\nAbastecimiento constructivo (spolia): ante la caída en la extracción de nuevas canteras por la contracción económica, la obra recurre a spolia (columnas de granito y mármol, capiteles y revestimientos reutilizados de edificios previos), agilizando tiempos y reduciendo costos.",
+      "7": "El conjunto no responde a una alineación continua de calle tradicional, sino que articula tres relaciones de borde diferenciadas:\n\nFrente urbano (fachada este – Piazza di Porta San Giovanni): retroceso respecto al eje vial para abrir una gran explanada de acceso que habilita la perspectiva monumental y la recepción de multitudes.\n\nFlanco norte (Piazza Giovanni Paolo Secondo): paramentación en «L» conformada junto al Palacio de Letrán y el Baptisterio, configurando un recinto semiabierto que ordena el vacío lateral.\n\nFlanco sur y posterior (oeste): adosamiento directo al borde urbano y a la Muralla Aureliana, operando como cierre perimetral frente al límite de la ciudad.",
+      "8": "El conjunto no es una sola forma pura, sino la yuxtaposición de las tres: la iglesia es un AULA precedida por un PÓRTICO, conectada directamente a un RECINTO (el claustro y el palacio).",
+      "9": "Articulación de espacios públicos, interiores accesibles, patios y recintos de San Juan de Letrán.",
+      "12": "La traza donde se ubica San Juan de Letrán es radiocéntrica e hipodámica de carácter monumental. Es una red de avenidas (plan barroco de Sixto V) que convergen en el edificio como un gran nodo visual y de peregrinación, conectándolo directamente con otros monumentos clave de Roma.\n\nVia di San Giovanni in Laterano: conecta el Coliseo con San Juan de Letrán.\nVia Merulana: conecta la basílica de San Juan de Letrán con la basílica de Santa María la Mayor.\nVia Domenico Fontana / Via di Santa Croce in Gerusalemme: conecta con la basílica de Santa Croce.",
+      "13": "Es una trama orgánica e histórica (heterogénea). Una trama orgánica (o irregular) creció de forma natural, sin un plano regulador; histórica indica que ha sido construida a lo largo de siglos; heterogénea significa que no es uniforme ni homogénea, sino una mezcla de capas de distintas épocas.",
+      "14": "El tejido urbano de San Juan de Letrán destaca por su escala monumental y discontinuidad: la gran masa arquitectónica de la basílica y el palacio convive con un amplio vacío público (las plazas) y choca con el borde histórico de las Murallas Aurelianas, contrastando fuertemente con el tejido residencial denso que lo rodea.",
+      "15": "El área de la basílica remata contra la Muralla Aureliana y Porta Asinaria, se encuentra con el antiguo patio monumental del hospital y choca de frente con los bloques de viviendas del siglo XIX.",
+      "16": "El espacio de la basílica limita con las plazas abiertas del entorno (como Piazza di Porta San Giovanni y Piazza Giovanni Paolo Secondo), las vías de acceso y conexión, el área del hospital y los bloques residenciales del siglo XIX, y el tramo de la Muralla Aureliana junto a Porta Asinaria.\n\nEl límite es el contorno general del espacio de la basílica, y los bordes son los encuentros puntuales donde se siente el choque o el remate con lo que tiene al lado."
     },
     "blocks": [
       {

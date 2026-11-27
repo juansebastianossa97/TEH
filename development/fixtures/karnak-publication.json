@@ -1,6 +1,20 @@
 {
   "exhibition_id": "karnak",
   "revision_id": "karnak-local-v1",
+  "chronicleFiles": [
+    {
+      "src": "/assets/karnak/cronica-maria-antonia.pdf",
+      "name": "Cuando la Tierra tembló, Colombia se unió · María Antonia Guerrero"
+    },
+    {
+      "src": "/assets/karnak/cronica-manuela.pdf",
+      "name": "Entre el temblor y la solidaridad · Manuela Agudelo"
+    },
+    {
+      "src": "/assets/karnak/cronica-salome.pdf",
+      "name": "El día en que todo tembló · Salomé Agudelo"
+    }
+  ],
   "document": {
     "schemaVersion": 1,
     "title": "Karnak",
@@ -101,6 +115,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/01-capilla-blanca-senusret-i.jpg",
+              "alt": "Capilla Blanca de Senusret I, reconstruida en el Museo al Aire Libre de Karnak.",
+              "caption": "Capilla Blanca de Senusret I, hoy reconstruida en el Museo al Aire Libre de Karnak.",
+              "author": "Marsupium",
+              "source": "Wikimedia Commons · CC BY 4.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:White_Chapel_of_Senusret_I_in_Karnak_Open_Air_Museum_01.jpg"
             }
           },
           {
@@ -129,6 +151,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/03-obelisco-tutmosis-i.jpg",
+              "alt": "Obelisco de Tutmosis I en el patio del cuarto pilono de Karnak.",
+              "caption": "Obelisco de Tutmosis I, aún en pie junto al cuarto pilono.",
+              "author": "Kurohito",
+              "source": "Wikimedia Commons · CC BY-SA 3.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Karnak-obelisk-thoutmesI.jpg"
             }
           },
           {
@@ -143,6 +173,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/04-capilla-roja-hatshepsut.jpg",
+              "alt": "Capilla Roja de Hatshepsut, de cuarcita roja, reconstruida en el Museo al Aire Libre de Karnak.",
+              "caption": "Capilla Roja de Hatshepsut, reconstruida con sus bloques originales en el Museo al Aire Libre.",
+              "author": "Marsupium",
+              "source": "Wikimedia Commons · CC BY 4.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Red_Chapel_of_Hatshepsut_in_Karnak_Open_Air_Museum_01.jpg"
             }
           },
           {
@@ -157,6 +195,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/05-akhmenu-tutmosis-iii.jpg",
+              "alt": "El Akhmenu, sala de festivales de Tutmosis III en Karnak.",
+              "caption": "Akhmenu, la sala de festivales de Tutmosis III.",
+              "author": "Marsupium",
+              "source": "Wikimedia Commons · CC BY 4.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Akh-menu_in_Karnak_01.jpg"
             }
           },
           {
@@ -185,6 +231,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/07-talatat-gempaaten.jpg",
+              "alt": "Bloques talatat del templo de Akenatón en Karnak, reunidos para reconstruir su decoración.",
+              "caption": "Talatat del Gem-pa-Atón: bloques pequeños de Akenatón, recuperados después de su reutilización.",
+              "author": "Jon Bodsworth",
+              "source": "Wikimedia Commons · Uso libre con derechos de autor (Copyrighted free use)",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Gempaaten_talatats.jpg"
             }
           },
           {
@@ -213,6 +267,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/09-sala-hipostila.jpg",
+              "alt": "Columnas papiriformes de la gran sala hipóstila de Karnak.",
+              "caption": "Gran sala hipóstila de Karnak: el bosque de columnas de Seti I y Ramsés II.",
+              "author": "Vyacheslav Argenberg",
+              "source": "Wikimedia Commons · CC BY 4.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Luxor,_Egypt,_Karnak,_Great_Hypostyle_Hall.jpg"
             }
           },
           {
@@ -227,6 +289,14 @@
             "source": {
               "name": "Elaine Sullivan · Digital Karnak (2010)",
               "url": "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+            },
+            "image": {
+              "src": "/assets/karnak/eventos/10-templo-jonsu.jpg",
+              "alt": "Templo de Jonsu, en el sector suroeste del recinto de Amón en Karnak.",
+              "caption": "Templo de Jonsu, iniciado por Ramsés III.",
+              "author": "Marc Ryckaert (MJJR)",
+              "source": "Wikimedia Commons · CC BY 3.0",
+              "sourceURL": "https://commons.wikimedia.org/wiki/File:Karnak_Khonsu_Temple_R01.jpg"
             }
           },
           {

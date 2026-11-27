@@ -2,10 +2,15 @@
 export function attachCuratedMedia(tiles, publication) {
   if (!tiles) return;
   tiles.analysisPanels = publication.analysisPanels || {};
-  if (!publication.chronicleFiles?.length) return;
+  attachChronicleFiles(tiles, publication.chronicleFiles);
+}
+
+// Curated chronicle PDFs, listed before any approved attachments.
+export function attachChronicleFiles(tiles, files) {
+  if (!tiles || !files?.length) return;
   const previous = tiles.showChronicle;
   tiles.showChronicle = content => {
-    for (const file of publication.chronicleFiles) {
+    for (const file of files) {
       const section = document.createElement('section');
       const title = document.createElement('h3');
       title.textContent = file.name;

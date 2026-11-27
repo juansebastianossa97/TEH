@@ -14,6 +14,13 @@ import {formatTitle} from '../blocks/title-format.js';
 
 // Curated publications ship with the site and do not enter the submission queue.
 export const staticPublications = [karnak, {...teyuna, mapOffset:[18,-52]}, {...ur, mapOffset:[24,-20]}, {...letran, mapOffset:[28,28]}, {...qorikancha, mapOffset:[-115,-35]}, {...atenas, mapOffset:[-115,28]}, batllo, {...capitolio, mapOffset:[-40,40]}];
+// Chronicles for the original map chapters, keyed by section id.
+export const originalChronicles = {
+  bizantino: [
+    {src:'/assets/santa-sofia/cronica-1.pdf', name:'Crónica escrita a máquina · grupo de Juan Sebastián, Santiago y Samuel'},
+    {src:'/assets/santa-sofia/cronica-2.pdf', name:'Crónica escrita a mano · grupo de Juan Sebastián, Santiago y Samuel'}
+  ]
+};
 export const findStaticPublication = id => staticPublications.find(row => row.exhibition_id === id);
 // Course material for exhibitions that live in Supabase: it is added to the remote row,
 // which keeps its own document, images and position on the route.

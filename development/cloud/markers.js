@@ -1,8 +1,8 @@
-import {attachCuratedMedia} from './curated-media.js';
+import {attachCuratedMedia, attachChronicleFiles} from './curated-media.js';
 import {renderChronicle, renderChronicleText} from '../tools/chronicle.js';
 import {mountAnalysis} from '../../dist/sophia-analysis.js';
 import {publishedAnswers, publishedChronicle, publishedImages, publishedChronicleTexts} from './analysis-contributions.js';
-import {combinePublications} from './static-publications.js';
+import {combinePublications, originalChronicles} from './static-publications.js';
 import {supabase,checked,chronicleURL} from './client.js';
 import {loadDraft} from '../blocks/model.js';
 
@@ -133,6 +133,7 @@ export function mountPublications(getMap) {
         if (tiles) {
           tiles.analysisAnswers = publishedAnswers(section.id, {}, remote);
           tiles.showChronicle = content => { renderChronicleText(publishedChronicleTexts(section.id, remote), content); renderChronicle(publishedChronicle(section.id, remote), content, chronicleURL); };
+          attachChronicleFiles(tiles, originalChronicles[section.id]);
           tiles.analysisImages = publishedImages(section.id, null, remote);
           tiles.resolveAnalysisImage = chronicleURL;
         }

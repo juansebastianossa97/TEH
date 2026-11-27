@@ -35,3 +35,11 @@ Los intervalos antiguos son aproximados y corresponden a reinados; no son fechas
 `readBackup` acepta el ZIP y verifica los hashes del contenido y sus miniaturas. `checkSophiaSubmission` acepta la plantilla. Se verificaron cinco imágenes independientes, dos portadas diferentes y trece eventos. Además se verificó el renderizado de las cinco imágenes, sus archivos en site/, la compilación de producción y las 31 pruebas existentes. Las imágenes se sirven como recursos estáticos del proyecto; no se duplicaron en Supabase. No se realizó verificación visual en navegador.
 
 No se modificaron las siete exposiciones originales, Barcelona ni la configuración de despliegue.
+
+## Crónicas (27 de noviembre de 2026)
+
+Tres crónicas en PDF sobre el terremoto, en `chronicleFiles` de `development/fixtures/karnak-publication.json` y servidas desde `dist/assets/karnak/`. Se consultan desde **Cr**. María Antonia Guerrero y Salomé Agudelo figuran como autoras en los metadatos de sus PDF. «Entre el temblor y la solidaridad» no trae nombre: se atribuye a Manuela Agudelo por descarte. **Confirmar con el grupo.**
+
+## Imágenes de la línea de tiempo (27 de noviembre de 2026)
+
+Siete momentos de la cronología llevan una fotografía de Wikimedia Commons con licencia abierta (campo `image` de cada evento, con autor, licencia y enlace). Archivos en `dist/assets/karnak/eventos/`. Los eventos de una línea de tiempo admiten ahora una imagen opcional (`development/blocks/model.js`, `development/blocks/render.js` y estilos al final de `dist/style.css`).

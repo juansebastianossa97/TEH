@@ -186,3 +186,11 @@ test('Santa Sofía: imágenes con crédito dentro de los puntos que más las nec
   assert.equal(document.querySelectorAll('img[src^="/assets/santa-sofia/"]').length,0);
  }finally{delete globalThis.document;dom.window.close()}
 });
+
+test('San Juan de Letrán: puntos del análisis contextual y láminas del PDF del grupo', ()=>{
+ const row=findStaticPublication('san-juan-letran');
+ assert.deepEqual(Object.keys(row.document.analysis).map(Number),[1,2,3,4,5,6,7,8,9,12,13,14,15,16]);
+ assert.deepEqual(validateDocument(row.document),[]);
+ assert.deepEqual(Object.keys(row.analysisPanels),['C','F']);
+ for(const file of Object.values(row.analysisPanels).flat())assert.ok(fs.existsSync(new URL('../dist'+file.src,import.meta.url)));
+});

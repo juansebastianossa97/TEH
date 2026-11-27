@@ -58,6 +58,7 @@ export function validateDocument(doc) {
           text(e.date,'Fecha',100);text(e.era,'Etapa',200);text(e.title,'Evento',500);text(e.body,'Descripción de evento');
           list(e.tags,'Categorías',12).forEach(t=>text(t,'Categoría',80));
           if(e.source?.url||e.source?.name){if(!safeURL(e.source?.url))errors.push('Fuente no permitida');text(e.source?.name,'Fuente',300)}
+          if(e.image!==undefined)asset(e.image);
         }
       }
       if(b.type==='sources')for(const item of list(b.items,'Fuentes')){if(!item||typeof item!=='object'){errors.push('Referencia no válida');continue}text(item.name,'Referencia',1000);if((item.name||item.url)&&!safeURL(item.url))errors.push('Referencia no permitida')}

@@ -50,7 +50,7 @@ export function renderDocument(doc,root){
    const list=el('ol','timeline-events');
    b.events.forEach((event,i)=>{const row=el('li','timeline-event'),date=el('div','timeline-date'),card=el('article','timeline-card'),top=el('div','timeline-card-top'),tags=el('div','timeline-tags');
     date.append(el('span','',event.date),el('small','',event.era));event.tags.forEach(t=>tags.append(el('span','',t)));
-    top.append(el('span','timeline-index',String(i+1).padStart(2,'0')),tags);card.append(top,el('h4','',event.title),el('p','',event.body),...(event.source?.url?[link(event.source.name+' ↗',event.source.url)]:[]));row.append(date,card);list.append(row);
+    top.append(el('span','timeline-index',String(i+1).padStart(2,'0')),tags);card.append(top,el('h4','',event.title),el('p','',event.body),...(event.image?[figure(event.image)]:[]),...(event.source?.url?[link(event.source.name+' ↗',event.source.url)]:[]));row.append(date,card);list.append(row);
    });
    ['Todos',...new Set(b.events.flatMap(e=>e.tags).filter(t=>t!=='Todos'))].forEach(category=>{const button=el('button','',category);button.type='button';button.setAttribute('aria-pressed',String(category==='Todos'));button.addEventListener('click',()=>{
     for(const btn of filters.children)btn.setAttribute('aria-pressed',String(btn===button));let visible=0;
